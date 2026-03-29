@@ -1,0 +1,39 @@
+name: RSS to Telegram
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+jobs:
+  rss:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Send RSS to Telegram
+        run: |
+          pip install feedparser requests
+          python <<EOF
+          import feedparser, requests
+
+          BOT_TOKEN = "${{ secrets.BOT_TOKEN }}"
+          CHAT_ID = "${{ secrets.CHAT_ID }}"
+
+          feeds = [
+            "https://www.reddit.com/r/aivideo/new/.rss",
+            "https://www.reddit.com/r/comfyui/new/.rss",
+            "https://github.com/comfyanonymous/ComfyUI/releases.atom"
+          ]
+
+          for url in feeds:
+              d = feedparser.parse(url)
+              for entry in d.entries[:3]:
+                  title = entry.title
+                  link = entry.link
+                  msg = f"{title}\n{link}"
+
+                  requests.post(
+                      f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage",
+                      data={"chat_id": CHAT_ID, "text": msg}
+                  )
+          EOF
