@@ -16,6 +16,8 @@ jobs:
   rss:
     runs-on: ubuntu-latest
     timeout-minutes: 12
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     steps:
       - name: Checkout
@@ -39,10 +41,9 @@ jobs:
           MAX_SUMMARY_CHARS: "220"
         run: |
           python -m pip install --upgrade pip
-          pip install feedparser requests googletrans==4.0.2
+          pip install feedparser requests deep-translator
 
           python <<'PY'
-          import asyncio
           import html
           import json
           import os
@@ -53,7 +54,7 @@ jobs:
 
           import feedparser
           import requests
-          from googletrans import Translator
+          from deep_translator import GoogleTranslator
 
           BOT_TOKEN = os.environ["BOT_TOKEN"]
           CHAT_ID = os.environ["CHAT_ID"]
@@ -87,38 +88,24 @@ jobs:
           def is_korean(text: str) -> bool:
               return bool(re.search(r"[가-힣]", text or ""))
 
-          async def _translate_batch(texts, limit=220):
-              safe_texts = [clean_text(t)[:limit] for t in texts]
-              out = list(safe_texts)
-
-              jobs = [(i, t) for i, t in enumerate(safe_texts) if t and not is_korean(t)]
-              if not jobs:
-                  return out
-
-              try:
-                  async with Translator(service_urls=["translate.googleapis.com"]) as translator:
-                      batch = [t for _, t in jobs]
-                      results = await translator.translate(batch, dest="ko")
-                      if not isinstance(results, list):
-                          results = [results]
-                      for (i, _), res in zip(jobs, results):
-                          out[i] = getattr(res, "text", safe_texts[i]) or safe_texts[i]
-              except Exception:
-                  try:
-                      async with Translator(service_urls=["translate.googleapis.com"]) as translator:
-                          for i, t in jobs:
-                              try:
-                                  res = await translator.translate(t, dest="ko")
-                                  out[i] = getattr(res, "text", t) or t
-                              except Exception:
-                                  out[i] = t
-                  except Exception:
-                      pass
-
-              return out
-
           def translate_batch_ko(texts, limit=220):
-              return asyncio.run(_translate_batch(texts, limit=limit))
+              out = []
+              try:
+                  translator = GoogleTranslator(source='auto', target='ko')
+              except Exception:
+                  translator = None
+
+              for t in texts:
+                  safe_t = clean_text(t)[:limit]
+                  if not safe_t or is_korean(safe_t) or not translator:
+                      out.append(safe_t)
+                  else:
+                      try:
+                          res = translator.translate(safe_t)
+                          out.append(res or safe_t)
+                      except Exception:
+                          out.append(safe_t)
+              return out
 
           def google_news_rss(query, hl="en-US", gl="US", ceid="US:en"):
               return f"https://news.google.com/rss/search?q={quote(query)}&hl={hl}&gl={gl}&ceid={ceid}"
@@ -290,75 +277,28 @@ jobs:
 
           def build_header(signal, topic):
               if topic == "COMFYUI":
-                  return {
-                      "NEWS": "🔴 ComfyUI 최신뉴스",
-                      "TIP": "🟡 ComfyUI 꿀팁 / Workflow",
-                      "TREND": "🔵 ComfyUI 트렌드",
-                  }.get(signal, "🔵 ComfyUI 정보")
-
+                  return {"NEWS": "🔴 ComfyUI 최신뉴스", "TIP": "🟡 ComfyUI 꿀팁 / Workflow", "TREND": "🔵 ComfyUI 트렌드"}.get(signal, "🔵 ComfyUI 정보")
               if topic == "VIDEO_GEN":
-                  return {
-                      "NEWS": "🔴 AI Video 최신뉴스",
-                      "TIP": "🟡 AI Video 꿀팁 / 성공사례",
-                      "TREND": "🔵 AI Video 트렌드",
-                  }.get(signal, "🔵 AI Video 정보")
-
+                  return {"NEWS": "🔴 AI Video 최신뉴스", "TIP": "🟡 AI Video 꿀팁 / 성공사례", "TREND": "🔵 AI Video 트렌드"}.get(signal, "🔵 AI Video 정보")
               if topic == "IMAGE_GEN":
-                  return {
-                      "NEWS": "🔴 AI Image 최신뉴스",
-                      "TIP": "🟡 AI Image 꿀팁 / 성공사례",
-                      "TREND": "🔵 AI Image 트렌드",
-                  }.get(signal, "🔵 AI Image 정보")
-
+                  return {"NEWS": "🔴 AI Image 최신뉴스", "TIP": "🟡 AI Image 꿀팁 / 성공사례", "TREND": "🔵 AI Image 트렌드"}.get(signal, "🔵 AI Image 정보")
               if topic == "IMAGE_EDIT":
-                  return {
-                      "NEWS": "🔴 AI Image Edit 최신뉴스",
-                      "TIP": "🟡 AI Image Edit 꿀팁",
-                      "TREND": "🔵 AI Image Edit 트렌드",
-                  }.get(signal, "🔵 AI Image Edit 정보")
-
+                  return {"NEWS": "🔴 AI Image Edit 최신뉴스", "TIP": "🟡 AI Image Edit 꿀팁", "TREND": "🔵 AI Image Edit 트렌드"}.get(signal, "🔵 AI Image Edit 정보")
               if topic == "UPSCALE":
-                  return {
-                      "NEWS": "🔴 Upscaling 최신뉴스",
-                      "TIP": "🟡 Upscaling 꿀팁 / 성공사례",
-                      "TREND": "🔵 Upscaling 트렌드",
-                  }.get(signal, "🔵 Upscaling 정보")
-
+                  return {"NEWS": "🔴 Upscaling 최신뉴스", "TIP": "🟡 Upscaling 꿀팁 / 성공사례", "TREND": "🔵 Upscaling 트렌드"}.get(signal, "🔵 Upscaling 정보")
               if topic == "AUDIO_GEN":
-                  return {
-                      "NEWS": "🔴 AI Audio 최신뉴스",
-                      "TIP": "🟡 AI Audio / SFX 꿀팁",
-                      "TREND": "🔵 AI Audio / SFX 트렌드",
-                  }.get(signal, "🔵 AI Audio 정보")
-
+                  return {"NEWS": "🔴 AI Audio 최신뉴스", "TIP": "🟡 AI Audio / SFX 꿀팁", "TREND": "🔵 AI Audio / SFX 트렌드"}.get(signal, "🔵 AI Audio 정보")
               if topic == "LOW_VRAM":
-                  return {
-                      "NEWS": "🔴 Low VRAM 최신뉴스",
-                      "TIP": "🟡 Low VRAM 성공사례",
-                      "TREND": "🔵 Low VRAM 트렌드",
-                  }.get(signal, "🟡 Low VRAM 정보")
-
+                  return {"NEWS": "🔴 Low VRAM 최신뉴스", "TIP": "🟡 Low VRAM 성공사례", "TREND": "🔵 Low VRAM 트렌드"}.get(signal, "🟡 Low VRAM 정보")
               if topic == "GUI_ONECLICK":
-                  return {
-                      "NEWS": "🟤 GUI Tool 최신뉴스",
-                      "TIP": "🟤 GUI Tool 꿀팁",
-                      "TREND": "🟤 GUI Tool 트렌드",
-                  }.get(signal, "🟤 GUI Tool 정보")
-
+                  return {"NEWS": "🟤 GUI Tool 최신뉴스", "TIP": "🟤 GUI Tool 꿀팁", "TREND": "🟤 GUI Tool 트렌드"}.get(signal, "🟤 GUI Tool 정보")
               if topic == "CGPERSIA":
                   return "🟣 CGPersia 업데이트"
-
               if topic == "KR_NEWS":
                   return "🟥 한국 AI 최신뉴스"
-
               if topic == "COMMUNITY_HOT":
                   return "🔵 커뮤니티 인기글"
-
-              return {
-                  "NEWS": "🔴 AI 최신뉴스",
-                  "TIP": "🟡 AI 꿀팁 / 성공사례",
-                  "TREND": "🔵 AI 트렌드",
-              }.get(signal, "🔵 AI 정보")
+              return {"NEWS": "🔴 AI 최신뉴스", "TIP": "🟡 AI 꿀팁 / 성공사례", "TREND": "🔵 AI 트렌드"}.get(signal, "🔵 AI 정보")
 
           def send_message(text):
               r = session.post(
@@ -604,9 +544,10 @@ jobs:
                   send_message(msg)
                   seen[item["key"]] = now_utc().isoformat().replace("+00:00", "Z")
                   sent += 1
-                  time.sleep(0.8)
               except Exception:
-                  continue
+                  pass
+              finally:
+                  time.sleep(0.8)
 
           state["seen"] = seen
           save_state(state)
@@ -620,5 +561,5 @@ jobs:
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
             git add .rss_state.json
-            git diff --cached --quiet || (git commit -m "chore: update rss state" && git push)
+            git diff --cached --quiet || (git commit -m "chore: update rss state" && git pull --rebase && git push)
           fi
