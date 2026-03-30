@@ -5,35 +5,501 @@ on:
     - cron: "*/30 * * * *"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   rss:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Send RSS to Telegram
-        run: |
-          pip install feedparser requests
-          python <<EOF
-          import feedparser, requests
+      - name: Checkout
+        uses: actions/checkout@v4
 
-          BOT_TOKEN = "${{ secrets.BOT_TOKEN }}"
-          CHAT_ID = "${{ secrets.CHAT_ID }}"
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Collect + Translate Titles + Send
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          CHAT_ID: ${{ secrets.CHAT_ID }}
+          RSSHUB_BASE: ${{ secrets.RSSHUB_BASE }}
+          MAX_MESSAGES_PER_RUN: "20"
+          MAX_ITEMS_PER_FEED: "2"
+          PER_SOURCE_CAP: "2"
+          DEDUP_DAYS: "14"
+          ENABLE_RSSHUB: "1"
+        run: |
+          python -m pip install --upgrade pip
+          pip install feedparser requests googletrans==4.0.2
+
+          python <<'PY'
+          import os, re, json, time, html, asyncio
+          from datetime import datetime, timedelta, timezone
+          from urllib.parse import quote
+          import requests, feedparser
+          from googletrans import Translator
+
+          BOT_TOKEN = os.environ["BOT_TOKEN"]
+          CHAT_ID = os.environ["CHAT_ID"]
+
+          MAX_MESSAGES_PER_RUN = int(os.getenv("MAX_MESSAGES_PER_RUN", "20"))
+          MAX_ITEMS_PER_FEED = int(os.getenv("MAX_ITEMS_PER_FEED", "2"))
+          PER_SOURCE_CAP = int(os.getenv("PER_SOURCE_CAP", "2"))
+          DEDUP_DAYS = int(os.getenv("DEDUP_DAYS", "14"))
+
+          ENABLE_RSSHUB = os.getenv("ENABLE_RSSHUB", "1") == "1"
+          RSSHUB_BASE = os.getenv("RSSHUB_BASE", "https://rsshub.app").rstrip("/")
+
+          STATE_PATH = ".rss_state.json"
+          USER_AGENT = "rss-to-telegram-bot/1.3"
+          TIMEOUT = 20
+
+          def now_utc():
+              return datetime.now(timezone.utc)
+
+          def load_state():
+              if not os.path.exists(STATE_PATH):
+                  return {"version": 1, "seen": {}}
+              try:
+                  with open(STATE_PATH, "r", encoding="utf-8") as f:
+                      return json.load(f)
+              except Exception:
+                  return {"version": 1, "seen": {}}
+
+          def save_state(state):
+              with open(STATE_PATH, "w", encoding="utf-8") as f:
+                  json.dump(state, f, ensure_ascii=False, indent=2)
+
+          def prune_state(state):
+              cutoff = now_utc() - timedelta(days=DEDUP_DAYS)
+              keep = {}
+              for k, v in state.get("seen", {}).items():
+                  try:
+                      ts = datetime.fromisoformat(v.replace("Z", "+00:00"))
+                      if ts >= cutoff:
+                          keep[k] = v
+                  except Exception:
+                      pass
+              state["seen"] = keep
+
+          def clean_text(text):
+              if not text:
+                  return ""
+              text = html.unescape(text)
+              text = re.sub(r"<[^>]+>", " ", text)
+              text = re.sub(r"\s+", " ", text).strip()
+              return text
+
+          def google_news_rss(query, hl="en-US", gl="US", ceid="US:en"):
+              return f"https://news.google.com/rss/search?q={quote(query)}&hl={hl}&gl={gl}&ceid={ceid}"
+
+          def is_korean(text):
+              return bool(re.search(r"[가-힣]", text or ""))
+
+          async def translate_titles_to_ko(titles):
+              safe_titles = [clean_text(t)[:180] for t in titles]
+              output = list(safe_titles)
+
+              idxs = [i for i, t in enumerate(safe_titles) if t and not is_korean(t)]
+              if not idxs:
+                  return output
+
+              try:
+                  async with Translator(service_urls=["translate.googleapis.com"]) as translator:
+                      batch = [safe_titles[i] for i in idxs]
+                      results = await translator.translate(batch, dest="ko")
+                      if not isinstance(results, list):
+                          results = [results]
+                      for pos, i in enumerate(idxs):
+                          output[i] = getattr(results[pos], "text", safe_titles[i]) or safe_titles[i]
+              except Exception:
+                  pass
+
+              return output
+
+          SIGNAL_RULES = {
+              "NEWS": [
+                  r"\brelease\b", r"\breleased\b", r"\blaunch\b", r"\blaunched\b",
+                  r"\bupdate\b", r"\bupdated\b", r"\bchangelog\b", r"\bannounc",
+                  r"\bversion\b", r"\bnew model\b", r"\bnew tool\b",
+                  r"출시", r"업데이트", r"릴리스", r"공개", r"발표",
+                  r"发布", r"更新", r"上线"
+              ],
+              "TIP": [
+                  r"\bguide\b", r"\btutorial\b", r"\bworkflow\b", r"\btip\b", r"\btips\b",
+                  r"\bhow to\b", r"\bbenchmark\b", r"\bsetting\b", r"\bconfig\b",
+                  r"\binstall\b", r"\bsuccess\b", r"\bcase study\b",
+                  r"\blow vram\b", r"\b4gb\b", r"\b6gb\b", r"\b8gb\b",
+                  r"꿀팁", r"가이드", r"튜토리얼", r"설정", r"방법", r"성공사례", r"후기",
+                  r"教程", r"低显存", r"实测", r"安装", r"设置"
+              ],
+              "TREND": [
+                  r"\btrending\b", r"\btrend\b", r"\btop\b", r"\bhot\b", r"\bpopular\b",
+                  r"\branking\b", r"\bviral\b",
+                  r"트렌드", r"인기", r"핫", r"급상승",
+                  r"热门", r"趋势", r"热榜"
+              ],
+          }
+
+          TOPIC_RULES = {
+              "VIDEO_GEN": [
+                  r"text[- ]to[- ]video", r"image[- ]to[- ]video", r"video diffusion",
+                  r"video[- ]to[- ]video", r"frame interpolation", r"\bwan\b",
+                  r"hunyuan", r"\bltx\b", r"cogvideo", r"skyreels",
+                  r"영상 생성", r"비디오 생성", r"영상 ai",
+                  r"视频生成", r"文生视频", r"图生视频"
+              ],
+              "IMAGE_GEN": [
+                  r"text[- ]to[- ]image", r"image generation", r"\bdiffusion\b",
+                  r"stable diffusion", r"\bsdxl\b", r"\bflux\b", r"\blora\b",
+                  r"checkpoint", r"controlnet",
+                  r"이미지 생성", r"그림 생성", r"사진 생성",
+                  r"图像生成", r"文生图", r"扩散模型"
+              ],
+              "IMAGE_EDIT": [
+                  r"image editing", r"image[- ]to[- ]image", r"inpaint", r"outpaint",
+                  r"remove background", r"background remove", r"try[- ]on",
+                  r"이미지 편집", r"배경 제거", r"인페인트",
+                  r"修图", r"抠图", r"图像编辑"
+              ],
+              "UPSCALE": [
+                  r"upscale", r"super[- ]resolution", r"esrgan", r"real[- ]esrgan",
+                  r"gfpgan", r"restore", r"deblur", r"face restore",
+                  r"업스케일", r"초해상도", r"복원",
+                  r"超分辨率", r"修复", r"清晰化"
+              ],
+              "AUDIO_GEN": [
+                  r"text[- ]to[- ]audio", r"text[- ]to[- ]speech", r"\btts\b",
+                  r"audio generation", r"musicgen", r"sound effect", r"sfx",
+                  r"foley", r"audio[- ]to[- ]audio",
+                  r"오디오 생성", r"효과음", r"사운드", r"음성 생성",
+                  r"音频生成", r"音效", r"配音"
+              ],
+              "LOW_VRAM": [
+                  r"low vram", r"\b4gb\b", r"\b6gb\b", r"\b8gb\b", r"\bvram\b",
+                  r"gguf", r"quant", r"nf4", r"fp8", r"offload", r"\btile\b",
+                  r"저vram", r"저사양", r"6기가", r"8기가",
+                  r"低显存", r"量化"
+              ],
+              "COMFYUI": [
+                  r"\bcomfyui\b", r"custom nodes?", r"impact pack", r"manager",
+                  r"workflow", r"node pack",
+                  r"컴피유아이", r"노드", r"워크플로",
+                  r"工作流", r"节点"
+              ],
+              "GUI_ONECLICK": [
+                  r"stabilitymatrix", r"\bpinokio\b", r"swarmui", r"invokeai",
+                  r"automatic1111", r"\bforge\b", r"\bwebui\b", r"\bgui\b",
+                  r"launcher", r"one[- ]click",
+                  r"원클릭", r"gui", r"런처",
+                  r"一键", r"启动器"
+              ],
+              "AI_TRENDS": [
+                  r"trending", r"trend", r"top", r"hot", r"popular",
+                  r"트렌드", r"인기", r"핫",
+                  r"趋势", r"热门"
+              ],
+              "KR_NEWS": [
+                  r"한국", r"국내", r"한글", r"kr", r"ko"
+              ],
+              "COMMUNITY_HOT": [
+                  r"top/day", r"top/week", r"hot"
+              ],
+          }
+
+          EXCLUDE = [r"\bnsfw\b", r"hentai", r"porn"]
+
+          SIGNAL_COMPILED = {k: [re.compile(p, re.I) for p in v] for k, v in SIGNAL_RULES.items()}
+          TOPIC_COMPILED = {k: [re.compile(p, re.I) for p in v] for k, v in TOPIC_RULES.items()}
+          EXCLUDE_COMPILED = [re.compile(p, re.I) for p in EXCLUDE]
+
+          SIGNAL_PRIORITY = {"NEWS": 1, "TIP": 2, "TREND": 3}
+          TOPIC_PRIORITY = {
+              "COMFYUI": 1,
+              "GUI_ONECLICK": 2,
+              "LOW_VRAM": 3,
+              "VIDEO_GEN": 4,
+              "UPSCALE": 5,
+              "AUDIO_GEN": 6,
+              "IMAGE_EDIT": 7,
+              "IMAGE_GEN": 8,
+              "AI_TRENDS": 9,
+              "COMMUNITY_HOT": 10,
+              "KR_NEWS": 11,
+          }
+
+          def match_many(compiled, text):
+              out = []
+              for name, patterns in compiled.items():
+                  if any(p.search(text) for p in patterns):
+                      out.append(name)
+              return out
+
+          def is_excluded(text):
+              return any(p.search(text or "") for p in EXCLUDE_COMPILED)
+
+          def score(item):
+              best_signal = min([SIGNAL_PRIORITY.get(x, 99) for x in item["signals"]] or [99])
+              best_topic = min([TOPIC_PRIORITY.get(x, 99) for x in item["topics"]] or [99])
+              return (best_signal, best_topic, item["source"], item["title"])
+
+          def send_message(text):
+              url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
+              r = requests.post(
+                  url,
+                  data={
+                      "chat_id": CHAT_ID,
+                      "text": text[:4000],
+                      "disable_web_page_preview": False,
+                  },
+                  timeout=TIMEOUT,
+              )
+              r.raise_for_status()
 
           feeds = [
-            "https://www.reddit.com/r/aivideo/new/.rss",
-            "https://www.reddit.com/r/comfyui/new/.rss",
-            "https://github.com/comfyanonymous/ComfyUI/releases.atom"
+              # Reddit latest
+              {"name": "reddit/aivideo/new", "url": "https://www.reddit.com/r/aivideo/new/.rss"},
+              {"name": "reddit/comfyui/new", "url": "https://www.reddit.com/r/comfyui/new/.rss"},
+              {"name": "reddit/stablediffusion/new", "url": "https://www.reddit.com/r/StableDiffusion/new/.rss"},
+              {"name": "reddit/audioai/new", "url": "https://www.reddit.com/r/AudioAI/new/.rss"},
+
+              # Reddit hot / top
+              {"name": "reddit/comfyui/top/day", "url": "https://www.reddit.com/r/comfyui/top/.rss?t=day"},
+              {"name": "reddit/stablediffusion/top/day", "url": "https://www.reddit.com/r/StableDiffusion/top/.rss?t=day"},
+              {"name": "reddit/aivideo/top/week", "url": "https://www.reddit.com/r/aivideo/top/.rss?t=week"},
+
+              # Reddit search
+              {"name": "reddit/search/video", "url": "https://www.reddit.com/search.rss?q=AI%20video%20generation&sort=new"},
+              {"name": "reddit/search/image", "url": "https://www.reddit.com/search.rss?q=AI%20image%20generation&sort=new"},
+              {"name": "reddit/search/audio", "url": "https://www.reddit.com/search.rss?q=audio%20generation%20AI&sort=new"},
+              {"name": "reddit/search/sfx", "url": "https://www.reddit.com/search.rss?q=sound%20effect%20AI&sort=new"},
+              {"name": "reddit/search/upscale", "url": "https://www.reddit.com/search.rss?q=upscaler%20AI&sort=new"},
+              {"name": "reddit/search/lowvram", "url": "https://www.reddit.com/search.rss?q=low%20VRAM%20Stable%20Diffusion&sort=new"},
+              {"name": "reddit/search/comfyui", "url": "https://www.reddit.com/search.rss?q=ComfyUI&sort=new"},
+              {"name": "reddit/search/comfyui-workflow", "url": "https://www.reddit.com/search.rss?q=ComfyUI%20workflow&sort=new"},
+              {"name": "reddit/search/gui", "url": "https://www.reddit.com/search.rss?q=AI%20tool%20GUI&sort=new"},
+
+              # GitHub
+              {"name": "github/comfyui/releases", "url": "https://github.com/comfyanonymous/ComfyUI/releases.atom"},
+              {"name": "github/comfyui-manager/tags", "url": "https://github.com/ltdrdata/ComfyUI-Manager/tags.atom"},
+              {"name": "github/impact-pack/tags", "url": "https://github.com/ltdrdata/ComfyUI-Impact-Pack/tags.atom"},
+              {"name": "github/stabilitymatrix/releases", "url": "https://github.com/LykosAI/StabilityMatrix/releases.atom"},
+              {"name": "github/pinokio/releases", "url": "https://github.com/pinokiocomputer/pinokio/releases.atom"},
+              {"name": "github/swarmui/releases", "url": "https://github.com/mcmonkeyprojects/SwarmUI/releases.atom"},
+              {"name": "github/invokeai/releases", "url": "https://github.com/invoke-ai/InvokeAI/releases.atom"},
+
+              # Hugging Face
+              {"name": "hf/blog", "url": "https://huggingface.co/blog/feed.xml"},
+
+              # Google News EN
+              {"name": "news/comfyui", "url": google_news_rss("ComfyUI", "en-US", "US", "US:en")},
+              {"name": "news/text-to-video", "url": google_news_rss('"text-to-video" open source', "en-US", "US", "US:en")},
+              {"name": "news/image-generation", "url": google_news_rss('"AI image generation" open source', "en-US", "US", "US:en")},
+              {"name": "news/image-edit", "url": google_news_rss('"AI image editing" open source', "en-US", "US", "US:en")},
+              {"name": "news/upscale", "url": google_news_rss('upscaling AI open source', "en-US", "US", "US:en")},
+              {"name": "news/audio", "url": google_news_rss('"AI sound effect" open source', "en-US", "US", "US:en")},
+              {"name": "news/low-vram", "url": google_news_rss('"low vram" stable diffusion', "en-US", "US", "US:en")},
+
+              # Google News KR
+              {"name": "news-kr/comfyui", "url": google_news_rss("ComfyUI", "ko", "KR", "KR:ko")},
+              {"name": "news-kr/video", "url": google_news_rss('"AI 영상 생성"', "ko", "KR", "KR:ko")},
+              {"name": "news-kr/image", "url": google_news_rss('"AI 이미지 생성"', "ko", "KR", "KR:ko")},
+              {"name": "news-kr/upscale", "url": google_news_rss('"AI 업스케일링"', "ko", "KR", "KR:ko")},
+              {"name": "news-kr/sfx", "url": google_news_rss('"AI 효과음 생성"', "ko", "KR", "KR:ko")},
+              {"name": "news-kr/lowvram", "url": google_news_rss('"저VRAM" AI', "ko", "KR", "KR:ko")},
           ]
 
-          for url in feeds:
-              d = feedparser.parse(url)
-              for entry in d.entries[:3]:
-                  title = entry.title
-                  link = entry.link
-                  msg = f"{title}\n{link}"
+          if ENABLE_RSSHUB:
+              feeds += [
+                  {"name": "rsshub/juejin/ai/weekly", "url": f"{RSSHUB_BASE}/juejin/trending/ai/weekly"},
+                  {"name": "rsshub/juejin/ai/monthly", "url": f"{RSSHUB_BASE}/juejin/trending/ai/monthly"},
+                  {"name": "rsshub/36kr/24h", "url": f"{RSSHUB_BASE}/36kr/hot-list/24"},
+                  {"name": "rsshub/36kr/renqi", "url": f"{RSSHUB_BASE}/36kr/hot-list/renqi"},
+                  {"name": "rsshub/bilibili/comfyui", "url": f"{RSSHUB_BASE}/bilibili/vsearch/ComfyUI/pubdate"},
+                  {"name": "rsshub/bilibili/lowvram", "url": f"{RSSHUB_BASE}/bilibili/vsearch/%E4%BD%8E%E6%98%BE%E5%AD%98/pubdate"},
+                  {"name": "rsshub/modelscope/models", "url": f"{RSSHUB_BASE}/modelscope/models"},
+                  {"name": "rsshub/modelscope/studios", "url": f"{RSSHUB_BASE}/modelscope/studios"},
+              ]
 
-                  requests.post(
-                      f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage",
-                      data={"chat_id": CHAT_ID, "text": msg}
-                  )
-          EOF
+          HF_TASK_TO_TOPIC = {
+              "text-to-video": "VIDEO_GEN",
+              "image-to-video": "VIDEO_GEN",
+              "video-to-video": "VIDEO_GEN",
+              "image-text-to-video": "VIDEO_GEN",
+              "text-to-image": "IMAGE_GEN",
+              "image-to-image": "IMAGE_EDIT",
+              "text-to-audio": "AUDIO_GEN",
+              "text-to-speech": "AUDIO_GEN",
+              "audio-to-audio": "AUDIO_GEN",
+          }
+
+          def fetch_hf_trending(url):
+              r = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=TIMEOUT)
+              r.raise_for_status()
+              data = r.json()
+              items = data.get("recentlyTrending") or []
+              out = []
+
+              for it in items:
+                  repo_type = it.get("repoType")
+                  repo_data = it.get("repoData") or {}
+                  repo_id = repo_data.get("id")
+                  if not repo_id:
+                      continue
+
+                  pipeline = repo_data.get("pipeline_tag") or ""
+                  tags = " ".join(repo_data.get("tags") or [])
+                  ai_category = repo_data.get("ai_category") or ""
+                  title = repo_id
+                  link = f"https://huggingface.co/{repo_id}"
+                  summary = clean_text(f"{pipeline} {tags} {ai_category}")[:260]
+                  text = f"{title}\n{summary}\n{link}"
+
+                  if is_excluded(text):
+                      continue
+
+                  topics = []
+                  if pipeline in HF_TASK_TO_TOPIC:
+                      topics.append(HF_TASK_TO_TOPIC[pipeline])
+                  topics += match_many(TOPIC_COMPILED, text)
+                  topics = sorted(set(topics))
+
+                  signals = match_many(SIGNAL_COMPILED, text)
+                  signals.append("TREND")
+                  signals = sorted(set(signals))
+
+                  if not topics:
+                      continue
+
+                  out.append({
+                      "key": f"hf|{repo_type}|{repo_id}",
+                      "source": f"hf/trending/{repo_type}",
+                      "title": title,
+                      "summary": summary,
+                      "link": link,
+                      "signals": signals,
+                      "topics": topics,
+                  })
+              return out
+
+          state = load_state()
+          prune_state(state)
+          seen = state["seen"]
+
+          candidates = []
+
+          for feed in feeds:
+              try:
+                  parsed = feedparser.parse(feed["url"], request_headers={"User-Agent": USER_AGENT})
+                  for entry in parsed.entries[:MAX_ITEMS_PER_FEED]:
+                      title = clean_text(getattr(entry, "title", "") or "")
+                      link = clean_text(getattr(entry, "link", "") or "")
+                      summary = clean_text(getattr(entry, "summary", "") or "")[:260]
+                      text = f"{title}\n{summary}\n{link}\n{feed['name']}"
+
+                      if is_excluded(text):
+                          continue
+
+                      topics = match_many(TOPIC_COMPILED, text)
+                      signals = match_many(SIGNAL_COMPILED, text)
+
+                      if "top/day" in feed["name"] or "top/week" in feed["name"]:
+                          topics.append("COMMUNITY_HOT")
+                          signals.append("TREND")
+
+                      if "news-kr/" in feed["name"]:
+                          topics.append("KR_NEWS")
+
+                      topics = sorted(set(topics))
+                      signals = sorted(set(signals))
+
+                      if not topics and not signals:
+                          continue
+
+                      entry_id = getattr(entry, "id", None) or getattr(entry, "guid", None) or link or title
+                      key = f"{feed['name']}|{entry_id}"
+                      if key in seen:
+                          continue
+
+                      candidates.append({
+                          "key": key,
+                          "source": feed["name"],
+                          "title": title,
+                          "summary": summary,
+                          "link": link,
+                          "signals": signals,
+                          "topics": topics,
+                      })
+              except Exception:
+                  continue
+
+          try:
+              candidates += fetch_hf_trending("https://huggingface.co/api/trending")
+              candidates += fetch_hf_trending("https://huggingface.co/api/trending?type=space")
+          except Exception:
+              pass
+
+          candidates.sort(key=score)
+
+          selected = []
+          source_counts = {}
+
+          for item in candidates:
+              if len(selected) >= MAX_MESSAGES_PER_RUN:
+                  break
+
+              source_counts.setdefault(item["source"], 0)
+              if source_counts[item["source"]] >= PER_SOURCE_CAP:
+                  continue
+
+              selected.append(item)
+              source_counts[item["source"]] += 1
+
+          translated_titles = asyncio.run(translate_titles_to_ko([x["title"] for x in selected]))
+
+          sent = 0
+          for item, title_ko in zip(selected, translated_titles):
+              signal_tags = "".join([f"[{x}]" for x in item["signals"][:2]])
+              topic_tags = "".join([f"[{x}]" for x in item["topics"][:2]])
+
+              msg_parts = [
+                  f"{signal_tags}{topic_tags}",
+                  f"🇰🇷 {title_ko}",
+              ]
+
+              if item["title"] and clean_text(title_ko) != clean_text(item["title"]):
+                  msg_parts.append(f"🌐 {item['title']}")
+
+              if item.get("summary"):
+                  msg_parts.append(f"📝 {item['summary']}")
+
+              msg_parts.append(f"🔗 {item['link']}")
+              msg_parts.append(f"# {item['source']}")
+
+              msg = "\n\n".join([p for p in msg_parts if p]).strip()
+
+              try:
+                  send_message(msg)
+                  seen[item["key"]] = now_utc().isoformat().replace("+00:00", "Z")
+                  sent += 1
+                  time.sleep(0.8)
+              except Exception:
+                  continue
+
+          state["seen"] = seen
+          save_state(state)
+
+          print(f"done sent={sent} total_candidates={len(candidates)}")
+          PY
+
+      - name: Commit dedup state
+        run: |
+          if [ -f .rss_state.json ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add .rss_state.json
+            git diff --cached --quiet || (git commit -m "chore: update rss state" && git push)
+          fi
