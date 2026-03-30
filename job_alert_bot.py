@@ -95,14 +95,11 @@ SESSION.headers.update(
     }
 )
 
-
 def now_kst() -> datetime:
     return datetime.now(KST)
 
-
 def jitter() -> None:
     time.sleep(random.uniform(2.2, 4.4))
-
 
 def clean_text(value: str) -> str:
     if not value:
@@ -110,10 +107,8 @@ def clean_text(value: str) -> str:
     value = re.sub(r"\s+", " ", value)
     return value.strip()
 
-
 def split_lines(text: str):
     return [clean_text(x) for x in re.split(r"[\n\r]+", text) if clean_text(x)]
-
 
 def unique_keep_order(items):
     seen = set()
@@ -124,7 +119,6 @@ def unique_keep_order(items):
             result.append(item)
     return result
 
-
 def load_state() -> dict:
     if not STATE_PATH.exists():
         return {"seen_ids": {}}
@@ -133,13 +127,11 @@ def load_state() -> dict:
     except Exception:
         return {"seen_ids": {}}
 
-
 def save_state(state: dict) -> None:
     STATE_PATH.write_text(
         json.dumps(state, ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
-
 
 def prune_state(state: dict) -> None:
     keep_after = now_kst() - timedelta(days=STATE_KEEP_DAYS)
@@ -153,14 +145,11 @@ def prune_state(state: dict) -> None:
             pruned[key] = iso_value
     state["seen_ids"] = pruned
 
-
 def is_seen(state: dict, uid: str) -> bool:
     return uid in state.get("seen_ids", {})
 
-
 def mark_seen(state: dict, uid: str) -> None:
     state.setdefault("seen_ids", {})[uid] = now_kst().isoformat()
-
 
 def send_telegram(text: str) -> None:
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
@@ -174,7 +163,6 @@ def send_telegram(text: str) -> None:
     }
     response = requests.post(url, data=payload, timeout=30)
     response.raise_for_status()
-
 
 def fetch_html(url: str, referer: str | None = None, allow_insecure_retry: bool = False) -> str:
     headers = {}
@@ -196,7 +184,6 @@ def fetch_html(url: str, referer: str | None = None, allow_insecure_retry: bool 
         )
         response.raise_for_status()
         return response.text
-
 
 def parse_date_from_text(text: str):
     if not text:
@@ -255,7 +242,6 @@ def parse_date_from_text(text: str):
 
     return None
 
-
 def extract_labeled_field(text: str, label: str) -> str:
     if not text:
         return "-"
@@ -274,7 +260,6 @@ def extract_labeled_field(text: str, label: str) -> str:
             return clean_text(m.group(1))
 
     return "-"
-
 
 def extract_deadline_from_text(text: str) -> str:
     if not text:
@@ -298,12 +283,10 @@ def extract_deadline_from_text(text: str) -> str:
 
     return "-"
 
-
 def within_last_two_days(dt) -> bool:
     if dt is None:
         return False
     return dt >= now_kst() - timedelta(days=2)
-
 
 def make_uid(job: dict) -> str:
     source = job.get("source", "")
@@ -313,12 +296,10 @@ def make_uid(job: dict) -> str:
     reg = job.get("reg_date_text", "")
     return f"{source}|{url}|{title}|{company}|{reg}"
 
-
 def format_date(dt) -> str:
     if not dt:
         return "-"
     return dt.strftime("%Y-%m-%d")
-
 
 def is_bad_title(title: str) -> bool:
     title = clean_text(title)
@@ -330,7 +311,6 @@ def is_bad_title(title: str) -> bool:
         return True
     return False
 
-
 def is_valid_href(href: str) -> bool:
     href = (href or "").strip()
     if not href:
@@ -340,7 +320,6 @@ def is_valid_href(href: str) -> bool:
     if href.startswith("#"):
         return False
     return True
-
 
 def value_after_label(lines, labels):
     for i, line in enumerate(lines):
@@ -355,13 +334,11 @@ def value_after_label(lines, labels):
                         return nxt
     return "-"
 
-
 def company_from_title(title: str) -> str:
     m = re.match(r"^\[([^\]]+)\]", clean_text(title))
     if m:
         return clean_text(m.group(1))
     return "-"
-
 
 def pick_company_from_lines(lines, title):
     by_label = value_after_label(lines, ["회사명", "기업명", "사업장명", "업체명", "기관명", "상호"])
@@ -396,7 +373,6 @@ def pick_company_from_lines(lines, title):
 
     return company_from_title(title)
 
-
 def nearest_block_text(anchor, max_hops=6):
     node = anchor
     best_text = ""
@@ -410,7 +386,6 @@ def nearest_block_text(anchor, max_hops=6):
             best_text = "\n".join(lines)
             break
     return best_text
-
 
 # -------------------------
 # 고용24
@@ -468,7 +443,6 @@ def search_work24(keyword: str):
 
     return jobs[:8]
 
-
 def hydrate_work24(job: dict) -> dict:
     html = fetch_html(job["url"], referer=job.get("search_url"), allow_insecure_retry=True)
     soup = BeautifulSoup(html, "html.parser")
@@ -501,7 +475,6 @@ def hydrate_work24(job: dict) -> dict:
     job["close_date_text"] = close_text if close_text != "-" else extract_deadline_from_text(raw_text)
     job["needs_detail"] = False
     return job
-
 
 # -------------------------
 # 사람인
@@ -556,7 +529,6 @@ def search_saramin(keyword: str):
 
     return jobs[:8]
 
-
 def hydrate_saramin(job: dict) -> dict:
     html = fetch_html(job["url"], referer=job.get("search_url"))
     soup = BeautifulSoup(html, "html.parser")
@@ -593,7 +565,6 @@ def hydrate_saramin(job: dict) -> dict:
 
     job["needs_detail"] = False
     return job
-
 
 # -------------------------
 # 잡코리아
@@ -662,7 +633,6 @@ def search_jobkorea(keyword: str):
 
     return jobs[:8]
 
-
 def hydrate_jobkorea(job: dict) -> dict:
     html = fetch_html(job["url"], referer=job.get("search_url"))
     soup = BeautifulSoup(html, "html.parser")
@@ -701,7 +671,6 @@ def hydrate_jobkorea(job: dict) -> dict:
     job["needs_detail"] = False
     return job
 
-
 def format_group_message(keyword: str, source: str, jobs: list[dict]) -> str:
     emoji = EMOJI_MAP.get(keyword, "🔘")
     source_label = SOURCE_LABELS.get(source, source)
@@ -721,7 +690,6 @@ def format_group_message(keyword: str, source: str, jobs: list[dict]) -> str:
         )
 
     return "\n".join(lines).strip()
-
 
 def main():
     state = load_state()
@@ -803,7 +771,6 @@ def main():
     if errors:
         summary = "\n".join(errors[:10])
         send_telegram(f"⚠️ 일부 소스 오류 요약\n{summary}")
-
 
 if __name__ == "__main__":
     main()
