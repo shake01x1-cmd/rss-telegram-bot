@@ -48,8 +48,9 @@ SOURCE_LABELS = {
     "jobkorea": "잡코리아",
 }
 
-MAX_PER_SOURCE_PER_KEYWORD = 2
-MAX_MESSAGES_PER_RUN = 18
+# 🚀 [수정 완료] 한 키워드당 최대 40개까지 쓸어 담기!
+MAX_PER_SOURCE_PER_KEYWORD = 40
+MAX_MESSAGES_PER_RUN = 50
 STATE_KEEP_DAYS = 14
 REQUEST_TIMEOUT = 25
 
@@ -109,15 +110,6 @@ def clean_text(value: str) -> str:
 
 def split_lines(text: str):
     return [clean_text(x) for x in re.split(r"[\n\r]+", text) if clean_text(x)]
-
-def unique_keep_order(items):
-    seen = set()
-    result = []
-    for item in items:
-        if item not in seen:
-            seen.add(item)
-            result.append(item)
-    return result
 
 def load_state() -> dict:
     if not STATE_PATH.exists():
@@ -188,37 +180,28 @@ def fetch_html(url: str, referer: str | None = None, allow_insecure_retry: bool 
 def parse_date_from_text(text: str):
     if not text:
         return None
-
     text = clean_text(text)
-
     if "오늘" in text or "금일" in text or "방금" in text:
         return now_kst()
-
     if "어제" in text:
         return now_kst() - timedelta(days=1)
-
     m = re.search(r"(\d+)\s*일\s*전", text)
     if m:
         return now_kst() - timedelta(days=int(m.group(1)))
-
     m = re.search(r"(\d+)\s*시간\s*전", text)
     if m:
         return now_kst()
-
     patterns = [
         r"(20\d{2})[./-](\d{1,2})[./-](\d{1,2})",
         r"(20\d{2})년\s*(\d{1,2})월\s*(\d{1,2})일",
         r"~\s*(\d{2})\.(\d{2})",
         r"(\d{2})/(\d{2})/(\d{2})",
     ]
-
     for idx, pattern in enumerate(patterns):
         match = re.search(pattern, text)
         if not match:
             continue
-
         parts = match.groups()
-
         try:
             if idx in (0, 1):
                 year, month, day = map(int, parts)
@@ -230,22 +213,17 @@ def parse_date_from_text(text: str):
                 year = 2000 + int(parts[0])
                 month = int(parts[1])
                 day = int(parts[2])
-
             dt = datetime(year, month, day, tzinfo=KST)
-
             if idx == 2 and dt < now_kst() - timedelta(days=330):
                 dt = datetime(year + 1, month, day, tzinfo=KST)
-
             return dt
         except ValueError:
             return None
-
     return None
 
 def extract_labeled_field(text: str, label: str) -> str:
     if not text:
         return "-"
-
     patterns = [
         rf"{label}\s*[:：]?\s*(20\d{{2}}[./-]\d{{1,2}}[./-]\d{{1,2}})",
         rf"{label}\s*[:：]?\s*(20\d{{2}}년\s*\d{{1,2}}월\s*\d{{1,2}}일)",
@@ -253,34 +231,28 @@ def extract_labeled_field(text: str, label: str) -> str:
         rf"{label}\s*[:：]?\s*(~\s*\d{{2}}\.\d{{2}}(?:\([^)]+\))?)",
         rf"{label}\s*[:：]?\s*(D-\d+|오늘마감|내일마감|상시채용|채용시|접수마감)",
     ]
-
     for pattern in patterns:
         m = re.search(pattern, text)
         if m:
             return clean_text(m.group(1))
-
     return "-"
 
 def extract_deadline_from_text(text: str) -> str:
     if not text:
         return "-"
-
     labeled = extract_labeled_field(text, "마감일")
     if labeled != "-":
         return labeled
-
     patterns = [
         r"(~\s*\d{2}\.\d{2}(?:\([^)]+\))?)",
         r"(20\d{2}[./-]\d{1,2}[./-]\d{1,2})",
         r"(20\d{2}년\s*\d{1,2}월\s*\d{1,2}일)",
         r"(D-\d+|오늘마감|내일마감|상시채용|채용시|접수마감)",
     ]
-
     for pattern in patterns:
         m = re.search(pattern, text)
         if m:
             return clean_text(m.group(1))
-
     return "-"
 
 def within_last_two_days(dt) -> bool:
@@ -344,13 +316,11 @@ def pick_company_from_lines(lines, title):
     by_label = value_after_label(lines, ["회사명", "기업명", "사업장명", "업체명", "기관명", "상호"])
     if by_label != "-":
         return by_label
-
     title_idx = -1
     for i, line in enumerate(lines):
         if title and title in line:
             title_idx = i
             break
-
     search_order = []
     if title_idx != -1:
         for offset in [1, -1, 2, -2, 3, -3]:
@@ -359,7 +329,6 @@ def pick_company_from_lines(lines, title):
                 search_order.append(lines[idx])
     else:
         search_order = lines[:8]
-
     for line in search_order:
         if not line:
             continue
@@ -370,7 +339,6 @@ def pick_company_from_lines(lines, title):
         if len(line) > 50:
             continue
         return line
-
     return company_from_title(title)
 
 def nearest_block_text(anchor, max_hops=6):
@@ -395,7 +363,7 @@ def search_work24(keyword: str):
     search_url = (
         "https://m.work24.go.kr/wk/a/b/1200/retriveDtlEmpSrchList.do"
         f"?searchMode=Y&currentPageNo=1&pageIndex=1&sortField=DATE&sortOrderBy=DESC"
-        f"&resultCnt=10&siteClcd=all&srcKeyword={quote_plus(keyword)}"
+        f"&resultCnt=40&siteClcd=all&srcKeyword={quote_plus(keyword)}"
     )
 
     html = fetch_html(search_url, allow_insecure_retry=True)
@@ -441,7 +409,7 @@ def search_work24(keyword: str):
         )
         seen.add(url_abs)
 
-    return jobs[:8]
+    return jobs[:40]  # 🚀 [수정 완료] 40개 탐색
 
 def hydrate_work24(job: dict) -> dict:
     html = fetch_html(job["url"], referer=job.get("search_url"), allow_insecure_retry=True)
@@ -481,7 +449,7 @@ def hydrate_work24(job: dict) -> dict:
 # -------------------------
 def search_saramin(keyword: str):
     base_url = "https://www.saramin.co.kr"
-    search_url = f"https://www.saramin.co.kr/zf_user/search/recruit?searchword={quote_plus(keyword)}&recruitPage=1"
+    search_url = f"https://www.saramin.co.kr/zf_user/search/recruit?searchword={quote_plus(keyword)}&recruitPage=1&sort=reg_dt"
 
     html = fetch_html(search_url)
     soup = BeautifulSoup(html, "html.parser")
@@ -527,7 +495,7 @@ def search_saramin(keyword: str):
         )
         seen.add(url_abs)
 
-    return jobs[:8]
+    return jobs[:40]  # 🚀 [수정 완료] 40개 탐색
 
 def hydrate_saramin(job: dict) -> dict:
     html = fetch_html(job["url"], referer=job.get("search_url"))
@@ -571,8 +539,8 @@ def hydrate_saramin(job: dict) -> dict:
 # -------------------------
 def search_jobkorea(keyword: str):
     urls = [
-        f"https://m.jobkorea.co.kr/Search/?stext={quote_plus(keyword)}",
-        f"https://www.jobkorea.co.kr/Search/?stext={quote_plus(keyword)}",
+        f"https://m.jobkorea.co.kr/Search/?stext={quote_plus(keyword)}&tabType=recruit&Sort=1",
+        f"https://www.jobkorea.co.kr/Search/?stext={quote_plus(keyword)}&tabType=recruit&Sort=1",
     ]
 
     html = ""
@@ -631,7 +599,7 @@ def search_jobkorea(keyword: str):
         )
         seen.add(url_abs)
 
-    return jobs[:8]
+    return jobs[:40]  # 🚀 [수정 완료] 40개 탐색
 
 def hydrate_jobkorea(job: dict) -> dict:
     html = fetch_html(job["url"], referer=job.get("search_url"))
@@ -674,9 +642,7 @@ def hydrate_jobkorea(job: dict) -> dict:
 def format_group_message(keyword: str, source: str, jobs: list[dict]) -> str:
     emoji = EMOJI_MAP.get(keyword, "🔘")
     source_label = SOURCE_LABELS.get(source, source)
-
     lines = [f"{emoji} {keyword} | {source_label} 최신 공고", ""]
-
     for idx, job in enumerate(jobs, start=1):
         lines.extend(
             [
@@ -688,7 +654,6 @@ def format_group_message(keyword: str, source: str, jobs: list[dict]) -> str:
                 "",
             ]
         )
-
     return "\n".join(lines).strip()
 
 def main():
