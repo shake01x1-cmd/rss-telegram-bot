@@ -8,6 +8,8 @@ from datetime import datetime, timedelta, timezone
 from urllib.parse import quote_plus, urljoin
 
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 from bs4 import BeautifulSoup
 
 KST = timezone(timedelta(hours=9))
@@ -62,8 +64,21 @@ SESSION.headers.update(
         "Accept-Language": "ko-KR,ko;q=0.9,en;q=0.8",
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
         "Connection": "keep-alive",
+        "Upgrade-Insecure-Requests": "1",
     }
 )
+
+retry = Retry(
+    total=2,
+    connect=2,
+    read=2,
+    backoff_factor=1.2,
+    status_forcelist=[429, 500, 502, 503, 504],
+    allowed_methods=["GET", "HEAD"],
+)
+adapter = HTTPAdapter(max_retries=retry)
+SESSION.mount("https://", adapter)
+SESSION.mount("http://", adapter)
 
 
 def now_kst() -> datetime:
@@ -142,62 +157,123 @@ def send_telegram(text: str) -> None:
     response.raise_for_status()
 
 
-def fetch_html(url: str) -> str:
-    response = SESSION.get(url, timeout=REQUEST_TIMEOUT)
+def fetch_html(url: str, referer: str | None = None) -> str:
+    headers = {}
+    if referer:
+        headers["Referer"] = referer
+    response = SESSION.get(url, headers=headers, timeout=REQUEST_TIMEOUT)
     response.raise_for_status()
     return response.text
+
+
+def extract_lines_from_soup(soup: BeautifulSoup):
+    return unique_keep_order(
+        [clean_text(s) for s in soup.stripped_strings if clean_text(s)]
+    )
+
+
+def find_first_date_text(text: str):
+    if not text:
+        return None
+
+    patterns = [
+        r"(20\d{2}[./-]\d{1,2}[./-]\d{1,2})",
+        r"(20\d{2}년\s*\d{1,2}월\s*\d{1,2}일)",
+        r"(\d{2}/\d{2}/\d{2})",
+    ]
+
+    for pattern in patterns:
+        m = re.search(pattern, text)
+        if m:
+            return m.group(1).strip()
+
+    return None
 
 
 def parse_date_from_text(text: str):
     if not text:
         return None
 
-    text = text.strip()
+    date_text = find_first_date_text(text)
+    if not date_text:
+        return None
 
     patterns = [
-        r"(20\d{2})[./-](\d{1,2})[./-](\d{1,2})",
-        r"(20\d{2})년\s*(\d{1,2})월\s*(\d{1,2})일",
-        r"(\d{2})/(\d{2})/(\d{2})",
+        ("%Y.%m.%d", r"\."),
+        ("%Y-%m-%d", r"-"),
+        ("%Y/%m/%d", r"/"),
     ]
 
-    for pattern in patterns:
-        match = re.search(pattern, text)
-        if not match:
-            continue
+    for fmt, sep in patterns:
+        if re.search(sep, date_text):
+            try:
+                return datetime.strptime(date_text, fmt).replace(tzinfo=KST)
+            except ValueError:
+                pass
 
-        parts = match.groups()
-        if len(parts[0]) == 4:
-            year, month, day = map(int, parts)
-        else:
-            year = 2000 + int(parts[0])
-            month = int(parts[1])
-            day = int(parts[2])
-
+    m = re.search(r"(20\d{2})년\s*(\d{1,2})월\s*(\d{1,2})일", date_text)
+    if m:
         try:
-            return datetime(year, month, day, tzinfo=KST)
+            return datetime(int(m.group(1)), int(m.group(2)), int(m.group(3)), tzinfo=KST)
         except ValueError:
             return None
 
-    return None
+    try:
+        return datetime.strptime(date_text, "%y/%m/%d").replace(tzinfo=KST)
+    except ValueError:
+        return None
 
 
-def extract_close_date_text(text: str) -> str:
-    if not text:
-        return "-"
+def extract_labeled_date(lines, labels):
+    compact_labels = [re.sub(r"\s+", "", x) for x in labels]
 
-    candidates = re.findall(r"(20\d{2}[./-]\d{1,2}[./-]\d{1,2})", text)
-    if len(candidates) >= 2:
-        return candidates[1]
-    if len(candidates) == 1:
-        return candidates[0]
+    for i, line in enumerate(lines):
+        compact = re.sub(r"\s+", "", line)
+        for label in compact_labels:
+            if label in compact:
+                dt = parse_date_from_text(line)
+                if dt:
+                    return dt, find_first_date_text(line) or "-"
+                for j in range(i + 1, min(i + 3, len(lines))):
+                    dt = parse_date_from_text(lines[j])
+                    if dt:
+                        return dt, find_first_date_text(lines[j]) or "-"
+    return None, "-"
 
-    k_candidates = re.findall(r"(20\d{2}년\s*\d{1,2}월\s*\d{1,2}일)", text)
-    if len(k_candidates) >= 2:
-        return k_candidates[1]
-    if len(k_candidates) == 1:
-        return k_candidates[0]
 
-    m = re.search(r"(D-\d+|오늘마감|내일마감|상시채용|마감)", text)
+def extract_labeled_company(lines):
+    labels = ["회사명", "기업명", "사업체명", "업체명", "기관명", "회사", "기업"]
+    stop_words = ["등록일", "마감일", "근무", "학력", "경력", "급여", "근무지", "채용", "모집", "상세요강"]
+
+    for i, line in enumerate(lines):
+        compact = re.sub(r"\s+", "", line)
+        for label in labels:
+            label_compact = re.sub(r"\s+", "", label)
+            if compact.startswith(label_compact):
+                m = re.match(rf"^{re.escape(label)}\s*[:：]?\s*(.+)$", line)
+                if m:
+                    value = clean_text(m.group(1))
+                    if value and not any(word in value for word in stop_words):
+                        return value
+
+                for j in range(i + 1, min(i + 4, len(lines))):
+                    candidate = clean_text(lines[j])
+                    if not candidate:
+                        continue
+                    if any(word in candidate for word in stop_words):
+                        break
+                    if len(candidate) <= 50:
+                        return candidate
+    return "-"
+
+
+def extract_close_date_text(lines):
+    _, close_text = extract_labeled_date(lines, ["마감일", "접수마감", "마감", "접수기간"])
+    if close_text != "-":
+        return close_text
+
+    body = " ".join(lines)
+    m = re.search(r"(D-\d+|오늘마감|내일마감|상시채용|채용시까지|마감)", body)
     if m:
         return m.group(1)
 
@@ -219,20 +295,49 @@ def make_uid(job: dict) -> str:
     return f"{source}|{url}|{title}|{company}|{reg}"
 
 
+def clean_title(title: str) -> str:
+    title = clean_text(title)
+    bad_titles = {"본문 바로가기", "주메뉴 바로가기", "바로가기"}
+    if title in bad_titles:
+        return ""
+    if "바로가기" in title:
+        return ""
+    return title
+
+
+def extract_meta_title(soup: BeautifulSoup) -> str:
+    for selector in [
+        ('meta[property="og:title"]', "content"),
+        ('meta[name="twitter:title"]', "content"),
+    ]:
+        el = soup.select_one(selector[0])
+        if el and el.get(selector[1]):
+            return clean_text(el.get(selector[1]))
+
+    if soup.title and soup.title.text:
+        return clean_text(soup.title.text)
+
+    return ""
+
+
 def extract_candidates_by_href(soup: BeautifulSoup, href_keyword: str, base_url: str):
     results = []
     seen_urls = set()
 
     for a in soup.find_all("a", href=True):
-        href = a["href"]
+        href = a["href"].strip()
         if href_keyword not in href:
+            continue
+        if href.startswith("javascript:"):
+            continue
+        if href.startswith("#"):
             continue
 
         url = urljoin(base_url, href)
         if url in seen_urls:
             continue
 
-        title = clean_text(a.get_text(" ", strip=True))
+        title = clean_title(a.get_text(" ", strip=True))
         if len(title) < 4:
             continue
 
@@ -258,42 +363,6 @@ def extract_candidates_by_href(soup: BeautifulSoup, href_keyword: str, base_url:
     return results
 
 
-def pick_company_from_lines(lines, title):
-    bad_words = [
-        "등록일", "수정일", "마감일", "근무지", "경력", "학력", "급여", "지원",
-        "스크랩", "관심기업", "기업정보", "상세요강", "채용공고", "모집요강",
-        "기간", "방법", "즉시지원", "파견", "정규직", "계약직", "아르바이트",
-        "공고", "채용", "상세", "모집",
-    ]
-    title_idx = -1
-    for i, line in enumerate(lines):
-        if title and title in line:
-            title_idx = i
-            break
-
-    search_order = []
-    if title_idx != -1:
-        for offset in [1, -1, 2, -2, 3, -3]:
-            idx = title_idx + offset
-            if 0 <= idx < len(lines):
-                search_order.append(lines[idx])
-    else:
-        search_order = lines[:8]
-
-    for line in search_order:
-        if not line:
-            continue
-        if line == title:
-            continue
-        if any(word in line for word in bad_words):
-            continue
-        if len(line) > 50:
-            continue
-        return line
-
-    return "-"
-
-
 def format_date(dt) -> str:
     if not dt:
         return "-"
@@ -304,66 +373,113 @@ def format_date(dt) -> str:
 # 고용24
 # -------------------------
 def search_work24(keyword: str):
-    base_url = "https://m.work24.go.kr"
-    url = (
-        "https://m.work24.go.kr/wk/a/b/1200/retriveDtlEmpSrchList.do"
-        f"?searchMode=Y&currentPageNo=1&pageIndex=1&sortField=DATE&sortOrderBy=DESC"
-        f"&resultCnt=10&siteClcd=all&srcKeyword={quote_plus(keyword)}"
-    )
+    urls = [
+        (
+            "https://m.work24.go.kr/wk/a/b/1200/retriveDtlEmpSrchList.do"
+            f"?searchMode=Y&currentPageNo=1&pageIndex=1&sortField=DATE&sortOrderBy=DESC"
+            f"&resultCnt=10&siteClcd=all&srcKeyword={quote_plus(keyword)}"
+        ),
+        (
+            "https://www.work24.go.kr/wk/a/b/1200/retriveDtlEmpSrchList.do"
+            f"?searchMode=Y&currentPageNo=1&pageIndex=1&sortField=DATE&sortOrderBy=DESC"
+            f"&resultCnt=10&siteClcd=all&srcKeyword={quote_plus(keyword)}"
+        ),
+    ]
 
-    html = fetch_html(url)
+    html = ""
+    used_url = ""
+    for url in urls:
+        try:
+            html = fetch_html(url, referer="https://www.work24.go.kr/cm/main.do")
+            used_url = url
+            if "/wk/a/b/1500/empDetailAuthView.do" in html:
+                break
+        except Exception:
+            continue
+
+    if not html:
+        return []
+
     soup = BeautifulSoup(html, "html.parser")
-
     jobs = []
     seen = set()
 
     for a in soup.find_all("a", href=True):
-        title = clean_text(a.get_text(" ", strip=True))
+        href = a["href"].strip()
+
+        if "/wk/a/b/1500/empDetailAuthView.do" not in href:
+            continue
+        if href.startswith("javascript:"):
+            continue
+        if href.startswith("#"):
+            continue
+
+        title = clean_title(a.get_text(" ", strip=True))
         if len(title) < 6:
             continue
 
+        url_abs = urljoin(used_url, href)
+        if url_abs in seen:
+            continue
+        seen.add(url_abs)
+
         block_text = ""
         node = a
-        for _ in range(5):
+        for _ in range(6):
             node = node.parent
             if node is None:
                 break
             txt = clean_text(node.get_text("\n", strip=True))
-            if "등록일" in txt and "마감일" in txt and title in txt:
+            if title in txt:
                 block_text = txt
-                break
-
-        if not block_text:
-            continue
-
-        url_abs = urljoin(base_url, a["href"])
-        uid = f"{title}|{url_abs}"
-        if uid in seen:
-            continue
-        seen.add(uid)
-
-        lines = unique_keep_order(
-            [clean_text(x) for x in block_text.split("\n") if clean_text(x)]
-        )
-
-        company = pick_company_from_lines(lines, title)
-        reg_dt = parse_date_from_text(block_text)
+                if "등록일" in txt or "마감일" in txt:
+                    break
 
         jobs.append(
             {
                 "source": "work24",
                 "keyword": keyword,
                 "title": title,
-                "company": company,
+                "company": "-",
                 "region": "-",
-                "reg_dt": reg_dt,
-                "reg_date_text": format_date(reg_dt),
-                "close_date_text": extract_close_date_text(block_text),
+                "reg_dt": None,
+                "reg_date_text": "-",
+                "close_date_text": "-",
                 "url": url_abs,
+                "search_block_text": block_text,
+                "search_url": used_url,
             }
         )
 
     return jobs
+
+
+def hydrate_work24(job: dict) -> dict:
+    html = fetch_html(job["url"], referer=job.get("search_url") or "https://www.work24.go.kr/cm/main.do")
+    soup = BeautifulSoup(html, "html.parser")
+    title = extract_meta_title(soup)
+    if title:
+        job["title"] = title
+
+    lines = extract_lines_from_soup(soup)
+
+    company = extract_labeled_company(lines)
+    reg_dt, reg_text = extract_labeled_date(lines, ["등록일"])
+    close_dt, close_text = extract_labeled_date(lines, ["마감일", "접수마감", "마감", "접수기간"])
+
+    if reg_dt is None and job.get("search_block_text"):
+        search_lines = unique_keep_order(
+            [clean_text(x) for x in job["search_block_text"].split("\n") if clean_text(x)]
+        )
+        reg_dt, reg_text = extract_labeled_date(search_lines, ["등록일"])
+        if close_text == "-":
+            _, close_text = extract_labeled_date(search_lines, ["마감일", "접수마감", "마감", "접수기간"])
+
+    job["company"] = company or "-"
+    job["reg_dt"] = reg_dt
+    job["reg_date_text"] = reg_text if reg_text != "-" else format_date(reg_dt)
+    job["close_date_text"] = close_text if close_text != "-" else "-"
+    return job
 
 
 # -------------------------
@@ -373,15 +489,12 @@ def search_saramin(keyword: str):
     base_url = "https://www.saramin.co.kr"
     url = f"https://www.saramin.co.kr/zf_user/search/recruit?searchword={quote_plus(keyword)}&recruitPage=1"
 
-    html = fetch_html(url)
+    html = fetch_html(url, referer="https://www.saramin.co.kr/")
     soup = BeautifulSoup(html, "html.parser")
     candidates = extract_candidates_by_href(soup, "/zf_user/jobs/relay/view", base_url)
 
     jobs = []
-    for item in candidates[:6]:
-        block_text = item.get("block_text", "")
-        reg_dt = parse_date_from_text(block_text)
-
+    for item in candidates[:8]:
         jobs.append(
             {
                 "source": "saramin",
@@ -389,22 +502,25 @@ def search_saramin(keyword: str):
                 "title": item["title"],
                 "company": "-",
                 "region": "-",
-                "reg_dt": reg_dt,
-                "reg_date_text": format_date(reg_dt),
-                "close_date_text": extract_close_date_text(block_text),
+                "reg_dt": None,
+                "reg_date_text": "-",
+                "close_date_text": "-",
                 "url": item["url"],
+                "search_block_text": item.get("block_text", ""),
+                "search_url": url,
             }
         )
     return jobs
 
 
 def hydrate_saramin(job: dict) -> dict:
-    html = fetch_html(job["url"])
+    html = fetch_html(job["url"], referer=job.get("search_url") or "https://www.saramin.co.kr/")
     soup = BeautifulSoup(html, "html.parser")
 
-    og_title = soup.find("meta", attrs={"property": "og:title"})
-    if og_title and og_title.get("content"):
-        job["title"] = clean_text(og_title["content"])
+    title = extract_meta_title(soup)
+    if title:
+        title = title.replace(" - 사람인", "").strip()
+        job["title"] = title
 
     company = "-"
     for selector in [
@@ -412,6 +528,7 @@ def hydrate_saramin(job: dict) -> dict:
         ".corp_name",
         ".recruit_company",
         "a[href*='/company-info/view']",
+        ".company",
     ]:
         el = soup.select_one(selector)
         if el:
@@ -419,18 +536,25 @@ def hydrate_saramin(job: dict) -> dict:
             if company:
                 break
 
-    body = clean_text(soup.get_text("\n", strip=True))
+    lines = extract_lines_from_soup(soup)
     if company == "-":
-        lines = unique_keep_order([clean_text(x) for x in body.split("\n") if clean_text(x)])
-        company = pick_company_from_lines(lines, job["title"])
+        company = extract_labeled_company(lines)
 
-    reg_dt = job.get("reg_dt") or parse_date_from_text(body)
+    reg_dt, reg_text = extract_labeled_date(lines, ["등록일", "수정일"])
+    close_dt, close_text = extract_labeled_date(lines, ["마감일", "접수마감", "접수기간", "마감"])
+
+    if reg_dt is None and job.get("search_block_text"):
+        search_lines = unique_keep_order(
+            [clean_text(x) for x in job["search_block_text"].split("\n") if clean_text(x)]
+        )
+        reg_dt, reg_text = extract_labeled_date(search_lines, ["등록일", "수정일"])
+        if close_text == "-":
+            _, close_text = extract_labeled_date(search_lines, ["마감일", "접수마감", "접수기간", "마감"])
 
     job["company"] = company or "-"
     job["reg_dt"] = reg_dt
-    job["reg_date_text"] = format_date(reg_dt)
-    if job.get("close_date_text", "-") == "-":
-        job["close_date_text"] = extract_close_date_text(body)
+    job["reg_date_text"] = reg_text if reg_text != "-" else format_date(reg_dt)
+    job["close_date_text"] = close_text if close_text != "-" else "-"
     return job
 
 
@@ -444,9 +568,11 @@ def search_jobkorea(keyword: str):
     ]
 
     html = ""
+    used_url = ""
     for url in urls:
         try:
-            html = fetch_html(url)
+            html = fetch_html(url, referer="https://www.jobkorea.co.kr/")
+            used_url = url
             if "/Recruit/GI_Read/" in html:
                 break
         except Exception:
@@ -456,15 +582,11 @@ def search_jobkorea(keyword: str):
         return []
 
     soup = BeautifulSoup(html, "html.parser")
-    base_url = "https://m.jobkorea.co.kr"
+    base_url = "https://www.jobkorea.co.kr"
     candidates = extract_candidates_by_href(soup, "/Recruit/GI_Read/", base_url)
 
     jobs = []
-    for item in candidates[:6]:
-        block_text = item.get("block_text", "")
-        reg_dt = parse_date_from_text(block_text)
-        mobile_url = item["url"].replace("https://www.jobkorea.co.kr", "https://m.jobkorea.co.kr")
-
+    for item in candidates[:8]:
         jobs.append(
             {
                 "source": "jobkorea",
@@ -472,42 +594,59 @@ def search_jobkorea(keyword: str):
                 "title": item["title"],
                 "company": "-",
                 "region": "-",
-                "reg_dt": reg_dt,
-                "reg_date_text": format_date(reg_dt),
-                "close_date_text": extract_close_date_text(block_text),
-                "url": mobile_url,
+                "reg_dt": None,
+                "reg_date_text": "-",
+                "close_date_text": "-",
+                "url": item["url"],
+                "search_block_text": item.get("block_text", ""),
+                "search_url": used_url,
             }
         )
     return jobs
 
 
 def hydrate_jobkorea(job: dict) -> dict:
-    html = fetch_html(job["url"])
+    html = fetch_html(job["url"], referer=job.get("search_url") or "https://www.jobkorea.co.kr/")
     soup = BeautifulSoup(html, "html.parser")
-    body = clean_text(soup.get_text("\n", strip=True))
-    lines = unique_keep_order([clean_text(x) for x in body.split("\n") if clean_text(x)])
 
-    if "채용공고" in lines:
-        try:
-            idx = lines.index("채용공고")
-            if idx + 1 < len(lines):
-                job["company"] = lines[idx + 1]
-            if idx + 2 < len(lines):
-                job["title"] = lines[idx + 2]
-        except Exception:
-            pass
+    title = extract_meta_title(soup)
+    if title:
+        title = title.replace(" - 잡코리아", "").strip()
+        job["title"] = title
 
-    if job.get("company", "-") == "-":
-        job["company"] = pick_company_from_lines(lines, job["title"])
+    company = "-"
+    for selector in [
+        ".company-name",
+        ".coName",
+        ".tplCompany",
+        ".company",
+        "a[href*='/Company/']",
+    ]:
+        el = soup.select_one(selector)
+        if el:
+            company = clean_text(el.get_text(" ", strip=True))
+            if company:
+                break
 
-    if job.get("reg_dt") is None:
-        reg_dt = parse_date_from_text(body)
-        job["reg_dt"] = reg_dt
-        job["reg_date_text"] = format_date(reg_dt)
+    lines = extract_lines_from_soup(soup)
+    if company == "-":
+        company = extract_labeled_company(lines)
 
-    if job.get("close_date_text", "-") == "-":
-        job["close_date_text"] = extract_close_date_text(body)
+    reg_dt, reg_text = extract_labeled_date(lines, ["등록일", "수정일"])
+    close_dt, close_text = extract_labeled_date(lines, ["마감일", "접수마감", "접수기간", "마감"])
 
+    if reg_dt is None and job.get("search_block_text"):
+        search_lines = unique_keep_order(
+            [clean_text(x) for x in job["search_block_text"].split("\n") if clean_text(x)]
+        )
+        reg_dt, reg_text = extract_labeled_date(search_lines, ["등록일", "수정일"])
+        if close_text == "-":
+            _, close_text = extract_labeled_date(search_lines, ["마감일", "접수마감", "접수기간", "마감"])
+
+    job["company"] = company or "-"
+    job["reg_dt"] = reg_dt
+    job["reg_date_text"] = reg_text if reg_text != "-" else format_date(reg_dt)
+    job["close_date_text"] = close_text if close_text != "-" else "-"
     return job
 
 
@@ -546,6 +685,7 @@ def main():
     }
 
     hydrators = {
+        "work24": hydrate_work24,
         "saramin": hydrate_saramin,
         "jobkorea": hydrate_jobkorea,
     }
@@ -564,11 +704,11 @@ def main():
 
             for job in jobs:
                 try:
-                    if source in hydrators and len(filtered) < MAX_PER_SOURCE_PER_KEYWORD:
-                        job = hydrators[source](job)
-                        jitter()
+                    job = hydrators[source](job)
+                    jitter()
                 except Exception as e:
                     errors.append(f"{SOURCE_LABELS[source]} | {keyword} | 상세파싱실패: {e}")
+                    continue
 
                 if not within_last_two_days(job.get("reg_dt")):
                     continue
