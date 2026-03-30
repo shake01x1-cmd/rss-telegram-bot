@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "seen": {
+    "github/comfyui/releases|tag:github.com,2008:Repository/589831718/v0.18.2": "2026-03-30T00:38:44.262226Z",
+    "github/comfyui/releases|tag:github.com,2008:Repository/589831718/v0.18.3": "2026-03-30T00:38:45.536772Z",
+    "github/stabilitymatrix/releases|tag:github.com,2008:Repository/652941996/v2.15.6": "2026-03-30T00:38:46.850695Z",
+    "github/invokeai/releases|tag:github.com,2008:Repository/525592995/v6.12.0": "2026-03-30T00:38:48.155083Z",
+    "github/invokeai/releases|tag:github.com,2008:Repository/525592995/v6.12.0rc1": "2026-03-30T00:38:49.437019Z",
+    "github/pinokio/releases|tag:github.com,2008:Repository/664226598/v7.1.15": "2026-03-30T00:38:50.732085Z",
+    "github/stabilitymatrix/releases|tag:github.com,2008:Repository/652941996/v2.15.5": "2026-03-30T00:38:52.011501Z",
+    "github/swarmui/releases|tag:github.com,2008:Repository/818118661/0.9.7-Beta": "2026-03-30T00:38:53.311663Z",
+    "github/swarmui/releases|tag:github.com,2008:Repository/818118661/0.9.8-Beta": "2026-03-30T00:38:54.590254Z",
+    "news/low-vram|CBMihAFBVV95cUxNb1JhNWxzUU5VVmIySW5wS1JCVlhmeWxZZVE2dmQ2RUt2Q29iRnJyemt1WE5sMFRjbXh2VXRyR0YtdDF4ZUpTdTRtUGZoOUJGYWFOMV9HTDZWRTVDVE1oUUQ1cGxjczdCUVVUNk9EcXU5ZXNMaFdGNFFEOG82bkdGRjVPYkk": "2026-03-30T00:38:55.879012Z",
+    "news-kr/sfx|CBMiX0FVX3lxTFBhZktoaVFlMzI5QkFmdFJkYmFQRm1PNkNRNmR4UFQyLU83ZnNsTktHYTluUGl4aWFYemRESU55bExDLWhOU2VjYzVGOUZPY2l6SmVQTlVCN0xyZGRpRmJz": "2026-03-30T00:38:57.226410Z",
+    "reddit/search/comfyui|https://www.reddit.com/t5_82r90w": "2026-03-30T00:38:58.499780Z",
+    "reddit/search/comfyui-workflow|https://www.reddit.com/t5_zdqb6": "2026-03-30T00:38:59.883604Z",
+    "reddit/search/comfyui-workflow|https://www.reddit.com/t5_fso2if": "2026-03-30T00:39:01.164331Z",
+    "news/low-vram|CBMimAFBVV95cUxQT3lBT1NFb29oRlJid3BoeDNLMk16VVZBMHdMeUtjZ0w4VHNIWmRoR3BmSUFLV043ZFdkMTBnSWhhMDRzSEFuWlY2OU1YbzczVWFkNnNmeDJSYUt2TDJjYzh2dFRFVXVwTkpBV3prNERPTWxDVnZTb3ZPQnFpd1dnM254UTM2TkdnZ0g1dWZnM0syTWE1dHpwdg": "2026-03-30T00:39:02.471459Z",
+    "reddit/comfyui/top/day|https://www.reddit.com/r/comfyui/top/t3_1s6wksp": "2026-03-30T00:39:03.783289Z",
+    "reddit/comfyui/top/day|https://www.reddit.com/r/comfyui/top/t3_1s782j2": "2026-03-30T00:39:05.066833Z",
+    "reddit/stablediffusion/top/day|https://www.reddit.com/r/StableDiffusion/top/t3_1s6kjmv": "2026-03-30T00:39:06.384533Z",
+    "hf|model|Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled-v2-GGUF": "2026-03-30T00:39:07.882268Z",
+    "hf|space|r3gm/wan2-2-fp8da-aoti-preview": "2026-03-30T00:39:09.188460Z"
+  }
+}
