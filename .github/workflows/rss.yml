@@ -98,7 +98,7 @@ jobs:
               for t in texts:
                   safe_t = clean_text(t)[:limit]
                   if not safe_t or is_korean(safe_t) or not translator:
-                      out.append(safe_t)
+                          out.append(safe_t)
                   else:
                       try:
                           res = translator.translate(safe_t)
@@ -560,6 +560,7 @@ jobs:
           if [ -f .rss_state.json ]; then
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
+            git fetch origin main
             git add .rss_state.json
-            git diff --cached --quiet || (git commit -m "chore: update rss state" && git pull --rebase && git push)
+            git diff --cached --quiet || (git commit -m "chore: update rss state" && git push origin main --force)
           fi
