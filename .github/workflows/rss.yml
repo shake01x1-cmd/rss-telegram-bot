@@ -8,9 +8,14 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: rss-to-telegram
+  cancel-in-progress: false
+
 jobs:
   rss:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     steps:
       - name: Checkout
@@ -21,7 +26,7 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Collect + Translate Titles + Send
+      - name: Collect + Translate + Send
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
           CHAT_ID: ${{ secrets.CHAT_ID }}
@@ -31,34 +36,82 @@ jobs:
           PER_SOURCE_CAP: "2"
           DEDUP_DAYS: "14"
           ENABLE_RSSHUB: "1"
+          MAX_SUMMARY_CHARS: "220"
         run: |
           python -m pip install --upgrade pip
           pip install feedparser requests googletrans==4.0.2
 
           python <<'PY'
-          import os, re, json, time, html, asyncio
+          import html
+          import json
+          import os
+          import re
+          import time
           from datetime import datetime, timedelta, timezone
           from urllib.parse import quote
-          import requests, feedparser
+
+          import feedparser
+          import requests
           from googletrans import Translator
 
           BOT_TOKEN = os.environ["BOT_TOKEN"]
           CHAT_ID = os.environ["CHAT_ID"]
+          RSSHUB_BASE = os.getenv("RSSHUB_BASE", "https://rsshub.app").rstrip("/")
 
           MAX_MESSAGES_PER_RUN = int(os.getenv("MAX_MESSAGES_PER_RUN", "20"))
           MAX_ITEMS_PER_FEED = int(os.getenv("MAX_ITEMS_PER_FEED", "2"))
           PER_SOURCE_CAP = int(os.getenv("PER_SOURCE_CAP", "2"))
           DEDUP_DAYS = int(os.getenv("DEDUP_DAYS", "14"))
-
+          MAX_SUMMARY_CHARS = int(os.getenv("MAX_SUMMARY_CHARS", "220"))
           ENABLE_RSSHUB = os.getenv("ENABLE_RSSHUB", "1") == "1"
-          RSSHUB_BASE = os.getenv("RSSHUB_BASE", "https://rsshub.app").rstrip("/")
 
           STATE_PATH = ".rss_state.json"
-          USER_AGENT = "rss-to-telegram-bot/1.3"
+          USER_AGENT = "rss-to-telegram-bot/1.5"
           TIMEOUT = 20
+
+          session = requests.Session()
+          session.headers.update({"User-Agent": USER_AGENT})
+          translator = Translator(service_urls=["translate.googleapis.com"])
 
           def now_utc():
               return datetime.now(timezone.utc)
+
+          def clean_text(text: str) -> str:
+              if not text:
+                  return ""
+              text = html.unescape(text)
+              text = re.sub(r"<[^>]+>", " ", text)
+              text = re.sub(r"\s+", " ", text).strip()
+              return text
+
+          def is_korean(text: str) -> bool:
+              return bool(re.search(r"[가-힣]", text or ""))
+
+          def batch_translate_ko(texts, limit=220):
+              safe_texts = [clean_text(t)[:limit] for t in texts]
+              out = list(safe_texts)
+
+              jobs = [(i, t) for i, t in enumerate(safe_texts) if t and not is_korean(t)]
+              if not jobs:
+                  return out
+
+              try:
+                  batch = [t for _, t in jobs]
+                  results = translator.translate(batch, dest="ko")
+                  if not isinstance(results, list):
+                      results = [results]
+                  for (i, _), res in zip(jobs, results):
+                      out[i] = getattr(res, "text", safe_texts[i]) or safe_texts[i]
+              except Exception:
+                  for i, t in jobs:
+                      try:
+                          out[i] = translator.translate(t, dest="ko").text
+                      except Exception:
+                          out[i] = t
+              return out
+
+          def google_news_rss(query, hl="en-US", gl="US", ceid="US:en"):
+              return f"https://news.google.com/rss/search?q={quote(query)}&hl={hl}&gl={gl}&ceid={ceid}"
 
           def load_state():
               if not os.path.exists(STATE_PATH):
@@ -84,41 +137,6 @@ jobs:
                   except Exception:
                       pass
               state["seen"] = keep
-
-          def clean_text(text):
-              if not text:
-                  return ""
-              text = html.unescape(text)
-              text = re.sub(r"<[^>]+>", " ", text)
-              text = re.sub(r"\s+", " ", text).strip()
-              return text
-
-          def google_news_rss(query, hl="en-US", gl="US", ceid="US:en"):
-              return f"https://news.google.com/rss/search?q={quote(query)}&hl={hl}&gl={gl}&ceid={ceid}"
-
-          def is_korean(text):
-              return bool(re.search(r"[가-힣]", text or ""))
-
-          async def translate_titles_to_ko(titles):
-              safe_titles = [clean_text(t)[:180] for t in titles]
-              output = list(safe_titles)
-
-              idxs = [i for i, t in enumerate(safe_titles) if t and not is_korean(t)]
-              if not idxs:
-                  return output
-
-              try:
-                  async with Translator(service_urls=["translate.googleapis.com"]) as translator:
-                      batch = [safe_titles[i] for i in idxs]
-                      results = await translator.translate(batch, dest="ko")
-                      if not isinstance(results, list):
-                          results = [results]
-                      for pos, i in enumerate(idxs):
-                          output[i] = getattr(results[pos], "text", safe_titles[i]) or safe_titles[i]
-              except Exception:
-                  pass
-
-              return output
 
           SIGNAL_RULES = {
               "NEWS": [
@@ -231,6 +249,26 @@ jobs:
               "KR_NEWS": 11,
           }
 
+          PRIORITY_BADGE = {
+              "NEWS": "🔴",
+              "TIP": "🟡",
+              "TREND": "🔵",
+          }
+
+          TOPIC_BADGE = {
+              "COMFYUI": "🟣",
+              "VIDEO_GEN": "🔴",
+              "IMAGE_GEN": "🟠",
+              "IMAGE_EDIT": "🟡",
+              "UPSCALE": "🔵",
+              "AUDIO_GEN": "🟢",
+              "LOW_VRAM": "⚪",
+              "GUI_ONECLICK": "🟤",
+              "AI_TRENDS": "🔷",
+              "KR_NEWS": "🟥",
+              "COMMUNITY_HOT": "🟦",
+          }
+
           def match_many(compiled, text):
               out = []
               for name, patterns in compiled.items():
@@ -246,10 +284,19 @@ jobs:
               best_topic = min([TOPIC_PRIORITY.get(x, 99) for x in item["topics"]] or [99])
               return (best_signal, best_topic, item["source"], item["title"])
 
+          def top_signal(item):
+              if not item["signals"]:
+                  return None
+              return sorted(item["signals"], key=lambda x: SIGNAL_PRIORITY.get(x, 99))[0]
+
+          def top_topic(item):
+              if not item["topics"]:
+                  return None
+              return sorted(item["topics"], key=lambda x: TOPIC_PRIORITY.get(x, 99))[0]
+
           def send_message(text):
-              url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
-              r = requests.post(
-                  url,
+              r = session.post(
+                  f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage",
                   data={
                       "chat_id": CHAT_ID,
                       "text": text[:4000],
@@ -259,19 +306,21 @@ jobs:
               )
               r.raise_for_status()
 
+          def parse_feed(url):
+              r = session.get(url, timeout=TIMEOUT)
+              r.raise_for_status()
+              return feedparser.parse(r.content)
+
           feeds = [
-              # Reddit latest
               {"name": "reddit/aivideo/new", "url": "https://www.reddit.com/r/aivideo/new/.rss"},
               {"name": "reddit/comfyui/new", "url": "https://www.reddit.com/r/comfyui/new/.rss"},
               {"name": "reddit/stablediffusion/new", "url": "https://www.reddit.com/r/StableDiffusion/new/.rss"},
               {"name": "reddit/audioai/new", "url": "https://www.reddit.com/r/AudioAI/new/.rss"},
 
-              # Reddit hot / top
               {"name": "reddit/comfyui/top/day", "url": "https://www.reddit.com/r/comfyui/top/.rss?t=day"},
               {"name": "reddit/stablediffusion/top/day", "url": "https://www.reddit.com/r/StableDiffusion/top/.rss?t=day"},
               {"name": "reddit/aivideo/top/week", "url": "https://www.reddit.com/r/aivideo/top/.rss?t=week"},
 
-              # Reddit search
               {"name": "reddit/search/video", "url": "https://www.reddit.com/search.rss?q=AI%20video%20generation&sort=new"},
               {"name": "reddit/search/image", "url": "https://www.reddit.com/search.rss?q=AI%20image%20generation&sort=new"},
               {"name": "reddit/search/audio", "url": "https://www.reddit.com/search.rss?q=audio%20generation%20AI&sort=new"},
@@ -282,7 +331,6 @@ jobs:
               {"name": "reddit/search/comfyui-workflow", "url": "https://www.reddit.com/search.rss?q=ComfyUI%20workflow&sort=new"},
               {"name": "reddit/search/gui", "url": "https://www.reddit.com/search.rss?q=AI%20tool%20GUI&sort=new"},
 
-              # GitHub
               {"name": "github/comfyui/releases", "url": "https://github.com/comfyanonymous/ComfyUI/releases.atom"},
               {"name": "github/comfyui-manager/tags", "url": "https://github.com/ltdrdata/ComfyUI-Manager/tags.atom"},
               {"name": "github/impact-pack/tags", "url": "https://github.com/ltdrdata/ComfyUI-Impact-Pack/tags.atom"},
@@ -291,10 +339,8 @@ jobs:
               {"name": "github/swarmui/releases", "url": "https://github.com/mcmonkeyprojects/SwarmUI/releases.atom"},
               {"name": "github/invokeai/releases", "url": "https://github.com/invoke-ai/InvokeAI/releases.atom"},
 
-              # Hugging Face
               {"name": "hf/blog", "url": "https://huggingface.co/blog/feed.xml"},
 
-              # Google News EN
               {"name": "news/comfyui", "url": google_news_rss("ComfyUI", "en-US", "US", "US:en")},
               {"name": "news/text-to-video", "url": google_news_rss('"text-to-video" open source', "en-US", "US", "US:en")},
               {"name": "news/image-generation", "url": google_news_rss('"AI image generation" open source', "en-US", "US", "US:en")},
@@ -303,7 +349,6 @@ jobs:
               {"name": "news/audio", "url": google_news_rss('"AI sound effect" open source', "en-US", "US", "US:en")},
               {"name": "news/low-vram", "url": google_news_rss('"low vram" stable diffusion', "en-US", "US", "US:en")},
 
-              # Google News KR
               {"name": "news-kr/comfyui", "url": google_news_rss("ComfyUI", "ko", "KR", "KR:ko")},
               {"name": "news-kr/video", "url": google_news_rss('"AI 영상 생성"', "ko", "KR", "KR:ko")},
               {"name": "news-kr/image", "url": google_news_rss('"AI 이미지 생성"', "ko", "KR", "KR:ko")},
@@ -337,7 +382,7 @@ jobs:
           }
 
           def fetch_hf_trending(url):
-              r = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=TIMEOUT)
+              r = session.get(url, timeout=TIMEOUT)
               r.raise_for_status()
               data = r.json()
               items = data.get("recentlyTrending") or []
@@ -355,7 +400,7 @@ jobs:
                   ai_category = repo_data.get("ai_category") or ""
                   title = repo_id
                   link = f"https://huggingface.co/{repo_id}"
-                  summary = clean_text(f"{pipeline} {tags} {ai_category}")[:260]
+                  summary = clean_text(f"{pipeline} {tags} {ai_category}")[:MAX_SUMMARY_CHARS]
                   text = f"{title}\n{summary}\n{link}"
 
                   if is_excluded(text):
@@ -393,11 +438,11 @@ jobs:
 
           for feed in feeds:
               try:
-                  parsed = feedparser.parse(feed["url"], request_headers={"User-Agent": USER_AGENT})
+                  parsed = parse_feed(feed["url"])
                   for entry in parsed.entries[:MAX_ITEMS_PER_FEED]:
                       title = clean_text(getattr(entry, "title", "") or "")
                       link = clean_text(getattr(entry, "link", "") or "")
-                      summary = clean_text(getattr(entry, "summary", "") or "")[:260]
+                      summary = clean_text(getattr(entry, "summary", "") or "")[:MAX_SUMMARY_CHARS]
                       text = f"{title}\n{summary}\n{link}\n{feed['name']}"
 
                       if is_excluded(text):
@@ -458,23 +503,27 @@ jobs:
               selected.append(item)
               source_counts[item["source"]] += 1
 
-          translated_titles = asyncio.run(translate_titles_to_ko([x["title"] for x in selected]))
+          translated_titles = batch_translate_ko([x["title"] for x in selected], limit=180)
+          translated_summaries = batch_translate_ko([x.get("summary", "") for x in selected], limit=MAX_SUMMARY_CHARS)
 
           sent = 0
-          for item, title_ko in zip(selected, translated_titles):
-              signal_tags = "".join([f"[{x}]" for x in item["signals"][:2]])
-              topic_tags = "".join([f"[{x}]" for x in item["topics"][:2]])
+          for item, title_ko, summary_ko in zip(selected, translated_titles, translated_summaries):
+              priority = top_signal(item)
+              topic = top_topic(item)
+
+              priority_badge = PRIORITY_BADGE.get(priority, "⚪")
+              topic_badge = TOPIC_BADGE.get(topic, "⚪")
 
               msg_parts = [
-                  f"{signal_tags}{topic_tags}",
+                  f"{priority_badge}{topic_badge} [{priority or 'INFO'}][{topic or 'ETC'}]",
                   f"🇰🇷 {title_ko}",
               ]
 
               if item["title"] and clean_text(title_ko) != clean_text(item["title"]):
                   msg_parts.append(f"🌐 {item['title']}")
 
-              if item.get("summary"):
-                  msg_parts.append(f"📝 {item['summary']}")
+              if summary_ko:
+                  msg_parts.append(f"📝 {summary_ko}")
 
               msg_parts.append(f"🔗 {item['link']}")
               msg_parts.append(f"# {item['source']}")
