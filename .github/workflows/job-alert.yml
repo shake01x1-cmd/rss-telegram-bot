@@ -3,7 +3,7 @@ name: Job Alert Bot
 on:
   workflow_dispatch:
   schedule:
-    # KST 10:07 / 14:07 / 19:07 실행을 위한 설정 (UTC 기준)
+    # KST 10:07 / 14:07 / 19:07 실행 (UTC 기준 1, 5, 10시)
     - cron: "7 1,5,10 * * *"
 
 concurrency:
