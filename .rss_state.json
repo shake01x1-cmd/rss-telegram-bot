@@ -19,8 +19,8 @@
     "reddit/comfyui/top/day|https://www.reddit.com/r/comfyui/top/t3_1s6wksp": "2026-03-30T00:39:03.783289Z",
     "reddit/comfyui/top/day|https://www.reddit.com/r/comfyui/top/t3_1s782j2": "2026-03-30T00:39:05.066833Z",
     "reddit/stablediffusion/top/day|https://www.reddit.com/r/StableDiffusion/top/t3_1s6kjmv": "2026-03-30T00:39:06.384533Z",
-    "hf|model|Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled-v2-GGUF": "2026-04-04T16:29:37.199153Z",
-    "hf|space|r3gm/wan2-2-fp8da-aoti-preview": "2026-04-04T16:29:40.563942Z",
+    "hf|model|Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled-v2-GGUF": "2026-04-04T17:02:51.135435Z",
+    "hf|space|r3gm/wan2-2-fp8da-aoti-preview": "2026-04-04T17:02:54.532992Z",
     "reddit/stablediffusion/new|t3_1s7cbek": "2026-03-30T01:01:03.961329Z",
     "reddit/comfyui/top/day|t3_1s6wksp": "2026-03-30T01:01:05.112334Z",
     "reddit/comfyui/top/day|t3_1s782j2": "2026-03-30T01:01:06.296179Z",
@@ -265,7 +265,7 @@
     "reddit/stablediffusion/new|t3_1s9ny04": "2026-04-01T16:04:44.278704Z",
     "reddit/comfyui/new|t3_1s9qct1": "2026-04-01T17:27:49.314300Z",
     "reddit/aivideo/new|t3_1s9ql58": "2026-04-01T17:27:50.419059Z",
-    "hf|model|prism-ml/Bonsai-8B-gguf": "2026-04-04T16:29:38.315757Z",
+    "hf|model|prism-ml/Bonsai-8B-gguf": "2026-04-04T17:02:52.276770Z",
     "community/cgpersia|https://cgpersia.com/?p=202893": "2026-04-01T17:27:55.921139Z",
     "reddit/stablediffusion/new|t3_1s9qtya": "2026-04-01T17:27:58.117940Z",
     "reddit/stablediffusion/new|t3_1s9qxq1": "2026-04-01T17:27:59.216157Z",
@@ -509,6 +509,8 @@
     "reddit/stablediffusion/new|t3_1sccnh7": "2026-04-04T15:53:41.262749Z",
     "reddit/stablediffusion/top/day|t3_1sc352d": "2026-04-04T15:53:46.960574Z",
     "reddit/comfyui/new|t3_1sccpyb": "2026-04-04T15:53:48.111130Z",
-    "reddit/stablediffusion/new|t3_1sccyvw": "2026-04-04T16:29:36.055113Z"
+    "reddit/stablediffusion/new|t3_1sccyvw": "2026-04-04T16:29:36.055113Z",
+    "reddit/comfyui/new|t3_1scdp9p": "2026-04-04T17:02:48.862929Z",
+    "reddit/comfyui/new|t3_1sce8hs": "2026-04-04T17:02:50.000921Z"
   }
 }
