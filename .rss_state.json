@@ -19,8 +19,8 @@
     "reddit/comfyui/top/day|https://www.reddit.com/r/comfyui/top/t3_1s6wksp": "2026-03-30T00:39:03.783289Z",
     "reddit/comfyui/top/day|https://www.reddit.com/r/comfyui/top/t3_1s782j2": "2026-03-30T00:39:05.066833Z",
     "reddit/stablediffusion/top/day|https://www.reddit.com/r/StableDiffusion/top/t3_1s6kjmv": "2026-03-30T00:39:06.384533Z",
-    "hf|model|Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled-v2-GGUF": "2026-04-05T02:06:19.646791Z",
-    "hf|space|r3gm/wan2-2-fp8da-aoti-preview": "2026-04-05T02:06:22.909221Z",
+    "hf|model|Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled-v2-GGUF": "2026-04-05T04:59:36.409018Z",
+    "hf|space|r3gm/wan2-2-fp8da-aoti-preview": "2026-04-05T04:59:39.798799Z",
     "reddit/stablediffusion/new|t3_1s7cbek": "2026-03-30T01:01:03.961329Z",
     "reddit/comfyui/top/day|t3_1s6wksp": "2026-03-30T01:01:05.112334Z",
     "reddit/comfyui/top/day|t3_1s782j2": "2026-03-30T01:01:06.296179Z",
@@ -265,7 +265,7 @@
     "reddit/stablediffusion/new|t3_1s9ny04": "2026-04-01T16:04:44.278704Z",
     "reddit/comfyui/new|t3_1s9qct1": "2026-04-01T17:27:49.314300Z",
     "reddit/aivideo/new|t3_1s9ql58": "2026-04-01T17:27:50.419059Z",
-    "hf|model|prism-ml/Bonsai-8B-gguf": "2026-04-05T02:06:20.725534Z",
+    "hf|model|prism-ml/Bonsai-8B-gguf": "2026-04-05T04:59:37.555270Z",
     "community/cgpersia|https://cgpersia.com/?p=202893": "2026-04-01T17:27:55.921139Z",
     "reddit/stablediffusion/new|t3_1s9qtya": "2026-04-01T17:27:58.117940Z",
     "reddit/stablediffusion/new|t3_1s9qxq1": "2026-04-01T17:27:59.216157Z",
@@ -545,6 +545,10 @@
     "reddit/comfyui/new|t3_1scra1z": "2026-04-05T02:06:23.988556Z",
     "reddit/comfyui/new|t3_1scr070": "2026-04-05T02:06:25.113422Z",
     "reddit/stablediffusion/new|t3_1scr196": "2026-04-05T02:06:26.198456Z",
-    "reddit/stablediffusion/new|t3_1scqdy6": "2026-04-05T02:06:27.280605Z"
+    "reddit/stablediffusion/new|t3_1scqdy6": "2026-04-05T02:06:27.280605Z",
+    "reddit/stablediffusion/top/day|t3_1scg5s2": "2026-04-05T04:59:40.920651Z",
+    "reddit/comfyui/new|t3_1scs7nh": "2026-04-05T04:59:42.046251Z",
+    "reddit/comfyui/new|t3_1scttef": "2026-04-05T04:59:43.186732Z",
+    "news/text-to-video|CBMihAFBVV95cUxNTHdYODFyM2g2eWl3bDc0VUVJTTNEaWtvZmlzMjg0RUhvcWp6c1liaGpzc1VuNXh6TU9JMHdGMW14aDl4bm5yM3ljcWZvNFRYRG1UR0ZSYnlaZVRtMWRwMTcwekxTV09md3I4MmQ5ME8wY0tLN1NjNlVLSEx0YjlFVFJNVGM": "2026-04-05T04:59:44.318710Z"
   }
 }
