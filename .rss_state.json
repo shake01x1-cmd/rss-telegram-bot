@@ -20,7 +20,7 @@
     "reddit/comfyui/top/day|https://www.reddit.com/r/comfyui/top/t3_1s782j2": "2026-03-30T00:39:05.066833Z",
     "reddit/stablediffusion/top/day|https://www.reddit.com/r/StableDiffusion/top/t3_1s6kjmv": "2026-03-30T00:39:06.384533Z",
     "hf|model|Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled-v2-GGUF": "2026-04-06T08:11:04.354681Z",
-    "hf|space|r3gm/wan2-2-fp8da-aoti-preview": "2026-04-12T02:44:05.147274Z",
+    "hf|space|r3gm/wan2-2-fp8da-aoti-preview": "2026-04-12T05:19:00.832029Z",
     "reddit/stablediffusion/new|t3_1s7cbek": "2026-03-30T01:01:03.961329Z",
     "reddit/comfyui/top/day|t3_1s6wksp": "2026-03-30T01:01:05.112334Z",
     "reddit/comfyui/top/day|t3_1s782j2": "2026-03-30T01:01:06.296179Z",
@@ -633,7 +633,7 @@
     "reddit/stablediffusion/new|t3_1sdnko3": "2026-04-06T04:51:14.879385Z",
     "reddit/stablediffusion/new|t3_1sdqchm": "2026-04-06T06:29:07.471040Z",
     "reddit/comfyui/new|t3_1sdqnbt": "2026-04-06T06:29:08.622011Z",
-    "hf|model|netflix/void-model": "2026-04-12T02:44:06.303218Z",
+    "hf|model|netflix/void-model": "2026-04-12T05:19:01.918612Z",
     "reddit/stablediffusion/new|t3_1sdsmnb": "2026-04-06T08:11:03.180746Z",
     "reddit/comfyui/new|t3_1sdrd5r": "2026-04-06T08:11:08.966391Z",
     "reddit/comfyui/new|t3_1sdtxu6": "2026-04-06T09:47:22.766379Z",
@@ -891,7 +891,7 @@
     "reddit/stablediffusion/new|t3_1sgqw5v": "2026-04-09T15:05:53.960387Z",
     "reddit/comfyui/new|t3_1sgusrn": "2026-04-09T16:47:10.320481Z",
     "reddit/comfyui/top/day|t3_1sgk810": "2026-04-09T16:47:11.415793Z",
-    "hf|model|unsloth/gemma-4-26B-A4B-it-GGUF": "2026-04-12T02:44:02.914432Z",
+    "hf|model|unsloth/gemma-4-26B-A4B-it-GGUF": "2026-04-12T05:18:58.592387Z",
     "reddit/comfyui/new|t3_1sgtibe": "2026-04-09T16:47:16.930210Z",
     "reddit/comfyui/new|t3_1sgwho6": "2026-04-09T17:56:30.227653Z",
     "reddit/stablediffusion/new|t3_1sgvzed": "2026-04-09T17:56:31.316994Z",
@@ -1078,6 +1078,10 @@
     "github/stabilitymatrix/releases|tag:github.com,2008:Repository/652941996/v2.15.7": "2026-04-12T02:43:58.292855Z",
     "reddit/comfyui/new|t3_1sj1nos": "2026-04-12T02:43:59.498245Z",
     "reddit/stablediffusion/new|t3_1sj1gi9": "2026-04-12T02:44:00.653197Z",
-    "reddit/comfyui/top/day|t3_1sistxe": "2026-04-12T02:44:01.789170Z"
+    "reddit/comfyui/top/day|t3_1sistxe": "2026-04-12T02:44:01.789170Z",
+    "reddit/comfyui/top/day|t3_1siyvg9": "2026-04-12T05:18:56.376928Z",
+    "reddit/stablediffusion/new|t3_1sj47t0": "2026-04-12T05:18:57.504176Z",
+    "reddit/aivideo/top/week|t3_1sfo94b": "2026-04-12T05:19:03.023026Z",
+    "reddit/comfyui/new|t3_1sj5ckt": "2026-04-12T05:19:04.113045Z"
   }
 }
