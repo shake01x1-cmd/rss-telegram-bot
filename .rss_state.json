@@ -2,15 +2,9 @@
   "version": 1,
   "seen": {
     "hf|model|Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled-v2-GGUF": "2026-04-06T08:11:04.354681Z",
-    "hf|space|r3gm/wan2-2-fp8da-aoti-preview": "2026-04-15T19:09:08.902745Z",
+    "hf|space|r3gm/wan2-2-fp8da-aoti-preview": "2026-04-15T20:13:38.761795Z",
     "hf|dataset|ibm-research/VAKRA": "2026-04-03T13:12:01.536424Z",
     "hf|model|prism-ml/Bonsai-8B-gguf": "2026-04-08T14:52:41.568117Z",
-    "reddit/aivideo/new|t3_1s9sref": "2026-04-01T19:36:35.536738Z",
-    "reddit/comfyui/new|t3_1s9uh3w": "2026-04-01T19:36:36.703797Z",
-    "reddit/stablediffusion/new|t3_1s9uxk4": "2026-04-01T19:36:37.867754Z",
-    "reddit/stablediffusion/top/day|t3_1s9dqtw": "2026-04-01T19:36:43.586315Z",
-    "reddit/comfyui/new|t3_1s9uvwh": "2026-04-01T19:36:45.875531Z",
-    "reddit/stablediffusion/new|t3_1s9up64": "2026-04-01T19:36:47.018997Z",
     "reddit/comfyui/new|t3_1s9wn63": "2026-04-01T20:39:41.026423Z",
     "reddit/stablediffusion/new|t3_1s9vh4o": "2026-04-01T20:39:47.627554Z",
     "reddit/comfyui/new|t3_1s9w2nx": "2026-04-01T20:39:48.737930Z",
@@ -1025,7 +1019,7 @@
     "news-kr/image|CBMiVkFVX3lxTE1EM1h4LUI0eGVxbTBBOHBaVDUyYkd6bEdDd1Vtcm8tRlQtbGhDdzkxZEZGRFJDY0w0ekF0VVBETU1SdnpmbW5kVzZpYlVQdHhkYm1aYUZB": "2026-04-14T16:14:33.029816Z",
     "reddit/comfyui/top/day|t3_1slc5jf": "2026-04-14T17:41:44.418322Z",
     "reddit/stablediffusion/new|t3_1slervj": "2026-04-14T17:41:45.714871Z",
-    "hf|model|Jiunsong/supergemma4-26b-uncensored-gguf-v2": "2026-04-15T19:09:06.738056Z",
+    "hf|model|Jiunsong/supergemma4-26b-uncensored-gguf-v2": "2026-04-15T20:13:36.458984Z",
     "reddit/comfyui/new|t3_1slflj1": "2026-04-14T17:41:51.474217Z",
     "reddit/comfyui/new|t3_1slhjhk": "2026-04-14T19:06:10.998146Z",
     "reddit/comfyui/top/day|t3_1slg8g2": "2026-04-14T19:06:12.588715Z",
@@ -1096,13 +1090,14 @@
     "reddit/comfyui/new|t3_1smd1sb": "2026-04-15T17:37:50.408550Z",
     "reddit/comfyui/new|t3_1smd149": "2026-04-15T17:37:51.568669Z",
     "hf/blog|https://huggingface.co/blog/ibm-research/vakra-benchmark-analysis": "2026-04-15T17:37:52.648612Z",
-    "hf|model|openbmb/VoxCPM2": "2026-04-15T19:09:09.987473Z",
+    "hf|model|openbmb/VoxCPM2": "2026-04-15T20:13:39.914722Z",
     "reddit/comfyui/top/day|t3_1slinfg": "2026-04-15T19:09:04.572494Z",
     "reddit/stablediffusion/top/day|t3_1sm05ml": "2026-04-15T19:09:05.655922Z",
     "reddit/aivideo/top/week|t3_1sh5gt6": "2026-04-15T19:09:11.070908Z",
     "reddit/comfyui/new|t3_1smfi93": "2026-04-15T19:09:12.163014Z",
     "reddit/comfyui/new|t3_1smfng6": "2026-04-15T19:09:13.252622Z",
     "reddit/stablediffusion/new|t3_1smeyz1": "2026-04-15T19:09:14.340741Z",
-    "reddit/stablediffusion/new|t3_1smfghg": "2026-04-15T19:09:15.421782Z"
+    "reddit/stablediffusion/new|t3_1smfghg": "2026-04-15T19:09:15.421782Z",
+    "reddit/comfyui/top/day|t3_1sm2fws": "2026-04-15T20:13:35.315781Z"
   }
 }
