@@ -2,14 +2,8 @@
   "version": 1,
   "seen": {
     "hf|model|Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled-v2-GGUF": "2026-04-06T08:11:04.354681Z",
-    "hf|space|r3gm/wan2-2-fp8da-aoti-preview": "2026-04-15T00:05:52.862113Z",
-    "hf|model|GAIR/daVinci-MagiHuman": "2026-04-01T02:33:14.967058Z",
+    "hf|space|r3gm/wan2-2-fp8da-aoti-preview": "2026-04-15T03:47:07.295318Z",
     "hf|dataset|ibm-research/VAKRA": "2026-04-03T13:12:01.536424Z",
-    "news-kr/upscale|CBMiakFVX3lxTE5YalVXSUYzdXQxUUdBdWlPNjc4V05xc0pmTXhobFV3alNRNnZsTDVoS193Qm1Na3hoWDhTNFo3ZWJ0WjV4UjQ1dlowV0hkSG1FVkJSZ2tGeWQwOGN0aW9QTUI2RUl1ZjRnLWc": "2026-04-01T02:33:08.223665Z",
-    "reddit/comfyui/new|t3_1s96dru": "2026-04-01T02:33:09.327293Z",
-    "reddit/stablediffusion/new|t3_1s97fek": "2026-04-01T02:33:10.438212Z",
-    "reddit/comfyui/new|t3_1s95j6n": "2026-04-01T02:33:17.191997Z",
-    "news-kr/upscale|CBMic0FVX3lxTFAydHAzMjlueU5QYnJBczhjR2RyTFh2Ri1MbUhQV252RmhONE9taGRkQ3RwSW9UYmlCZTdpalZKNGNfRnpDWlNhZWhQcUZ0U2hhSEdKUnNjVE5UWEV2NHVDVi00MnlSZEFrcDZFRW9XM1ZkV3c": "2026-04-01T02:33:18.296741Z",
     "reddit/comfyui/new|t3_1s9atss": "2026-04-01T05:20:24.778217Z",
     "reddit/comfyui/new|t3_1s9aozr": "2026-04-01T05:20:25.876398Z",
     "reddit/stablediffusion/new|t3_1s9bd6c": "2026-04-01T05:20:26.971778Z",
@@ -416,7 +410,7 @@
     "reddit/stablediffusion/new|t3_1sdnko3": "2026-04-06T04:51:14.879385Z",
     "reddit/stablediffusion/new|t3_1sdqchm": "2026-04-06T06:29:07.471040Z",
     "reddit/comfyui/new|t3_1sdqnbt": "2026-04-06T06:29:08.622011Z",
-    "hf|model|netflix/void-model": "2026-04-15T00:05:53.996763Z",
+    "hf|model|netflix/void-model": "2026-04-15T03:47:08.439631Z",
     "reddit/stablediffusion/new|t3_1sdsmnb": "2026-04-06T08:11:03.180746Z",
     "reddit/comfyui/new|t3_1sdrd5r": "2026-04-06T08:11:08.966391Z",
     "reddit/comfyui/new|t3_1sdtxu6": "2026-04-06T09:47:22.766379Z",
@@ -1076,7 +1070,7 @@
     "news-kr/image|CBMiVkFVX3lxTE1EM1h4LUI0eGVxbTBBOHBaVDUyYkd6bEdDd1Vtcm8tRlQtbGhDdzkxZEZGRFJDY0w0ekF0VVBETU1SdnpmbW5kVzZpYlVQdHhkYm1aYUZB": "2026-04-14T16:14:33.029816Z",
     "reddit/comfyui/top/day|t3_1slc5jf": "2026-04-14T17:41:44.418322Z",
     "reddit/stablediffusion/new|t3_1slervj": "2026-04-14T17:41:45.714871Z",
-    "hf|model|Jiunsong/supergemma4-26b-uncensored-gguf-v2": "2026-04-15T00:05:50.587405Z",
+    "hf|model|Jiunsong/supergemma4-26b-uncensored-gguf-v2": "2026-04-15T03:47:05.122487Z",
     "reddit/comfyui/new|t3_1slflj1": "2026-04-14T17:41:51.474217Z",
     "reddit/comfyui/new|t3_1slhjhk": "2026-04-14T19:06:10.998146Z",
     "reddit/comfyui/top/day|t3_1slg8g2": "2026-04-14T19:06:12.588715Z",
@@ -1101,6 +1095,12 @@
     "reddit/comfyui/new|t3_1slo6jb": "2026-04-14T23:10:23.507569Z",
     "reddit/stablediffusion/new|t3_1slpfch": "2026-04-15T00:05:48.314858Z",
     "reddit/stablediffusion/new|t3_1slpjsn": "2026-04-15T00:05:49.450909Z",
-    "news/text-to-video|CBMioAFBVV95cUxNRFBlWHdyZE1LX3d4V0g0VG04a28zanFGWEZTM19HSnhpYVV4c1E0OTY4cTFnVjEzQ0dqSjVZUm50RzZNWkVqX1YxbUplMXRBajgxQXVrd0pRNTdfcjItREZUOFlxRmxMdTYzOWtWOXUybTJIMEkyR1BBSXV5cmhBdzNxa21Jc0l3NkVCSGZtMnBEYnhhZkF3OVJqaUVNYUNy": "2026-04-15T00:05:55.144449Z"
+    "news/text-to-video|CBMioAFBVV95cUxNRFBlWHdyZE1LX3d4V0g0VG04a28zanFGWEZTM19HSnhpYVV4c1E0OTY4cTFnVjEzQ0dqSjVZUm50RzZNWkVqX1YxbUplMXRBajgxQXVrd0pRNTdfcjItREZUOFlxRmxMdTYzOWtWOXUybTJIMEkyR1BBSXV5cmhBdzNxa21Jc0l3NkVCSGZtMnBEYnhhZkF3OVJqaUVNYUNy": "2026-04-15T00:05:55.144449Z",
+    "reddit/comfyui/new|t3_1sltqtm": "2026-04-15T03:47:02.935882Z",
+    "reddit/stablediffusion/new|t3_1slrwyf": "2026-04-15T03:47:04.028064Z",
+    "github/comfyui/releases|tag:github.com,2008:Repository/589831718/v0.19.1": "2026-04-15T03:47:09.553748Z",
+    "news-kr/comfyui|CBMiP0FVX3lxTE4zSFhLLUlHTF80VGthbWE0SVQ5Z0JrNk5hNGh0eUJTaUZtYnFXSW9xSjE4NUowN0lGeDdYNDNoVQ": "2026-04-15T03:47:10.683781Z",
+    "reddit/stablediffusion/new|t3_1slsupt": "2026-04-15T03:47:11.773837Z",
+    "news-kr/upscale|CBMic0FVX3lxTFAydHAzMjlueU5QYnJBczhjR2RyTFh2Ri1MbUhQV252RmhONE9taGRkQ3RwSW9UYmlCZTdpalZKNGNfRnpDWlNhZWhQcUZ0U2hhSEdKUnNjVE5UWEV2NHVDVi00MnlSZEFrcDZFRW9XM1ZkV3c": "2026-04-15T03:47:12.878446Z"
   }
 }
