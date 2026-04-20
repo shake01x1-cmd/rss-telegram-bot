@@ -1,11 +1,9 @@
 {
   "version": 1,
   "seen": {
-    "hf|space|r3gm/wan2-2-fp8da-aoti-preview": "2026-04-20T17:53:54.053880Z",
+    "hf|space|r3gm/wan2-2-fp8da-aoti-preview": "2026-04-20T18:58:22.693945Z",
     "hf|model|prism-ml/Bonsai-8B-gguf": "2026-04-08T14:52:41.568117Z",
     "hf|model|netflix/void-model": "2026-04-15T16:02:40.526826Z",
-    "reddit/comfyui/new|t3_1se65zp": "2026-04-06T18:10:40.968991Z",
-    "reddit/comfyui/new|t3_1se6bh8": "2026-04-06T18:10:46.413709Z",
     "reddit/comfyui/new|t3_1se7w96": "2026-04-06T19:35:48.193779Z",
     "reddit/stablediffusion/top/day|t3_1sdyjcr": "2026-04-06T19:35:49.318932Z",
     "reddit/comfyui/new|t3_1se8l39": "2026-04-06T19:35:55.133848Z",
@@ -628,7 +626,7 @@
     "news-kr/image|CBMiVkFVX3lxTE1EM1h4LUI0eGVxbTBBOHBaVDUyYkd6bEdDd1Vtcm8tRlQtbGhDdzkxZEZGRFJDY0w0ekF0VVBETU1SdnpmbW5kVzZpYlVQdHhkYm1aYUZB": "2026-04-14T16:14:33.029816Z",
     "reddit/comfyui/top/day|t3_1slc5jf": "2026-04-14T17:41:44.418322Z",
     "reddit/stablediffusion/new|t3_1slervj": "2026-04-14T17:41:45.714871Z",
-    "hf|model|Jiunsong/supergemma4-26b-uncensored-gguf-v2": "2026-04-20T17:53:50.650329Z",
+    "hf|model|Jiunsong/supergemma4-26b-uncensored-gguf-v2": "2026-04-20T18:58:19.224039Z",
     "reddit/comfyui/new|t3_1slflj1": "2026-04-14T17:41:51.474217Z",
     "reddit/comfyui/new|t3_1slhjhk": "2026-04-14T19:06:10.998146Z",
     "reddit/comfyui/top/day|t3_1slg8g2": "2026-04-14T19:06:12.588715Z",
@@ -722,7 +720,7 @@
     "reddit/comfyui/new|t3_1smrcn4": "2026-04-16T03:52:36.726826Z",
     "reddit/comfyui/new|t3_1smrc9c": "2026-04-16T03:52:37.974376Z",
     "reddit/stablediffusion/top/day|t3_1smazg6": "2026-04-16T03:52:43.848285Z",
-    "hf|dataset|markov-ai/computer-use-large": "2026-04-20T17:53:56.351382Z",
+    "hf|dataset|markov-ai/computer-use-large": "2026-04-20T18:58:25.013761Z",
     "reddit/stablediffusion/new|t3_1smrs0y": "2026-04-16T03:52:46.294872Z",
     "reddit/stablediffusion/new|t3_1smqviz": "2026-04-16T03:52:47.470738Z",
     "news-kr/image|CBMiXkFVX3lxTE9XaUh4U2xIUUZrQ3FGSXhHOWJhT2dxTjMxQmViLUJSLU9jWm9HQjM4RlM0cmVaNG5HVzFkSnE1aThoLTh2S0JJeDVLdTRVT3lnV1J0Z3J0V3FObGw4N2c": "2026-04-16T05:58:47.529867Z",
@@ -817,7 +815,7 @@
     "reddit/comfyui/new|t3_1snxxt7": "2026-04-17T11:29:19.555894Z",
     "reddit/comfyui/new|t3_1snxmbe": "2026-04-17T11:29:20.634700Z",
     "reddit/stablediffusion/new|t3_1snxxh6": "2026-04-17T11:29:21.730190Z",
-    "hf|model|unsloth/Qwen3.6-35B-A3B-GGUF": "2026-04-20T17:53:51.794111Z",
+    "hf|model|unsloth/Qwen3.6-35B-A3B-GGUF": "2026-04-20T18:58:20.379443Z",
     "reddit/stablediffusion/top/day|t3_1snun9x": "2026-04-17T11:29:27.161657Z",
     "reddit/stablediffusion/new|t3_1sny5s5": "2026-04-17T11:29:29.377027Z",
     "reddit/stablediffusion/new|t3_1sny9oy": "2026-04-17T12:10:33.095408Z",
@@ -901,7 +899,7 @@
     "reddit/stablediffusion/top/day|t3_1sokmqw": "2026-04-18T16:51:12.040660Z",
     "reddit/stablediffusion/new|t3_1sp2ohu": "2026-04-18T16:51:13.204339Z",
     "community/cgpersia|https://cgpersia.com/?p=203050": "2026-04-18T17:33:10.279914Z",
-    "hf|dataset|Jackrong/GLM-5.1-Reasoning-1M-Cleaned": "2026-04-20T17:53:55.206669Z",
+    "hf|dataset|Jackrong/GLM-5.1-Reasoning-1M-Cleaned": "2026-04-20T18:58:23.844364Z",
     "reddit/stablediffusion/new|t3_1sp4jyb": "2026-04-18T18:40:06.043752Z",
     "reddit/stablediffusion/top/day|t3_1sp03jq": "2026-04-18T19:38:01.141689Z",
     "reddit/comfyui/new|t3_1sp6g1q": "2026-04-18T19:38:02.228214Z",
@@ -1051,6 +1049,10 @@
     "reddit/comfyui/new|t3_1sqwoko": "2026-04-20T17:53:48.381190Z",
     "reddit/stablediffusion/new|t3_1sqw5rd": "2026-04-20T17:53:49.518264Z",
     "reddit/comfyui/new|t3_1sqwrg3": "2026-04-20T17:53:57.491390Z",
-    "reddit/stablediffusion/new|t3_1sqw9ir": "2026-04-20T17:53:58.625172Z"
+    "reddit/stablediffusion/new|t3_1sqw9ir": "2026-04-20T17:53:58.625172Z",
+    "reddit/comfyui/new|t3_1sqyhqa": "2026-04-20T18:58:18.060200Z",
+    "reddit/comfyui/new|t3_1sqyxjl": "2026-04-20T18:58:26.179315Z",
+    "reddit/stablediffusion/new|t3_1sqyvp4": "2026-04-20T18:58:27.345028Z",
+    "reddit/stablediffusion/new|t3_1sqyxtk": "2026-04-20T18:58:28.509294Z"
   }
 }
