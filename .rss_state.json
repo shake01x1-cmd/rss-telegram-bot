@@ -7,14 +7,6 @@
     "hf|model|unsloth/Qwen3.6-35B-A3B-MTP-GGUF": "2026-05-23T11:57:58.362845Z",
     "hf|space|r3gm/wan2-2-fp8da-aoti-preview-2": "2026-06-04T16:51:41.819393Z",
     "hf|space|cbensimon/wan2-2-fp8da-aoti-preview2": "2026-05-29T00:07:04.790277Z",
-    "reddit/comfyui/new|t3_1tjr3mz": "2026-05-21T17:28:55.330699Z",
-    "reddit/comfyui/new|t3_1tjr249": "2026-05-21T17:28:56.486647Z",
-    "reddit/stablediffusion/new|t3_1tjr8nr": "2026-05-21T17:28:57.657897Z",
-    "reddit/stablediffusion/new|t3_1tjr1hq": "2026-05-21T17:28:58.810489Z",
-    "community/cgpersia|https://cgpersia.com/?p=203386": "2026-05-21T17:28:59.958859Z",
-    "reddit/stablediffusion/top/day|t3_1tiytor": "2026-05-21T17:29:01.137874Z",
-    "community/cgpersia|https://cgpersia.com/?p=203383": "2026-05-21T17:29:06.990841Z",
-    "reddit/aivideo/new|t3_1tjq72c": "2026-05-21T17:29:09.345808Z",
     "community/cgpersia|https://cgpersia.com/?p=203392": "2026-05-21T19:27:04.943904Z",
     "reddit/comfyui/new|t3_1tjudwu": "2026-05-21T19:27:06.061411Z",
     "community/cgpersia|https://cgpersia.com/?p=203395": "2026-05-21T19:27:11.798440Z",
@@ -753,6 +745,12 @@
     "hf/blog|https://huggingface.co/blog/nvidia/fine-tuning-nemotron-35-asr": "2026-06-04T16:51:38.375658Z",
     "reddit/stablediffusion/top/day|t3_1tvwefx": "2026-06-04T16:51:42.969447Z",
     "reddit/comfyui/new|t3_1twrfvj": "2026-06-04T16:51:44.123694Z",
-    "reddit/comfyui/new|t3_1twsfjn": "2026-06-04T16:51:45.296856Z"
+    "reddit/comfyui/new|t3_1twsfjn": "2026-06-04T16:51:45.296856Z",
+    "reddit/stablediffusion/top/day|t3_1tw6gmq": "2026-06-04T19:20:47.786699Z",
+    "github/comfyui/releases|tag:github.com,2008:Repository/589831718/v0.24.1": "2026-06-04T19:20:48.936452Z",
+    "reddit/comfyui/new|t3_1twwgna": "2026-06-04T19:20:50.112131Z",
+    "reddit/comfyui/new|t3_1twuzui": "2026-06-04T19:20:51.268665Z",
+    "reddit/stablediffusion/new|t3_1twx737": "2026-06-04T19:20:52.418982Z",
+    "reddit/stablediffusion/new|t3_1twwu8a": "2026-06-04T19:20:53.590193Z"
   }
 }
