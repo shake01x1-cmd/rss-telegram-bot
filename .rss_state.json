@@ -3,11 +3,8 @@
   "seen": {
     "hf|model|SulphurAI/Sulphur-2-base": "2026-05-28T14:34:53.816891Z",
     "hf|model|unsloth/Qwen3.6-27B-MTP-GGUF": "2026-05-26T17:54:28.239145Z",
-    "hf|space|r3gm/wan2-2-fp8da-aoti-preview-2": "2026-06-06T19:13:06.092135Z",
+    "hf|space|r3gm/wan2-2-fp8da-aoti-preview-2": "2026-06-06T20:38:59.244044Z",
     "hf|space|cbensimon/wan2-2-fp8da-aoti-preview2": "2026-05-29T00:07:04.790277Z",
-    "reddit/comfyui/new|t3_1tlq5bu": "2026-05-23T20:03:20.614392Z",
-    "reddit/aivideo/new|t3_1tloyv1": "2026-05-23T20:03:26.054024Z",
-    "reddit/comfyui/new|t3_1tlpze4": "2026-05-23T20:03:27.153997Z",
     "reddit/stablediffusion/new|t3_1tlqtup": "2026-05-23T21:14:17.207381Z",
     "reddit/comfyui/new|t3_1tlsall": "2026-05-23T21:14:22.743903Z",
     "reddit/comfyui/new|t3_1tlrfs1": "2026-05-23T21:14:23.856382Z",
@@ -604,7 +601,7 @@
     "reddit/comfyui/new|t3_1twf984": "2026-06-04T07:00:33.286301Z",
     "reddit/comfyui/new|t3_1twjaon": "2026-06-04T10:41:54.307453Z",
     "news-kr/image|CBMiYkFVX3lxTE9IQ1FvcnZBUU0tZUtIT0RzNE5Mb09MMjhPeFVsUG5wRHg3TXpBQ1N1RzhWTzN4TmtUc3BWNzVES3ZQZThwUFFCNnBoZ19zR2VrSGdVdTJhY1I1SEFpV0EzeHV3": "2026-06-04T10:41:55.391331Z",
-    "hf|model|unsloth/gemma-4-12b-it-GGUF": "2026-06-06T19:13:03.795004Z",
+    "hf|model|unsloth/gemma-4-12b-it-GGUF": "2026-06-06T20:38:57.078438Z",
     "community/cgpersia|https://cgpersia.com/?p=203641": "2026-06-04T10:41:59.783077Z",
     "reddit/comfyui/new|t3_1twjm31": "2026-06-04T10:42:00.887459Z",
     "news-kr/upscale|CBMiUEFVX3lxTE84aU04WS15dFU2SjdCT2lQcW12Z3JBOXlHNnhEeTBBSkhGWUpxQThCa203WXZOcmY3Z1I4TUc4R3pjbTczaXVfVHhSWS1FWjBk": "2026-06-04T10:42:01.968781Z",
@@ -649,7 +646,7 @@
     "reddit/stablediffusion/new|t3_1txabrr": "2026-06-05T04:55:02.653666Z",
     "reddit/stablediffusion/new|t3_1txacn4": "2026-06-05T04:55:03.892680Z",
     "news/image-generation|CBMiSkFVX3lxTE1tQm5VbVZiWmpTb3dQZjhzaVVsVXQxQkN2dUtGSUUwLUdaWlh3djYzaHVvRl9lamxKODRySDhvRkItNnBha2dqYUt3": "2026-06-05T04:55:05.056227Z",
-    "hf|model|ideogram-ai/ideogram-4-fp8": "2026-06-06T19:13:02.642240Z",
+    "hf|model|ideogram-ai/ideogram-4-fp8": "2026-06-06T20:38:55.995544Z",
     "reddit/comfyui/new|t3_1tx9atu": "2026-06-05T04:55:10.948085Z",
     "reddit/comfyui/top/day|t3_1tx4qn7": "2026-06-05T08:40:58.265089Z",
     "reddit/stablediffusion/new|t3_1txeveh": "2026-06-05T08:40:59.428530Z",
@@ -743,6 +740,12 @@
     "reddit/stablediffusion/new|t3_1typl3g": "2026-06-06T19:13:01.492833Z",
     "reddit/stablediffusion/top/day|t3_1tyfvo0": "2026-06-06T19:13:07.251138Z",
     "reddit/stablediffusion/top/day|t3_1ty9uzs": "2026-06-06T19:13:08.407287Z",
-    "reddit/comfyui/new|t3_1typ2lh": "2026-06-06T19:13:09.563402Z"
+    "reddit/comfyui/new|t3_1typ2lh": "2026-06-06T19:13:09.563402Z",
+    "reddit/comfyui/new|t3_1tyqztt": "2026-06-06T20:38:51.640711Z",
+    "reddit/stablediffusion/new|t3_1tyr6f1": "2026-06-06T20:38:52.725315Z",
+    "reddit/stablediffusion/new|t3_1tyqgov": "2026-06-06T20:38:53.818406Z",
+    "reddit/comfyui/top/day|t3_1tydt9d": "2026-06-06T20:38:54.904310Z",
+    "reddit/comfyui/new|t3_1tys1v9": "2026-06-06T20:39:00.337520Z",
+    "reddit/aivideo/new|t3_1tys4kr": "2026-06-06T20:39:01.424735Z"
   }
 }
