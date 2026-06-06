@@ -4,9 +4,8 @@
     "hf|model|SulphurAI/Sulphur-2-base": "2026-05-28T14:34:53.816891Z",
     "hf|model|unsloth/Qwen3.6-27B-MTP-GGUF": "2026-05-26T17:54:28.239145Z",
     "hf|model|unsloth/Qwen3.6-35B-A3B-MTP-GGUF": "2026-05-23T11:57:58.362845Z",
-    "hf|space|r3gm/wan2-2-fp8da-aoti-preview-2": "2026-06-06T07:43:51.357151Z",
+    "hf|space|r3gm/wan2-2-fp8da-aoti-preview-2": "2026-06-06T09:59:05.535764Z",
     "hf|space|cbensimon/wan2-2-fp8da-aoti-preview2": "2026-05-29T00:07:04.790277Z",
-    "reddit/stablediffusion/top/day|t3_1tl0q2g": "2026-05-23T09:18:47.376825Z",
     "community/cgpersia|https://cgpersia.com/?p=203419": "2026-05-23T10:50:42.576964Z",
     "reddit/stablediffusion/top/day|t3_1tlbh78": "2026-05-23T10:50:43.662479Z",
     "reddit/comfyui/new|t3_1tlcdwg": "2026-05-23T10:50:44.773704Z",
@@ -641,7 +640,7 @@
     "reddit/comfyui/new|t3_1twf984": "2026-06-04T07:00:33.286301Z",
     "reddit/comfyui/new|t3_1twjaon": "2026-06-04T10:41:54.307453Z",
     "news-kr/image|CBMiYkFVX3lxTE9IQ1FvcnZBUU0tZUtIT0RzNE5Mb09MMjhPeFVsUG5wRHg3TXpBQ1N1RzhWTzN4TmtUc3BWNzVES3ZQZThwUFFCNnBoZ19zR2VrSGdVdTJhY1I1SEFpV0EzeHV3": "2026-06-04T10:41:55.391331Z",
-    "hf|model|unsloth/gemma-4-12b-it-GGUF": "2026-06-06T07:43:49.031116Z",
+    "hf|model|unsloth/gemma-4-12b-it-GGUF": "2026-06-06T09:59:03.369373Z",
     "community/cgpersia|https://cgpersia.com/?p=203641": "2026-06-04T10:41:59.783077Z",
     "reddit/comfyui/new|t3_1twjm31": "2026-06-04T10:42:00.887459Z",
     "news-kr/upscale|CBMiUEFVX3lxTE84aU04WS15dFU2SjdCT2lQcW12Z3JBOXlHNnhEeTBBSkhGWUpxQThCa203WXZOcmY3Z1I4TUc4R3pjbTczaXVfVHhSWS1FWjBk": "2026-06-04T10:42:01.968781Z",
@@ -686,7 +685,7 @@
     "reddit/stablediffusion/new|t3_1txabrr": "2026-06-05T04:55:02.653666Z",
     "reddit/stablediffusion/new|t3_1txacn4": "2026-06-05T04:55:03.892680Z",
     "news/image-generation|CBMiSkFVX3lxTE1tQm5VbVZiWmpTb3dQZjhzaVVsVXQxQkN2dUtGSUUwLUdaWlh3djYzaHVvRl9lamxKODRySDhvRkItNnBha2dqYUt3": "2026-06-05T04:55:05.056227Z",
-    "hf|model|ideogram-ai/ideogram-4-fp8": "2026-06-06T07:43:47.885617Z",
+    "hf|model|ideogram-ai/ideogram-4-fp8": "2026-06-06T09:59:02.286551Z",
     "reddit/comfyui/new|t3_1tx9atu": "2026-06-05T04:55:10.948085Z",
     "reddit/comfyui/top/day|t3_1tx4qn7": "2026-06-05T08:40:58.265089Z",
     "reddit/stablediffusion/new|t3_1txeveh": "2026-06-05T08:40:59.428530Z",
@@ -745,6 +744,13 @@
     "reddit/comfyui/new|t3_1ty9p9f": "2026-06-06T07:43:46.740633Z",
     "reddit/stablediffusion/top/day|t3_1txt582": "2026-06-06T07:43:52.540670Z",
     "reddit/stablediffusion/new|t3_1tyasf5": "2026-06-06T07:43:53.696439Z",
-    "news/image-generation|CBMivgJBVV95cUxQWDFKSTUtYmVhUFFLbldBYUU4YnJwN1pOalhsTy1PUVVRY3ViVE8yaUNnZ2NNelVwSERMcU8yT0lTaWZCVVItbGNKYXpxOXlERXhRNGNrMk9EaHcwOUFMUEdWN1ZFbHZRUE4yZjZBSzhZa2JRTTFqVjZLbTdYQk9UNGJQdlZBQ1k1RU5IdjI0MVJhZ0xXVC14TWxhRTIwUXNDYkxTeWxDWWxsWjNiamRZaEVxWUIxMTNaeHNDb3daQXpJUFV4UjB6S1ZPR0JveWwyd2ducTE2YUNTVTAzaDdBM2lIaXhud1ZVT2VRdUhhU1ltZER0MTFFNVFDVGRuWVdWc1hFWDVqRlpHdEczeWdPSGxXbDVIOUMtbTVFQkdhQVlZNVVFTlV0MUhnOWFDSGRXSjRPakd4QTFXMmZZdHc": "2026-06-06T07:43:54.849401Z"
+    "news/image-generation|CBMivgJBVV95cUxQWDFKSTUtYmVhUFFLbldBYUU4YnJwN1pOalhsTy1PUVVRY3ViVE8yaUNnZ2NNelVwSERMcU8yT0lTaWZCVVItbGNKYXpxOXlERXhRNGNrMk9EaHcwOUFMUEdWN1ZFbHZRUE4yZjZBSzhZa2JRTTFqVjZLbTdYQk9UNGJQdlZBQ1k1RU5IdjI0MVJhZ0xXVC14TWxhRTIwUXNDYkxTeWxDWWxsWjNiamRZaEVxWUIxMTNaeHNDb3daQXpJUFV4UjB6S1ZPR0JveWwyd2ducTE2YUNTVTAzaDdBM2lIaXhud1ZVT2VRdUhhU1ltZER0MTFFNVFDVGRuWVdWc1hFWDVqRlpHdEczeWdPSGxXbDVIOUMtbTVFQkdhQVlZNVVFTlV0MUhnOWFDSGRXSjRPakd4QTFXMmZZdHc": "2026-06-06T07:43:54.849401Z",
+    "reddit/aivideo/new|t3_1tyd2ay": "2026-06-06T09:59:00.118902Z",
+    "reddit/stablediffusion/top/day|t3_1txtrtr": "2026-06-06T09:59:01.198442Z",
+    "reddit/comfyui/new|t3_1tycnik": "2026-06-06T09:59:06.621375Z",
+    "reddit/comfyui/new|t3_1tybnea": "2026-06-06T09:59:07.729038Z",
+    "reddit/stablediffusion/new|t3_1tycodw": "2026-06-06T09:59:08.819674Z",
+    "reddit/stablediffusion/new|t3_1tycort": "2026-06-06T09:59:09.906593Z",
+    "reddit/aivideo/new|t3_1tybdhw": "2026-06-06T09:59:10.984956Z"
   }
 }
