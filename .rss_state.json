@@ -3,16 +3,9 @@
   "seen": {
     "hf|model|SulphurAI/Sulphur-2-base": "2026-05-28T14:34:53.816891Z",
     "hf|model|unsloth/Qwen3.6-27B-MTP-GGUF": "2026-05-26T17:54:28.239145Z",
-    "hf|space|r3gm/wan2-2-fp8da-aoti-preview-2": "2026-06-09T02:38:11.903790Z",
+    "hf|space|r3gm/wan2-2-fp8da-aoti-preview-2": "2026-06-09T06:44:28.615219Z",
     "hf|space|cbensimon/wan2-2-fp8da-aoti-preview2": "2026-05-29T00:07:04.790277Z",
-    "reddit/comfyui/new|t3_1tnw4uz": "2026-05-26T04:41:40.000113Z",
-    "reddit/comfyui/new|t3_1tnw1p7": "2026-05-26T04:41:41.081320Z",
-    "reddit/stablediffusion/new|t3_1tnw127": "2026-05-26T04:41:42.178957Z",
     "hf|model|Supertone/supertonic-3": "2026-05-29T12:11:42.086014Z",
-    "news-kr/video|CBMiVEFVX3lxTE9MZWZXRktjSUluUGxzdXc5RF8wcUhwS2lOQ2ExM3FmaVUyMnpRc2lwRVFxMWRNMzVaalhmb3d0eHVvRjJqSDJVejNsZndkS0NrRlEyeg": "2026-05-26T04:41:47.618929Z",
-    "reddit/stablediffusion/new|t3_1tnwc92": "2026-05-26T04:41:48.735146Z",
-    "reddit/aivideo/new|t3_1tnunhv": "2026-05-26T04:41:49.815029Z",
-    "news-kr/image|CBMiZ0FVX3lxTE5penJ4MjNvQTJNc3U4MEpQWjVSd01GUkdGMDREUzJkX0pXcGFNaWc0MGJjeFNLblJzSVowdHU5OG5lZERRN2VZal9TTXVDaFozWnpiM0piajFXdXJRME56WXRaQ0NqbWs": "2026-05-26T04:41:50.903828Z",
     "community/cgpersia|https://cgpersia.com/?p=203454": "2026-05-26T08:29:13.208570Z",
     "reddit/comfyui/top/day|t3_1tnftvn": "2026-05-26T08:29:14.353590Z",
     "reddit/stablediffusion/top/day|t3_1tnk3hg": "2026-05-26T08:29:20.204441Z",
@@ -502,7 +495,7 @@
     "reddit/stablediffusion/new|t3_1txabrr": "2026-06-05T04:55:02.653666Z",
     "reddit/stablediffusion/new|t3_1txacn4": "2026-06-05T04:55:03.892680Z",
     "news/image-generation|CBMiSkFVX3lxTE1tQm5VbVZiWmpTb3dQZjhzaVVsVXQxQkN2dUtGSUUwLUdaWlh3djYzaHVvRl9lamxKODRySDhvRkItNnBha2dqYUt3": "2026-06-05T04:55:05.056227Z",
-    "hf|model|ideogram-ai/ideogram-4-fp8": "2026-06-09T02:38:08.604954Z",
+    "hf|model|ideogram-ai/ideogram-4-fp8": "2026-06-09T06:44:25.146106Z",
     "reddit/comfyui/new|t3_1tx9atu": "2026-06-05T04:55:10.948085Z",
     "reddit/comfyui/top/day|t3_1tx4qn7": "2026-06-05T08:40:58.265089Z",
     "reddit/stablediffusion/new|t3_1txeveh": "2026-06-05T08:40:59.428530Z",
@@ -614,7 +607,7 @@
     "reddit/comfyui/new|t3_1tyvi1f": "2026-06-06T23:09:16.226577Z",
     "reddit/comfyui/new|t3_1tyyenf": "2026-06-07T01:35:31.339013Z",
     "reddit/stablediffusion/top/day|t3_1tyufqz": "2026-06-07T01:35:32.430724Z",
-    "hf|model|ideogram-ai/ideogram-4-nf4": "2026-06-09T02:38:09.698156Z",
+    "hf|model|ideogram-ai/ideogram-4-nf4": "2026-06-09T06:44:26.303254Z",
     "reddit/comfyui/new|t3_1tyylw3": "2026-06-07T01:35:37.899441Z",
     "reddit/stablediffusion/new|t3_1tyybn5": "2026-06-07T01:35:38.992400Z",
     "news-kr/video|CBMidEFVX3lxTE1GYlFNazFtZG9GMzk2Z0hJaDRUSHBRV2RXM2VNTC1MOUFKcnR5TFI5Y2FERFR4Y0ZJaklYVGlXUzlxbnVGVkpqSUlCdU5qbjVpRDdhMEZ1MUg4ZURHaWMzbTU0WUhORVZtY3ZZNU9MUGxqOVdZ": "2026-06-07T01:35:40.083805Z",
@@ -721,6 +714,10 @@
     "reddit/stablediffusion/new|t3_1u0nvxp": "2026-06-08T23:44:48.528344Z",
     "reddit/comfyui/new|t3_1u0p6al": "2026-06-09T02:38:07.516636Z",
     "reddit/comfyui/new|t3_1u0po48": "2026-06-09T02:38:12.994334Z",
-    "news-kr/image|CBMiZ0FVX3lxTE1BWVMwWG9aU0hZSFVGZEdaelJpV1ZETDhRQ0x4M0YydFJ6YW1TbnVicjZLWWJsLUphblM3TlRIS1ZXdGl4UlZaQ3BMclpzeHg4ZzNfbW9Kbm8yXzJ4RjNUdExRajNOdFnSAWtBVV95cUxQQ3l6ZGR2YmpvRFlDN1Y2WjZIV0ZDTU4xNUtYOVotaVRqWjRRZmYxMUVLS0V3U09Wa0RGdkYyejBUTktWOVBJbmVTenA3aGh1NFFRajB0VmlObl9KYWdBNE4xaGhucTVfckd4WQ": "2026-06-09T02:38:14.090477Z"
+    "news-kr/image|CBMiZ0FVX3lxTE1BWVMwWG9aU0hZSFVGZEdaelJpV1ZETDhRQ0x4M0YydFJ6YW1TbnVicjZLWWJsLUphblM3TlRIS1ZXdGl4UlZaQ3BMclpzeHg4ZzNfbW9Kbm8yXzJ4RjNUdExRajNOdFnSAWtBVV95cUxQQ3l6ZGR2YmpvRFlDN1Y2WjZIV0ZDTU4xNUtYOVotaVRqWjRRZmYxMUVLS0V3U09Wa0RGdkYyejBUTktWOVBJbmVTenA3aGh1NFFRajB0VmlObl9KYWdBNE4xaGhucTVfckd4WQ": "2026-06-09T02:38:14.090477Z",
+    "reddit/comfyui/new|t3_1u0vdc5": "2026-06-09T06:44:23.979077Z",
+    "reddit/stablediffusion/top/day|t3_1u04320": "2026-06-09T06:44:29.772232Z",
+    "reddit/comfyui/new|t3_1u0ub4w": "2026-06-09T06:44:30.923794Z",
+    "reddit/stablediffusion/new|t3_1u0x31p": "2026-06-09T06:44:32.101458Z"
   }
 }
