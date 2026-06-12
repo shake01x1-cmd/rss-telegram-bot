@@ -1,14 +1,8 @@
 {
   "version": 1,
   "seen": {
-    "hf|space|r3gm/wan2-2-fp8da-aoti-preview-2": "2026-06-12T14:04:24.213694Z",
+    "hf|space|r3gm/wan2-2-fp8da-aoti-preview-2": "2026-06-12T17:20:32.045479Z",
     "hf|dataset|Jackrong/Claude-opus-4.6-TraceInversion-9000x": "2026-06-01T22:59:29.605478Z",
-    "hf|model|Jackrong/Qwopus3.6-27B-v2-GGUF": "2026-05-29T16:13:02.650188Z",
-    "reddit/stablediffusion/new|t3_1tr5xh7": "2026-05-29T16:13:00.470611Z",
-    "reddit/comfyui/top/day|t3_1tqgy3w": "2026-05-29T16:13:01.566462Z",
-    "reddit/comfyui/new|t3_1tr5yec": "2026-05-29T16:13:07.048161Z",
-    "reddit/comfyui/new|t3_1tr6ibi": "2026-05-29T16:13:08.144460Z",
-    "reddit/stablediffusion/new|t3_1tr6iaz": "2026-05-29T16:13:09.227466Z",
     "news-kr/sfx|CBMiXEFVX3lxTE9FbG1FTzgwa0puelI5UVVnTXJiM2lFTlpLd1F3Z085Wk9xSUFoTkVaTzdIemg5VTBmS3JPcThmWWNRT1NCNExaM3lOZngyRlNpalFLbk1MRTllajRG": "2026-05-29T19:06:38.672793Z",
     "reddit/stablediffusion/new|t3_1trb88n": "2026-05-29T19:06:39.769509Z",
     "hf|model|nvidia/PiD": "2026-06-03T02:06:12.990586Z",
@@ -333,7 +327,7 @@
     "reddit/stablediffusion/new|t3_1txabrr": "2026-06-05T04:55:02.653666Z",
     "reddit/stablediffusion/new|t3_1txacn4": "2026-06-05T04:55:03.892680Z",
     "news/image-generation|CBMiSkFVX3lxTE1tQm5VbVZiWmpTb3dQZjhzaVVsVXQxQkN2dUtGSUUwLUdaWlh3djYzaHVvRl9lamxKODRySDhvRkItNnBha2dqYUt3": "2026-06-05T04:55:05.056227Z",
-    "hf|model|ideogram-ai/ideogram-4-fp8": "2026-06-12T14:04:20.782432Z",
+    "hf|model|ideogram-ai/ideogram-4-fp8": "2026-06-12T17:20:29.784363Z",
     "reddit/comfyui/new|t3_1tx9atu": "2026-06-05T04:55:10.948085Z",
     "reddit/comfyui/top/day|t3_1tx4qn7": "2026-06-05T08:40:58.265089Z",
     "reddit/stablediffusion/new|t3_1txeveh": "2026-06-05T08:40:59.428530Z",
@@ -683,6 +677,11 @@
     "news/image-generation|CBMiZ0FVX3lxTE1NMWR4LWIyQlRaRTVBaFNCeHBpNXlYbkRBZUY5ZFJrYXZSQS11a2I1S2NrSGRpUUQ5N1M3eS1qWjgyVU1hcTFTa0JoYzVOWHhHWDZPcFVBVWl4UlZWM1JyWU85WVBseUU": "2026-06-12T10:50:17.080002Z",
     "community/cgpersia|https://cgpersia.com/?p=203796": "2026-06-12T14:04:19.639299Z",
     "community/cgpersia|https://cgpersia.com/?p=203800": "2026-06-12T14:04:25.340211Z",
-    "reddit/aivideo/new|t3_1u3w5ke": "2026-06-12T14:04:26.487979Z"
+    "reddit/aivideo/new|t3_1u3w5ke": "2026-06-12T14:04:26.487979Z",
+    "hf|model|bosonai/higgs-audio-v3-tts-4b": "2026-06-12T17:20:33.139430Z",
+    "community/cgpersia|https://cgpersia.com/?p=203803": "2026-06-12T17:20:34.243243Z",
+    "community/cgpersia|https://cgpersia.com/?p=203806": "2026-06-12T17:20:35.329592Z",
+    "hf|dataset|liumindmind/Neko_Audio-80K_Short": "2026-06-12T17:20:36.420415Z",
+    "news-kr/video|CBMickFVX3lxTE03UlJva3ZfLWFnYVo3SzNjc19EWDdPdlRiRXZPbXZLajYxQXg4MWMxUVdib0ozdkl6dEllMkFYSnhuck10YmhOeGtpcW12RjAxM0pPOFIzVjdGc182amNnWnRwX2lrNkxEeHFESEpkdG9QUQ": "2026-06-12T17:20:37.506948Z"
   }
 }
