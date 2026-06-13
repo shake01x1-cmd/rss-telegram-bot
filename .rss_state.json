@@ -1,15 +1,9 @@
 {
   "version": 1,
   "seen": {
-    "hf|space|r3gm/wan2-2-fp8da-aoti-preview-2": "2026-06-13T20:46:58.502207Z",
+    "hf|space|r3gm/wan2-2-fp8da-aoti-preview-2": "2026-06-13T21:58:34.803323Z",
     "hf|dataset|Jackrong/Claude-opus-4.6-TraceInversion-9000x": "2026-06-01T22:59:29.605478Z",
     "hf|model|nvidia/PiD": "2026-06-03T02:06:12.990586Z",
-    "reddit/stablediffusion/new|t3_1tsa458": "2026-05-30T20:50:36.555752Z",
-    "reddit/stablediffusion/new|t3_1ts9p3b": "2026-05-30T20:50:42.264632Z",
-    "reddit/comfyui/new|t3_1tsck8e": "2026-05-30T21:56:32.612149Z",
-    "reddit/comfyui/new|t3_1tschmg": "2026-05-30T21:56:38.457981Z",
-    "reddit/stablediffusion/new|t3_1tsbyls": "2026-05-30T21:56:39.623216Z",
-    "news/audio|CBMitgFBVV95cUxQc3lQLVhTcEhyeV9mTWswcDJQd2xBTnA5eXF0cmROdE5NRXVkT1RELWZnRnlUWjlwZkhFS3NIa3hjNXJyUkVVd0YxLVpnS0lVTmk4UWphT0JPd3VQVExESTdYSzMzVXluMUV1UzlNR1VOSTN1UlkzMlp6bjFuZWdDVnI0R1pfSEU2TFBFZjRSVWpMNFVZdTllZkRvUU9lN2p0TFdyRGVsOGJKQTdnN0VFU3lTSU12dw": "2026-05-30T21:56:40.789104Z",
     "reddit/comfyui/new|t3_1tsdav0": "2026-05-30T22:55:48.082542Z",
     "reddit/stablediffusion/new|t3_1tsdbnz": "2026-05-30T22:55:49.221379Z",
     "reddit/comfyui/new|t3_1tsdqcb": "2026-05-30T22:55:54.653683Z",
@@ -607,12 +601,12 @@
     "community/cgpersia|https://cgpersia.com/?p=203796": "2026-06-12T14:04:19.639299Z",
     "community/cgpersia|https://cgpersia.com/?p=203800": "2026-06-12T14:04:25.340211Z",
     "reddit/aivideo/new|t3_1u3w5ke": "2026-06-12T14:04:26.487979Z",
-    "hf|model|bosonai/higgs-audio-v3-tts-4b": "2026-06-13T20:46:59.626355Z",
+    "hf|model|bosonai/higgs-audio-v3-tts-4b": "2026-06-13T21:58:35.939409Z",
     "community/cgpersia|https://cgpersia.com/?p=203803": "2026-06-12T17:20:34.243243Z",
     "community/cgpersia|https://cgpersia.com/?p=203806": "2026-06-12T17:20:35.329592Z",
     "hf|dataset|liumindmind/Neko_Audio-80K_Short": "2026-06-13T00:16:36.292223Z",
     "news-kr/video|CBMickFVX3lxTE03UlJva3ZfLWFnYVo3SzNjc19EWDdPdlRiRXZPbXZLajYxQXg4MWMxUVdib0ozdkl6dEllMkFYSnhuck10YmhOeGtpcW12RjAxM0pPOFIzVjdGc182amNnWnRwX2lrNkxEeHFESEpkdG9QUQ": "2026-06-12T17:20:37.506948Z",
-    "hf|model|unsloth/diffusiongemma-26B-A4B-it-GGUF": "2026-06-13T20:46:56.264450Z",
+    "hf|model|unsloth/diffusiongemma-26B-A4B-it-GGUF": "2026-06-13T21:58:32.541690Z",
     "community/cgpersia|https://cgpersia.com/?p=203809": "2026-06-12T22:55:14.948100Z",
     "community/cgpersia|https://cgpersia.com/?p=203812": "2026-06-12T22:55:16.040416Z",
     "github/invokeai/releases|tag:github.com,2008:Repository/525592995/v6.13.0.rc3": "2026-06-13T04:58:13.823867Z",
@@ -626,6 +620,7 @@
     "news-kr/video|CBMikwFBVV95cUxOc2FmcFBzclFzU3FWekpJNzUtRjh4eWxxU1RHRm5RdkMzNDJMelRVYlZBb2h1ajBWNi1aZ28zbGRnaDVlMURSUlRwcDB1OXRURW90aG0zb1V3QVlDdmNLWU1nYmhBOTVNREQ2eEFPX3RieDhzUTNaQWJCczlScWhFQTQ3Nnc1d3pmUW1teU9sX3NRMGM": "2026-06-13T14:36:13.123625Z",
     "community/cgpersia|https://cgpersia.com/?p=203819": "2026-06-13T17:52:09.439107Z",
     "community/cgpersia|https://cgpersia.com/?p=203822": "2026-06-13T19:17:06.199562Z",
-    "community/cgpersia|https://cgpersia.com/?p=203825": "2026-06-13T20:47:00.743966Z"
+    "community/cgpersia|https://cgpersia.com/?p=203825": "2026-06-13T20:47:00.743966Z",
+    "news/audio|CBMitgFBVV95cUxQc3lQLVhTcEhyeV9mTWswcDJQd2xBTnA5eXF0cmROdE5NRXVkT1RELWZnRnlUWjlwZkhFS3NIa3hjNXJyUkVVd0YxLVpnS0lVTmk4UWphT0JPd3VQVExESTdYSzMzVXluMUV1UzlNR1VOSTN1UlkzMlp6bjFuZWdDVnI0R1pfSEU2TFBFZjRSVWpMNFVZdTllZkRvUU9lN2p0TFdyRGVsOGJKQTdnN0VFU3lTSU12dw": "2026-06-13T21:58:37.074451Z"
   }
 }
