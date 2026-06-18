@@ -3,14 +3,6 @@
   "seen": {
     "hf|space|r3gm/wan2-2-fp8da-aoti-preview-2": "2026-06-18T16:24:04.425311Z",
     "hf|model|unsloth/gemma-4-12b-it-GGUF": "2026-06-12T14:04:21.940586Z",
-    "reddit/comfyui/top/day|t3_1twjx3c": "2026-06-04T16:51:33.745226Z",
-    "reddit/stablediffusion/new|t3_1tws4nd": "2026-06-04T16:51:34.895163Z",
-    "reddit/stablediffusion/top/day|t3_1tw5b2e": "2026-06-04T16:51:36.041817Z",
-    "reddit/stablediffusion/new|t3_1twsxcj": "2026-06-04T16:51:37.224331Z",
-    "hf/blog|https://huggingface.co/blog/nvidia/fine-tuning-nemotron-35-asr": "2026-06-04T16:51:38.375658Z",
-    "reddit/stablediffusion/top/day|t3_1tvwefx": "2026-06-04T16:51:42.969447Z",
-    "reddit/comfyui/new|t3_1twrfvj": "2026-06-04T16:51:44.123694Z",
-    "reddit/comfyui/new|t3_1twsfjn": "2026-06-04T16:51:45.296856Z",
     "reddit/stablediffusion/top/day|t3_1tw6gmq": "2026-06-04T19:20:47.786699Z",
     "github/comfyui/releases|tag:github.com,2008:Repository/589831718/v0.24.1": "2026-06-04T19:20:48.936452Z",
     "reddit/comfyui/new|t3_1twwgna": "2026-06-04T19:20:50.112131Z",
@@ -472,6 +464,8 @@
     "news-kr/video|CBMiSEFVX3lxTE1sUDFRemRDRmhTNVZ3bXZmVkxQTm5oZkV3TUJyUFhZZW5QanhUek5LNjQ4dFl0bGtfNDN3Q2E3eWlLQTY1SFRsTQ": "2026-06-18T12:48:33.929039Z",
     "hf/blog|https://huggingface.co/blog/peft-beyond-lora": "2026-06-18T16:24:05.548767Z",
     "community/cgpersia|https://cgpersia.com/?p=203900": "2026-06-18T16:24:06.636642Z",
-    "community/cgpersia|https://cgpersia.com/?p=203903": "2026-06-18T16:24:07.754640Z"
+    "community/cgpersia|https://cgpersia.com/?p=203903": "2026-06-18T16:24:07.754640Z",
+    "community/cgpersia|https://cgpersia.com/?p=203906": "2026-06-18T18:40:44.940334Z",
+    "reddit/aivideo/new|t3_1u9domk": "2026-06-18T18:40:46.080477Z"
   }
 }
