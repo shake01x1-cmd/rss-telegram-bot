@@ -1,12 +1,8 @@
 {
   "version": 1,
   "seen": {
-    "hf|space|r3gm/wan2-2-fp8da-aoti-preview-2": "2026-06-18T23:15:59.589629Z",
+    "hf|space|r3gm/wan2-2-fp8da-aoti-preview-2": "2026-06-19T02:14:30.385895Z",
     "hf|model|unsloth/gemma-4-12b-it-GGUF": "2026-06-12T14:04:21.940586Z",
-    "reddit/comfyui/new|t3_1tx4qn7": "2026-06-05T00:01:31.064450Z",
-    "reddit/comfyui/new|t3_1tx4ghp": "2026-06-05T00:01:32.158833Z",
-    "reddit/stablediffusion/new|t3_1tx47fm": "2026-06-05T00:01:33.239580Z",
-    "reddit/stablediffusion/top/day|t3_1twmecu": "2026-06-05T00:01:37.702295Z",
     "reddit/comfyui/new|t3_1txa8j6": "2026-06-05T04:55:01.473555Z",
     "reddit/stablediffusion/new|t3_1txabrr": "2026-06-05T04:55:02.653666Z",
     "reddit/stablediffusion/new|t3_1txacn4": "2026-06-05T04:55:03.892680Z",
@@ -396,7 +392,7 @@
     "news-kr/image|CBMiVEFVX3lxTE9OWDVLNzM4NTVjYW5DSGxBMWc3ajJySlFfZnE0ZTB3Ny1MTmRLeko3QUJzTzA0MHNSMlkxdE5NRl9JQ21EdGNCSVNXdjYtcVdIMk1fRw": "2026-06-15T03:37:29.026308Z",
     "reddit/aivideo/new|t3_1u64v5x": "2026-06-15T03:37:30.162299Z",
     "reddit/aivideo/new|t3_1u6a78c": "2026-06-15T09:56:40.374404Z",
-    "hf|model|yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF": "2026-06-18T23:15:57.410968Z",
+    "hf|model|yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF": "2026-06-19T02:14:28.124614Z",
     "community/cgpersia|https://cgpersia.com/?p=203837": "2026-06-15T09:56:45.932474Z",
     "news-kr/sfx|CBMicEFVX3lxTE1NWnJEbnJkN3A3QmE5WU43bHJpdER6RWhYSnZSQVVzMG1udzFoTFVMRnJ0Z29GQVpSbGtPakFFMTQyS0U0T081dHVoT25VdUJ2VEJfVWdVbERuc1puVGh6V1J6Qld3eEJxYUp6NlM5cF_SAXRBVV95cUxOLXpFRXhGMzF6a1N0QkVUVlRtUzJ2LU5YXzlEQzYtd2JNVll5MzBYaGN5VlA0bUVzSE56ZFc1aS05TXk2bHJEY011NkNWakNscndUeTh2R3V3UG9PeUxUaGM1a0lReVQ3YngtTW1ZLXlrbWM1TQ": "2026-06-15T15:44:15.437248Z",
     "community/cgpersia|https://cgpersia.com/?p=203844": "2026-06-15T19:42:27.926891Z",
@@ -413,7 +409,7 @@
     "news/text-to-video|CBMiswJBVV95cUxOMlBJaldhYkJkWnJ4T2JyY0JVSnEySmpnb2p3NGNxLXNvdFVhV1JvaWxNQXJ3MlBqX0N6djhpQUEyNFpqMkdGZWtnX0lKeVAxRC15dTlsY2lKWEpkNlV5cTZKOE12bzZqdUM0eUdzWkJhZmVhVVhhdUFkODVnYUhuZGtZbWxTVFlHTDMyNERYSGpVbU9McFYxblBqR0owNFBnYm1IMHU5OG5MZlJ1SmdIUl94cU0xWkw1U2F6MXRqSzBodjFoSm9ZaDJTUXlLRloxdUdiZE5MWXFYZkpwVWRuQXVWeXduZXRseWJtc2VtQjZVYlhpNTRHOFNCeUpBdzZCcy1ndUxfRjUwUkwxR2hXcVRQcXVJMzgyQ1llZzIzTnpvNGs2RDVoek8zX09aMjVQQlFj": "2026-06-16T11:01:21.272279Z",
     "news-kr/video|CBMib0FVX3lxTFBuMFNUNUl4VWFEVDJreG1SOGE3WVVQMjdRaUJ2VVEySzdVRmtlX1QyRWtpQUNZSVBwMzJaZjY0TEVUZmFjT0hMZGhxd0NQRlZxWC1RZndGRjY0amhubFRiMV94cTM5YlR2OWxxUHN4c9IBb0FVX3lxTFBuMFNUNUl4VWFEVDJreG1SOGE3WVVQMjdRaUJ2VVEySzdVRmtlX1QyRWtpQUNZSVBwMzJaZjY0TEVUZmFjT0hMZGhxd0NQRlZxWC1RZndGRjY0amhubFRiMV94cTM5YlR2OWxxUHN4cw": "2026-06-16T11:01:22.381187Z",
     "news-kr/video|CBMiY0FVX3lxTFBZZVFKZl9qbHdVaVRZeGtObmlqbFFtVVkwMm1zdmhDVjNQY1FGajNkS1ZmckVRQlpMeFBJSFo1dkJxQUdkUWNTblBQVWJmTmpaY0VBS2lnNndhdy0wUzVFampuZw": "2026-06-16T16:08:45.396784Z",
-    "hf|model|Jackrong/Qwopus3.6-27B-Coder-MTP-GGUF": "2026-06-18T23:15:56.296562Z",
+    "hf|model|Jackrong/Qwopus3.6-27B-Coder-MTP-GGUF": "2026-06-19T02:14:27.000874Z",
     "community/cgpersia|https://cgpersia.com/?p=203856": "2026-06-16T19:54:15.078804Z",
     "community/cgpersia|https://cgpersia.com/?p=203853": "2026-06-16T19:54:16.193722Z",
     "news-kr/video|CBMiakFVX3lxTE5UVnNuZGtEWW5wMTJyVVFMMnctSzVHRzJsQ3IyWXpiOGlTZzRWbmhtSjNzZUF1bXBlcmZZWk50Ry1IbDFiR2p0bGpRYThQVlgxUEpINXdMSW5NZXB4UHVDQ2dfaUZIM3MyY2fSAWxBVV95cUxNQV9EcmxpeEM3dWZBWUotVE5iREo0UnRfR2pJMTFqRnVTYkc5eHBxV2dsbnkwQXpTZENUeWFDYkxqdkdjNEN5bXpFd0hSSW9YX3BROEppSGpMWDd6TnpkNUJ2Q3REY3QyR0g3VUg": "2026-06-16T19:54:17.315489Z",
@@ -449,6 +445,11 @@
     "community/cgpersia|https://cgpersia.com/?p=203903": "2026-06-18T16:24:07.754640Z",
     "community/cgpersia|https://cgpersia.com/?p=203906": "2026-06-18T18:40:44.940334Z",
     "reddit/aivideo/new|t3_1u9domk": "2026-06-18T18:40:46.080477Z",
-    "news/image-edit|CBMizAFBVV95cUxPZnFMR1p3MUFjUEpwSUEwNnBMdS05MU00QnM5Y1BaX0ozQWk0RDgwemswREt0d1Vib3NLS0lQdmVJd21DVUt5d0R3akZmWWllTkVyN3VNYjdWekc3cThhNlhBSHJGUVpxaDNYQ1ZxS3FjNC1RTUk3a3dIUW9IODRzYjk3Rll4Q01wVlU0VnNXYWJuYWJZdnVqZkVqelB5RTBnYml1SEx1VXZ2OC1lMVIyUVhxUzNJUVgxbWxfekx6MWRhZHU3UFVoT3RYdnY": "2026-06-18T21:20:51.614224Z"
+    "news/image-edit|CBMizAFBVV95cUxPZnFMR1p3MUFjUEpwSUEwNnBMdS05MU00QnM5Y1BaX0ozQWk0RDgwemswREt0d1Vib3NLS0lQdmVJd21DVUt5d0R3akZmWWllTkVyN3VNYjdWekc3cThhNlhBSHJGUVpxaDNYQ1ZxS3FjNC1RTUk3a3dIUW9IODRzYjk3Rll4Q01wVlU0VnNXYWJuYWJZdnVqZkVqelB5RTBnYml1SEx1VXZ2OC1lMVIyUVhxUzNJUVgxbWxfekx6MWRhZHU3UFVoT3RYdnY": "2026-06-18T21:20:51.614224Z",
+    "community/cgpersia|https://cgpersia.com/?p=203912": "2026-06-19T02:14:25.864911Z",
+    "community/cgpersia|https://cgpersia.com/?p=203909": "2026-06-19T02:14:31.522085Z",
+    "reddit/comfyui/new|t3_1u9p7w0": "2026-06-19T02:14:32.662443Z",
+    "reddit/comfyui/new|t3_1u9nxt9": "2026-06-19T02:14:33.784530Z",
+    "news-kr/image|CBMiU0FVX3lxTE12Yk9DWDBHRG9ab3U2c1FBeTRpdjlTb2FXQm05MWp1UUY2cmluaktPMUlwNWF6NjlfbUZ2OUxuME93Z2tlNlVudG8zb2lRalN2ZmpV": "2026-06-19T02:14:34.920099Z"
   }
 }
