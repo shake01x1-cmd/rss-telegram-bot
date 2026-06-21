@@ -1,13 +1,10 @@
 {
   "version": 1,
   "seen": {
-    "hf|space|r3gm/wan2-2-fp8da-aoti-preview-2": "2026-06-21T11:27:56.351760Z",
+    "hf|space|r3gm/wan2-2-fp8da-aoti-preview-2": "2026-06-21T13:21:54.466700Z",
     "hf|model|unsloth/gemma-4-12b-it-GGUF": "2026-06-12T14:04:21.940586Z",
     "hf|model|ideogram-ai/ideogram-4-fp8": "2026-06-13T00:16:31.672565Z",
     "hf|model|ideogram-ai/ideogram-4-nf4": "2026-06-10T23:55:42.623199Z",
-    "reddit/comfyui/new|t3_1tz8n31": "2026-06-07T11:44:27.582538Z",
-    "reddit/comfyui/new|t3_1tz8lki": "2026-06-07T11:44:28.676994Z",
-    "reddit/comfyui/top/day|t3_1tyxxsg": "2026-06-07T11:44:29.771718Z",
     "reddit/comfyui/top/day|t3_1tz5h3z": "2026-06-07T13:41:25.584452Z",
     "community/cgpersia|https://cgpersia.com/?p=203725": "2026-06-07T13:41:26.716584Z",
     "reddit/stablediffusion/new|t3_1tzbmqp": "2026-06-07T13:41:32.273503Z",
@@ -263,7 +260,7 @@
     "news-kr/image|CBMiVEFVX3lxTE9OWDVLNzM4NTVjYW5DSGxBMWc3ajJySlFfZnE0ZTB3Ny1MTmRLeko3QUJzTzA0MHNSMlkxdE5NRl9JQ21EdGNCSVNXdjYtcVdIMk1fRw": "2026-06-15T03:37:29.026308Z",
     "reddit/aivideo/new|t3_1u64v5x": "2026-06-15T03:37:30.162299Z",
     "reddit/aivideo/new|t3_1u6a78c": "2026-06-15T09:56:40.374404Z",
-    "hf|model|yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF": "2026-06-21T11:27:53.985411Z",
+    "hf|model|yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF": "2026-06-21T13:21:52.151478Z",
     "community/cgpersia|https://cgpersia.com/?p=203837": "2026-06-15T09:56:45.932474Z",
     "news-kr/sfx|CBMicEFVX3lxTE1NWnJEbnJkN3A3QmE5WU43bHJpdER6RWhYSnZSQVVzMG1udzFoTFVMRnJ0Z29GQVpSbGtPakFFMTQyS0U0T081dHVoT25VdUJ2VEJfVWdVbERuc1puVGh6V1J6Qld3eEJxYUp6NlM5cF_SAXRBVV95cUxOLXpFRXhGMzF6a1N0QkVUVlRtUzJ2LU5YXzlEQzYtd2JNVll5MzBYaGN5VlA0bUVzSE56ZFc1aS05TXk2bHJEY011NkNWakNscndUeTh2R3V3UG9PeUxUaGM1a0lReVQ3YngtTW1ZLXlrbWM1TQ": "2026-06-15T15:44:15.437248Z",
     "community/cgpersia|https://cgpersia.com/?p=203844": "2026-06-15T19:42:27.926891Z",
@@ -346,6 +343,7 @@
     "hf|model|unsloth/GLM-5.2-GGUF": "2026-06-21T11:27:52.841358Z",
     "community/cgpersia|https://cgpersia.com/?p=203975": "2026-06-21T08:24:33.865343Z",
     "community/cgpersia|https://cgpersia.com/?p=203978": "2026-06-21T08:24:34.942578Z",
-    "news/image-generation|CBMiYkFVX3lxTE9uaEJpM2V1TEsyQThQcGw0d2ttXzRhbEhvUFZTWWJ5d2xTaWl2UmhoTHVXOHVRU0U5WV9XVDc4MWdVWXZRbURBM1FGaXhNY2Y3SjNZUmtNSzZ1SUFnMHpSeDF3": "2026-06-21T11:27:57.517252Z"
+    "news/image-generation|CBMiYkFVX3lxTE9uaEJpM2V1TEsyQThQcGw0d2ttXzRhbEhvUFZTWWJ5d2xTaWl2UmhoTHVXOHVRU0U5WV9XVDc4MWdVWXZRbURBM1FGaXhNY2Y3SjNZUmtNSzZ1SUFnMHpSeDF3": "2026-06-21T11:27:57.517252Z",
+    "hf|model|yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF": "2026-06-21T13:21:51.001587Z"
   }
 }
