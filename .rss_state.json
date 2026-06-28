@@ -1,7 +1,7 @@
 {
   "version": 1,
   "seen": {
-    "hf|space|r3gm/wan2-2-fp8da-aoti-preview-2": "2026-06-28T20:56:03.486731Z",
+    "hf|space|r3gm/wan2-2-fp8da-aoti-preview-2": "2026-06-28T21:59:44.471830Z",
     "hf|dataset|Jackrong/GLM-5.1-Reasoning-1M-Cleaned": "2026-06-16T00:08:59.295991Z",
     "hf|dataset|liumindmind/Neko_Audio-80K_Short": "2026-06-16T05:43:23.671521Z",
     "hf|model|unsloth/diffusiongemma-26B-A4B-it-GGUF": "2026-06-17T21:27:35.046182Z",
@@ -166,7 +166,7 @@
     "community/cgpersia|https://cgpersia.com/?p=204021": "2026-06-26T19:16:19.329993Z",
     "community/cgpersia|https://cgpersia.com/?p=204024": "2026-06-26T19:16:20.499659Z",
     "community/cgpersia|https://cgpersia.com/?p=204027": "2026-06-26T21:04:22.764062Z",
-    "hf|model|deepreinforce-ai/Ornith-1.0-35B-GGUF": "2026-06-28T20:56:00.207803Z",
+    "hf|model|deepreinforce-ai/Ornith-1.0-35B-GGUF": "2026-06-28T21:59:41.153238Z",
     "news/text-to-video|CBMiV0FVX3lxTE5WbnFnU3kxUnVrMWt2TlYyR3h4T3g0SWVFU0xQZlpBZHhxRDhGWnIzR284empKR1BVeVBIa0gyTmFiZWo3RjZvcjdIZ0puU3BMdlMzVURDOA": "2026-06-27T00:00:26.225879Z",
     "github/invokeai/releases|tag:github.com,2008:Repository/525592995/v6.13.0.rc3": "2026-06-27T07:34:04.643061Z",
     "reddit/aivideo/new|t3_1ugvgw1": "2026-06-27T07:34:05.792209Z",
@@ -178,7 +178,7 @@
     "news-kr/image|CBMiQEFVX3lxTE44eUZzYlNkbTlSZ3JMX245eVllUmNkM2FvNl80b2g2am83SHZvbkRkaDljemwzbVBPSWFzcDAtNEk": "2026-06-27T19:11:59.960484Z",
     "community/cgpersia|https://cgpersia.com/?p=204031": "2026-06-27T23:06:38.663478Z",
     "github/pinokio/releases|tag:github.com,2008:Repository/664226598/v7.2.6": "2026-06-28T06:12:48.576230Z",
-    "hf|model|deepreinforce-ai/Ornith-1.0-9B-GGUF": "2026-06-28T20:56:01.300032Z",
+    "hf|model|deepreinforce-ai/Ornith-1.0-9B-GGUF": "2026-06-28T21:59:42.264677Z",
     "news-kr/image|CBMiVkFVX3lxTE5xc3UzSXVBcFdhOUUxd1FRQ2ZveVUtaEZ2c1I3emRFMDVZeERLSzBMN3R3emgwMjZGaUR2b3ZtZWlxaEx6MWpidXpKQjV0eXgtTXpsbXVB": "2026-06-28T06:12:54.299613Z",
     "community/cgpersia|https://cgpersia.com/?p=204034": "2026-06-28T09:39:54.265327Z",
     "community/cgpersia|https://cgpersia.com/?p=204037": "2026-06-28T09:39:59.773658Z",
@@ -187,6 +187,7 @@
     "community/cgpersia|https://cgpersia.com/?p=204040": "2026-06-28T11:45:33.628087Z",
     "reddit/aivideo/new|t3_1uhwex2": "2026-06-28T13:25:13.395317Z",
     "github/comfyui-manager/tags|tag:github.com,2008:Repository/631600154/4.2.2": "2026-06-28T18:01:20.780024Z",
-    "reddit/aivideo/new|t3_1ui5tsy": "2026-06-28T19:52:27.436923Z"
+    "reddit/aivideo/new|t3_1ui5tsy": "2026-06-28T19:52:27.436923Z",
+    "news/upscale|CBMi4AFBVV95cUxNZjk4VnlFMlVzX1prNFF3T1lzU291X1pqU2RHU3lOSEFhQlhwd2tPTXB0LVRMemgzQjRnVmpPWE9WSi03azQ3UkdLREdkZUNKY0RXeDI3R1V5UEdVOWhlX284MHZKSTlPbzVqV05GVHpiSGdoX2JPX0h1UE8xWDNvaXNiUFkxNmF2bEFVZFF3bnQzZ1hkRWF6UjlkLWdKS2FlQ1BDZ3RaaU9oMGlUNHhVQ2NtUmNteFY3ZUJrdjlPRm9MNzU5TUkzNXliN3RJZGZlem44d2dMdTNOSUpRaWxIbA": "2026-06-28T21:59:45.580885Z"
   }
 }
