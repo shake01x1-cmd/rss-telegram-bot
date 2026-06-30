@@ -1,16 +1,10 @@
 {
   "version": 1,
   "seen": {
-    "hf|space|r3gm/wan2-2-fp8da-aoti-preview-2": "2026-06-30T03:56:15.700670Z",
-    "hf|dataset|liumindmind/Neko_Audio-80K_Short": "2026-06-16T05:43:23.671521Z",
+    "hf|space|r3gm/wan2-2-fp8da-aoti-preview-2": "2026-06-30T07:51:17.972262Z",
     "hf|model|unsloth/diffusiongemma-26B-A4B-it-GGUF": "2026-06-17T21:27:35.046182Z",
     "hf|model|moonshotai/Kimi-K2.7-Code": "2026-06-20T23:43:14.681917Z",
     "hf|model|yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF": "2026-06-21T13:21:52.151478Z",
-    "github/stabilitymatrix/releases|tag:github.com,2008:Repository/652941996/v2.16.1": "2026-06-16T05:43:18.147223Z",
-    "github/comfyui/releases|tag:github.com,2008:Repository/589831718/v0.25.0": "2026-06-16T05:43:24.762760Z",
-    "news-kr/image|CBMiXkFVX3lxTE55NDloX19oS282X2ZZRE5nZlQtWGZfaDJKVVRvYndHSXNoWU82eHFZRWdNNTZQNmx3c0k5dHI2VDMxSXlmYlVvRGY3NkUwdU9NRUloeThuejhyR3k2Zmc": "2026-06-16T05:43:25.859164Z",
-    "news-kr/video|CBMiT0FVX3lxTE9wQXRMcWtFUjM0bHl5UlgwREI4YUZ3WTlON096aFJUZ0o3d0Y5TGxSNFhuaFJCdXlFTi1jQkZEOXZSU2kzUFlfSjhDWTZXUTQ": "2026-06-16T05:43:26.946985Z",
-    "news-kr/video|CBMiaEFVX3lxTE5IV1ZsaXZHYUFHV1lpYVNWSlhSSmZLZ19CUjdlSHN2SzZvcUlUaEIzOGdlUGhoRWh6UHc0RVZIalByQkhBd0I2S2EzRWJDS2N2UFNYNXpveHRTYXVHZjB3Z0hTSUlhd2J20gFuQVVfeXFMTThLbGYydml3NlYteXo2MTBjdVd2S3lFYUJTSGtNTmNCYWFsVDY1NWZzSFhKTUxvMTFwdm1zVmdueUlxdFpJQW5YNHlqLWk0bHV3cnhobUVRTmRKZFU1MF9FSFVyWGY1UFFHeGVGLUE": "2026-06-16T05:43:28.041610Z",
     "community/cgpersia|https://cgpersia.com/?p=203847": "2026-06-16T11:01:14.620578Z",
     "community/cgpersia|https://cgpersia.com/?p=203850": "2026-06-16T11:01:15.713791Z",
     "news/text-to-video|CBMiswJBVV95cUxOMlBJaldhYkJkWnJ4T2JyY0JVSnEySmpnb2p3NGNxLXNvdFVhV1JvaWxNQXJ3MlBqX0N6djhpQUEyNFpqMkdGZWtnX0lKeVAxRC15dTlsY2lKWEpkNlV5cTZKOE12bzZqdUM0eUdzWkJhZmVhVVhhdUFkODVnYUhuZGtZbWxTVFlHTDMyNERYSGpVbU9McFYxblBqR0owNFBnYm1IMHU5OG5MZlJ1SmdIUl94cU0xWkw1U2F6MXRqSzBodjFoSm9ZaDJTUXlLRloxdUdiZE5MWXFYZkpwVWRuQXVWeXduZXRseWJtc2VtQjZVYlhpNTRHOFNCeUpBdzZCcy1ndUxfRjUwUkwxR2hXcVRQcXVJMzgyQ1llZzIzTnpvNGs2RDVoek8zX09aMjVQQlFj": "2026-06-16T11:01:21.272279Z",
@@ -155,7 +149,7 @@
     "community/cgpersia|https://cgpersia.com/?p=204021": "2026-06-26T19:16:19.329993Z",
     "community/cgpersia|https://cgpersia.com/?p=204024": "2026-06-26T19:16:20.499659Z",
     "community/cgpersia|https://cgpersia.com/?p=204027": "2026-06-26T21:04:22.764062Z",
-    "hf|model|deepreinforce-ai/Ornith-1.0-35B-GGUF": "2026-06-30T03:56:12.438239Z",
+    "hf|model|deepreinforce-ai/Ornith-1.0-35B-GGUF": "2026-06-30T07:51:14.475528Z",
     "news/text-to-video|CBMiV0FVX3lxTE5WbnFnU3kxUnVrMWt2TlYyR3h4T3g0SWVFU0xQZlpBZHhxRDhGWnIzR284empKR1BVeVBIa0gyTmFiZWo3RjZvcjdIZ0puU3BMdlMzVURDOA": "2026-06-27T00:00:26.225879Z",
     "github/invokeai/releases|tag:github.com,2008:Repository/525592995/v6.13.0.rc3": "2026-06-27T07:34:04.643061Z",
     "reddit/aivideo/new|t3_1ugvgw1": "2026-06-27T07:34:05.792209Z",
@@ -167,7 +161,7 @@
     "news-kr/image|CBMiQEFVX3lxTE44eUZzYlNkbTlSZ3JMX245eVllUmNkM2FvNl80b2g2am83SHZvbkRkaDljemwzbVBPSWFzcDAtNEk": "2026-06-27T19:11:59.960484Z",
     "community/cgpersia|https://cgpersia.com/?p=204031": "2026-06-27T23:06:38.663478Z",
     "github/pinokio/releases|tag:github.com,2008:Repository/664226598/v7.2.6": "2026-06-28T06:12:48.576230Z",
-    "hf|model|deepreinforce-ai/Ornith-1.0-9B-GGUF": "2026-06-30T03:56:13.528796Z",
+    "hf|model|deepreinforce-ai/Ornith-1.0-9B-GGUF": "2026-06-30T07:51:15.616174Z",
     "news-kr/image|CBMiVkFVX3lxTE5xc3UzSXVBcFdhOUUxd1FRQ2ZveVUtaEZ2c1I3emRFMDVZeERLSzBMN3R3emgwMjZGaUR2b3ZtZWlxaEx6MWpidXpKQjV0eXgtTXpsbXVB": "2026-06-28T06:12:54.299613Z",
     "community/cgpersia|https://cgpersia.com/?p=204034": "2026-06-28T09:39:54.265327Z",
     "community/cgpersia|https://cgpersia.com/?p=204037": "2026-06-28T09:39:59.773658Z",
@@ -193,6 +187,10 @@
     "github/invokeai/releases|tag:github.com,2008:Repository/525592995/v6.13.5.rc1": "2026-06-30T03:56:11.357359Z",
     "news-kr/video|CBMib0FVX3lxTE1wNUVvZ01aNzlxbmlmbUZ3bHptZjdUM3FrRTgzVG9JNlVNRFlvb3FOMnR2UXl2clFMMlJZYmZINVhHY2IyaEtUaldJZEg0OWZDTzZDZzBFaFJQVWdjQ1o5UDQ1UFpjSVA5b2pPRkUwOA": "2026-06-30T03:56:16.790589Z",
     "news/upscale|CBMiV0FVX3lxTE1zUnN6a1IzalZ5RDBJR0MyTi11SzUyN0I1d3JxTmNWT0FWcVNKV3FnWUZ0bUdwbmhBNHJBOURXb0tnbWp3VU9WWF9MNmdKRDYyN1NFWlVMQQ": "2026-06-30T03:56:17.879411Z",
-    "news-kr/image|CBMibEFVX3lxTE90NkM3cmxUdUYwcGJja3ItMGlyQ1Qxb3JpMGxpR2xRYXF6SjRfbFloblJBWktoZlJ5QWN4SVVXWU5obThVWTk1amwwb3o4SDJSSnlpcTVNU1hzQmdvZVdvUkhhZXVkamNqeTlwUQ": "2026-06-30T03:56:18.959349Z"
+    "news-kr/image|CBMibEFVX3lxTE90NkM3cmxUdUYwcGJja3ItMGlyQ1Qxb3JpMGxpR2xRYXF6SjRfbFloblJBWktoZlJ5QWN4SVVXWU5obThVWTk1amwwb3o4SDJSSnlpcTVNU1hzQmdvZVdvUkhhZXVkamNqeTlwUQ": "2026-06-30T03:56:18.959349Z",
+    "news/comfyui|CBMieEFVX3lxTE01bjlUN25teHhvUC1XMlAzbHd4b1BJSTdYdmpqQUlxenpld0tONXFEQW1DMWY2UW5PamdqUm1vWllEOWhCb0FObkduZU9GRnp2X0lmWlliOFZKLXlKS3lKeUlwUmowd21KOUQ3eVhTS3pINzNmSXN2Sw": "2026-06-30T07:51:12.121547Z",
+    "github/stabilitymatrix/releases|tag:github.com,2008:Repository/652941996/v2.16.1": "2026-06-30T07:51:13.272886Z",
+    "news-kr/image|CBMiT0FVX3lxTE41SUNFcHViSFc2ZmNNcTdlZTNJNkRWMW1PdHdMdEhiNmhWaFhCMzVZOXF6djl5amR1dkgzSm5NcFJmRzBPb3lHWDY5bHdqbG8": "2026-06-30T07:51:19.116786Z",
+    "news-kr/image|CBMic0FVX3lxTE90cFBzZktCN0dQQ09vaXY0bDNhczdsZHhaVl9LWGFsWHl3TkFQYk1BbWZtUkltZmJLZ3paN3RNV1Y0cGh0REFxbjNWYzJodTNDMlpJUXF3cXBQTHBEUDA4MG43UjNELUMwT3hkb2FiTnNCSms": "2026-06-30T07:51:20.260192Z"
   }
 }
