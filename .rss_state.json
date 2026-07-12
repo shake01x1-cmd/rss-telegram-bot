@@ -2,7 +2,7 @@
   "version": 1,
   "seen": {
     "hf|space|r3gm/wan2-2-fp8da-aoti-preview-2": "2026-07-01T23:17:54.191773Z",
-    "hf|model|empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF": "2026-07-12T16:53:14.560572Z",
+    "hf|model|empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF": "2026-07-12T17:55:40.017323Z",
     "hf|model|deepreinforce-ai/Ornith-1.0-35B-GGUF": "2026-07-09T14:02:18.881638Z",
     "hf|model|deepreinforce-ai/Ornith-1.0-9B-GGUF": "2026-07-05T17:02:47.790664Z",
     "github/comfyui-manager/tags|tag:github.com,2008:Repository/631600154/4.2.2": "2026-06-28T18:01:20.780024Z",
@@ -61,9 +61,9 @@
     "hf|space|Sneak-Moose/Pro-Realism-Edit-Studio": "2026-07-02T13:18:48.422154Z",
     "news-kr/video|CBMiVkFVX3lxTE1QTjFYUTRiZFlIMlpaS1VoQjhBcWJtT3ViWkcxODc3UVJMWGFmeUh2RUNYRlE2NEhFaVF4RVNueDNKTW03bmI2ck5HdnM4VUVFYXotYUF3": "2026-07-02T01:30:25.645326Z",
     "news-kr/image|CBMiZ0FVX3lxTE5rMlc4a1p2d1dmcmhjOWJWbWZkLXJGemdfX2NtZ3dfemtNTHI1N2J3dnY2VzRaRmtrQ2VOQ2RvZ3FIZThHYU11ZVVXSzk3NXJ5ZXpFc0pwcTUxdWxrMUhjWnZpYVViTlU": "2026-07-02T05:36:08.223466Z",
-    "hf|dataset|markov-ai/gaming-500-hours": "2026-07-12T16:53:18.019058Z",
+    "hf|dataset|markov-ai/gaming-500-hours": "2026-07-12T17:55:43.434017Z",
     "reddit/aivideo/new|t3_1ulkq9z": "2026-07-02T15:39:12.690136Z",
-    "hf|space|r3gm/wan2-2-fp8da-aoti-preview-2c": "2026-07-12T16:53:16.876486Z",
+    "hf|space|r3gm/wan2-2-fp8da-aoti-preview-2c": "2026-07-12T17:55:42.288116Z",
     "community/cgpersia|https://cgpersia.com/?p=204076": "2026-07-02T15:39:18.846009Z",
     "community/cgpersia|https://cgpersia.com/?p=204083": "2026-07-02T22:02:35.494276Z",
     "news-kr/video|CBMiYEFVX3lxTE5nQk1fOFBPSHRDOGs4bUhYZUI1TlJ5bXZmZlBaQmtuT1NGTXB6alB1TkJuVktlTGRlZFNFRV9XSjRVZXZFX3p6Q2tCaUxlM3FTdmt3S05JMVp4Y3FvTTE4RNIBeEFVX3lxTFByOGdiUlFvbmdORl9nQlhpb0Q1TXdRTk1DZDhkTXFIV2ExWl9PczZqdHl1R1NLR2czLVZmdzV0b1pNaWEwTnhGd2twUGhRSllscUdzcVJReHlkaVVJVF8waWdTVVpSZWlCdmNxdUw5WkRIMDU4VENRZA": "2026-07-03T09:40:57.097151Z",
@@ -184,6 +184,7 @@
     "news-kr/video|CBMiUkFVX3lxTE9VMUVjNVp4Vl9lTm5VTDRjRzcxdjg2TmItR2cyYlBQQWUtMDZRaHUwZjJTOFk2UXJRYmJpb0VTRGxSdG1vUkhJOTdCTHJtLW9CeUE": "2026-07-12T10:51:50.173498Z",
     "community/cgpersia|https://cgpersia.com/?p=204172": "2026-07-12T10:51:51.273065Z",
     "news-kr/image|CBMigwFBVV95cUxNekVTRHpCMHFKcE9OWWNnZFRpaE5DUGFUMzlLRkluX0tMQnAtRzc2Z0hsR0llX0hmMzVGZGltaXRyRUZ0NHhXMVFrQXprdFBXeHMwLTh1V2t4dHpMY3Z4Z2FWR2xCSEhpNVgzQ0FfYmFlQWZtQkpKbkRoMDY3Q0gxbEtRTQ": "2026-07-12T15:54:20.257760Z",
-    "reddit/aivideo/new|t3_1uukrjz": "2026-07-12T16:53:20.317060Z"
+    "reddit/aivideo/new|t3_1uukrjz": "2026-07-12T16:53:20.317060Z",
+    "hf|model|GnLOLot/MiniCPM5-1B-Claude-Opus-Fable5-Thinking-GGUF": "2026-07-12T17:55:38.869091Z"
   }
 }
