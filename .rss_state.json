@@ -1,13 +1,10 @@
 {
   "version": 1,
   "seen": {
-    "hf|model|empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF": "2026-07-20T16:54:14.731817Z",
+    "hf|model|empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF": "2026-07-20T18:50:06.704292Z",
     "hf|model|deepreinforce-ai/Ornith-1.0-35B-GGUF": "2026-07-09T14:02:18.881638Z",
-    "hf|dataset|markov-ai/gaming-500-hours": "2026-07-20T16:54:20.435836Z",
+    "hf|dataset|markov-ai/gaming-500-hours": "2026-07-20T18:50:11.325146Z",
     "hf|space|r3gm/wan2-2-fp8da-aoti-preview-2c": "2026-07-12T23:23:59.660278Z",
-    "github/impact-pack/tags|tag:github.com,2008:Repository/621356302/8.21.2": "2026-07-06T18:24:59.054068Z",
-    "github/impact-pack/tags|tag:github.com,2008:Repository/621356302/8.28": "2026-07-06T18:25:00.200898Z",
-    "news/image-edit|CBMicEFVX3lxTE9OLVJ1Z095YkVyUVkxLVI0cEZXZzZGXzdlV3JueThVZGt4dVdmc3NLelBjOTNRbTJwLWlTUlVvYWJhRTBMaGJRcER6Tm1HdGc5eFlpdHczYWI2QWJjdmRoWTlfczd4ZENyaU9DZ19nVnA": "2026-07-06T18:25:01.343596Z",
     "reddit/aivideo/new|t3_1upb727": "2026-07-06T21:53:41.455815Z",
     "news-kr/comfyui|CBMiXkFVX3lxTE5Ubm5WZ2hZYnJXNU5ZQ2V0bnFjLTRoWGp4eVZZajRCbGNJRW5VZnl6YXBYamJIU0E0WW5DS2lFczRTSmhDNzJXWFFIdy1RbWFZeU04MmV1RC1vQ3RXOHc": "2026-07-07T05:31:13.115465Z",
     "news/upscale|CBMi8gFBVV95cUxObmVIcEZ1RnBnY1Z6czJseDVwelZUalF2SGswWmdCTGdENnd4bTZjSGF5eXVDbktqZjZQM1BYZGh4UGZhLUQ4NWVpX2pHbWQtdDBqenBrQ3VvZ2pMVXNTZTBOMzVrUzVSZ0VzYjB4MmFYWFR4aHhVSGFnNFFQYVRyc3pxcmptRzJTejg5S3A1emRVUDF0NGN0LTAzYzBicnhKRVFOblcyQ2dEa2hVVm5PbUtabTNadXdkck9neXVmS0hYY1R5TmVOcTN6YUk4X1RRSmVuVHZJc0xGeVFGQ0NweFpUSnU1SmNONk9ocHFfWTBhUQ": "2026-07-07T05:31:14.227121Z",
@@ -90,7 +87,7 @@
     "news/upscale|CBMipwFBVV95cUxNWWhicHRSX19fTHFUaC1GMW12b3h5dGRUZG4yNW1vYmdGT0U0dU5jMkM2dmEzdnQyYWhkeE1keE1zeHVrWUxNYV9SN2VvbXNzNHVoWUpSM1dzc3BTLWlzbTBkSGJmZzNRaEdfZHpRT1Y0VmRNZHo4eFRtTGREYUhHcmg4RkVCQVppTHk1VmllS0FObUREVUJPaVdpU1dmNDUzemU2RGlOTQ": "2026-07-12T21:13:50.560208Z",
     "reddit/aivideo/new|t3_1uuro3n": "2026-07-12T21:13:51.649553Z",
     "news-kr/upscale|CBMiakFVX3lxTE1Qa0t2MmdaaWRXSTQ1a3oyUU9yVS1wN2FFcktzbWJHanRGdUhlNFNxU0hVRmZBWjc0b3RhRmpSbDRJNFhkb1hIaWxlOVhBTXdncUl5VS14SjJtbEp0MEpOR0gxcUhaREZHLWc": "2026-07-12T23:24:01.953061Z",
-    "hf|space|jasfn/LTX-2.3-10Eros": "2026-07-20T16:54:18.192487Z",
+    "hf|space|jasfn/LTX-2.3-10Eros": "2026-07-20T18:50:10.186699Z",
     "news-kr/video|CBMiXkFVX3lxTFBHZlo5aktWb1hGZFNKY1FzSWVWY3BrRDJYcU1oR2NRN3h1ZlZ0dG5LSUhLZm9sYng5dEg2bko0LTJublc0Vko0VHVfR3VtalJQd2RsbjJTai1HTXRPTHc": "2026-07-13T04:55:58.304953Z",
     "news-kr/image|CBMiX0FVX3lxTE9BbGRQNUJUVk9PVy1lWHpJRWNycExMb2tDNHhXRC1PajlydlphNk1JcUFBb3FqcTNZdFN0MGdNME5Nbi03WmlhMl9lZzl3V3lLNmpUbDdaeEExd3pUY3FN": "2026-07-13T08:13:48.449424Z",
     "community/cgpersia|https://cgpersia.com/?p=204175": "2026-07-13T11:36:27.460988Z",
@@ -143,7 +140,7 @@
     "github/pinokio/releases|tag:github.com,2008:Repository/664226598/v8.0.31": "2026-07-15T22:54:01.141280Z",
     "news-kr/upscale|CBMiWkFVX3lxTE9lYmM5c2E3YUlEcmk2XzZDa0R4WWZOaEdWOVZpa3NNNEFEb1ZaR0N6MWx6T2RQdG9xSzZTalVUNlliWXRvTVdVbjRET1M4WWFTZ3RJX19UeFF2Zw": "2026-07-15T23:54:06.923379Z",
     "news/upscale|CBMiV0FVX3lxTE1zUnN6a1IzalZ5RDBJR0MyTi11SzUyN0I1d3JxTmNWT0FWcVNKV3FnWUZ0bUdwbmhBNHJBOURXb0tnbWp3VU9WWF9MNmdKRDYyN1NFWlVMQQ": "2026-07-16T02:04:03.370723Z",
-    "hf|model|prism-ml/Bonsai-27B-gguf": "2026-07-20T16:54:15.853965Z",
+    "hf|model|prism-ml/Bonsai-27B-gguf": "2026-07-20T18:50:07.875301Z",
     "reddit/aivideo/new|t3_1uxxtu8": "2026-07-16T10:02:49.355904Z",
     "community/cgpersia|https://cgpersia.com/?p=204266": "2026-07-16T17:08:20.222505Z",
     "community/cgpersia|https://cgpersia.com/?p=204263": "2026-07-16T17:08:26.145464Z",
@@ -191,6 +188,11 @@
     "github/swarmui/releases|tag:github.com,2008:Repository/818118661/0.9.8-Beta": "2026-07-20T16:54:12.334120Z",
     "news/low-vram|CBMimAFBVV95cUxQT3lBT1NFb29oRlJid3BoeDNLMk16VVZBMHdMeUtjZ0w4VHNIWmRoR3BmSUFLV043ZFdkMTBnSWhhMDRzSEFuWlY2OU1YbzczVWFkNnNmeDJSYUt2TDJjYzh2dFRFVXVwTkpBV3prNERPTWxDVnZTb3ZPQnFpd1dnM254UTM2TkdnZ0g1dWZnM0syTWE1dHpwdg": "2026-07-20T16:54:13.560162Z",
     "community/cgpersia|https://cgpersia.com/?p=204332": "2026-07-20T16:54:19.311551Z",
-    "github/stabilitymatrix/releases|tag:github.com,2008:Repository/652941996/v2.16.0": "2026-07-20T16:54:21.547905Z"
+    "github/stabilitymatrix/releases|tag:github.com,2008:Repository/652941996/v2.16.0": "2026-07-20T16:54:21.547905Z",
+    "github/impact-pack/tags|tag:github.com,2008:Repository/621356302/8.21.2": "2026-07-20T18:50:12.472608Z",
+    "github/impact-pack/tags|tag:github.com,2008:Repository/621356302/8.28": "2026-07-20T18:50:13.627225Z",
+    "news/image-edit|CBMicEFVX3lxTE9OLVJ1Z095YkVyUVkxLVI0cEZXZzZGXzdlV3JueThVZGt4dVdmc3NLelBjOTNRbTJwLWlTUlVvYWJhRTBMaGJRcER6Tm1HdGc5eFlpdHczYWI2QWJjdmRoWTlfczd4ZENyaU9DZ19nVnA": "2026-07-20T18:50:14.765047Z",
+    "news-kr/image|CBMiZkFVX3lxTE5zNGlFT1ZYVFIyWTFBbFBjTEs3RmhIMDFvMlJka1B4cFJPTXYweUtUQ0NLbjQ1OVJpYjM3QTRXYkNrcnlvMDMyLVB1Q0JUSkV3Nk5VQm10dVdTQ2JRbzAxem4wWFM2dw": "2026-07-20T18:50:15.906155Z",
+    "reddit/aivideo/new|t3_1v1u7qb": "2026-07-20T18:50:17.057110Z"
   }
 }
