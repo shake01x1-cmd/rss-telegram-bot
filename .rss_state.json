@@ -3,7 +3,7 @@
   "seen": {
     "hf|dataset|markov-ai/gaming-500-hours": "2026-07-28T06:24:38.440533Z",
     "hf|model|prism-ml/Bonsai-27B-gguf": "2026-07-25T19:41:02.471775Z",
-    "hf|model|DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF": "2026-08-08T15:28:39.303915Z",
+    "hf|model|DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF": "2026-08-08T15:56:31.048716Z",
     "hf|space|conradlocke/krea2-identity-edit": "2026-07-28T03:56:44.452818Z",
     "community/cgpersia|https://cgpersia.com/?p=204377": "2026-07-25T17:05:45.909099Z",
     "community/cgpersia|https://cgpersia.com/?p=204380": "2026-07-25T17:05:47.034812Z",
@@ -51,7 +51,7 @@
     "community/cgpersia|https://cgpersia.com/?p=204406": "2026-07-28T22:59:53.880142Z",
     "news-kr/image|CBMiakFVX3lxTE1HSXVmWWEzWUJXdGhkVUd4ci1JUDMxMjd3QlM2bWZlcnFhUWFHMXJlQ0EtaHRUMEJqM0VvcEdPYllPajNhMUhHTmVQcFdxaUxzbWtsZGJMNXltOEgtclluMndvSS1EX0xndnc": "2026-07-29T03:48:45.078676Z",
     "news-kr/video|CBMiTkFVX3lxTE95WHZZME9PYVk1Q1Y1OUNKRU41QVJhUXhRcWtwNVZEZGtScWpZQmpJYmZhTHd0S1FDdlVXVV9rN0FTVmk0cmRGM3hmRWNQUQ": "2026-07-29T03:48:46.231909Z",
-    "hf|space|Fighterdan/LTX-2.3-10Eros_I2V": "2026-08-08T15:28:41.527484Z",
+    "hf|space|Fighterdan/LTX-2.3-10Eros_I2V": "2026-08-08T15:56:33.341191Z",
     "reddit/aivideo/new|t3_1v9sa77": "2026-07-29T11:38:30.817678Z",
     "news/comfyui|CBMiQkFVX3lxTE9kVDFzekI0MlZaY21iYzJaUlFQb3JiVTFGQzlMRUxOZEl0YkNiTXl1WGlfNlFtal94UkE4Ny14ZjZYUQ": "2026-07-29T15:47:26.576273Z",
     "community/cgpersia|https://cgpersia.com/?p=204413": "2026-07-29T20:08:47.980413Z",
@@ -169,7 +169,7 @@
     "github/invokeai/releases|tag:github.com,2008:Repository/525592995/v6.13.7": "2026-08-05T01:57:50.992660Z",
     "news-kr/image|CBMickFVX3lxTE16MWJ3eGVEa055eTFoRTl5NXR0U09LY3dQWnJVWm1oZlJGSUdyMVdqakFZeVcyS3VQbTNxOXpIN0dhal90Vlh0ZF9sSEpBV09SaHR6dmQtTjhxdEhySmR1R0N4eU5vVHdJaVA1RW9EUGZvQdIBckFVX3lxTE16MWJ3eGVEa055eTFoRTl5NXR0U09LY3dQWnJVWm1oZlJGSUdyMVdqakFZeVcyS3VQbTNxOXpIN0dhal90Vlh0ZF9sSEpBV09SaHR6dmQtTjhxdEhySmR1R0N4eU5vVHdJaVA1RW9EUGZvQQ": "2026-08-05T01:57:52.255507Z",
     "github/comfyui/releases|tag:github.com,2008:Repository/589831718/v0.30.2": "2026-08-05T01:57:57.808260Z",
-    "hf|model|ethanfel/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot": "2026-08-08T15:28:38.193376Z",
+    "hf|model|ethanfel/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot": "2026-08-08T15:56:29.885481Z",
     "github/pinokio/releases|tag:github.com,2008:Repository/664226598/v8.0.40": "2026-08-05T08:00:25.670802Z",
     "news/upscale|CBMitgFBVV95cUxPRGtnNGR0dFJIMzROMHduMFNoS0JSUU5Jenh6Rjg2QzlsVk1kMVdvNW5vU19OZnNXT25FOS1ncE8tR0cyZ1J5YWhpM3QzSHBnX1NJMk9jTjBIVV9McXBTREVVN1hNYWgzNG1QX3QydnlXQmx1QzB3S21oNWt5bTVRTHhnc1gtMzRlN2V6Wm14X0pMd3ZDNmVRQS10RlA3OUVINVhtUUduZHIwMEV6d3RfOFM4Nl9WUQ": "2026-08-05T08:00:26.815984Z",
     "community/cgpersia|https://cgpersia.com/?p=204544": "2026-08-05T10:43:46.640268Z",
@@ -212,6 +212,7 @@
     "github/comfyui/releases|tag:github.com,2008:Repository/589831718/v0.31.1": "2026-08-08T05:38:28.369624Z",
     "reddit/aivideo/new|t3_1vindnl": "2026-08-08T05:38:29.555045Z",
     "community/cgpersia|https://cgpersia.com/?p=204597": "2026-08-08T10:59:29.986187Z",
-    "reddit/aivideo/new|t3_1viyd8b": "2026-08-08T15:28:42.620878Z"
+    "reddit/aivideo/new|t3_1viyd8b": "2026-08-08T15:28:42.620878Z",
+    "community/cgpersia|https://cgpersia.com/?p=204600": "2026-08-08T15:56:34.886998Z"
   }
 }
