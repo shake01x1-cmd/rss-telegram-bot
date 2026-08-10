@@ -2,7 +2,7 @@
   "version": 1,
   "seen": {
     "hf|dataset|markov-ai/gaming-500-hours": "2026-07-28T06:24:38.440533Z",
-    "hf|model|DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF": "2026-08-10T13:52:55.649174Z",
+    "hf|model|DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF": "2026-08-10T14:52:45.266981Z",
     "hf|space|conradlocke/krea2-identity-edit": "2026-07-28T03:56:44.452818Z",
     "hf|model|microsoft/Mage-Flow": "2026-07-28T16:01:47.462901Z",
     "news-kr/sfx|CBMicEFVX3lxTE1NWnJEbnJkN3A3QmE5WU43bHJpdER6RWhYSnZSQVVzMG1udzFoTFVMRnJ0Z29GQVpSbGtPakFFMTQyS0U0T081dHVoT25VdUJ2VEJfVWdVbERuc1puVGh6V1J6Qld3eEJxYUp6NlM5cF_SAXRBVV95cUxOLXpFRXhGMzF6a1N0QkVUVlRtUzJ2LU5YXzlEQzYtd2JNVll5MzBYaGN5VlA0bUVzSE56ZFc1aS05TXk2bHJEY011NkNWakNscndUeTh2R3V3UG9PeUxUaGM1a0lReVQ3YngtTW1ZLXlrbWM1TQ": "2026-07-27T19:18:25.286922Z",
@@ -103,7 +103,7 @@
     "community/cgpersia|https://cgpersia.com/?p=204499": "2026-08-02T17:56:42.254867Z",
     "reddit/aivideo/new|t3_1vdojxt": "2026-08-02T17:56:44.440907Z",
     "news-kr/image|CBMia0FVX3lxTE13QjVjTFZmZUd1cjJtTzhSWnRxbUgxYnJ2WWVGcXkxM1libmt5UlR3di1lRVFnYWU4SnNjc0FoaGVPNHdVU1JzX1pWa3I4Vk9GQy1oU29DVjR4RUwzX3NvYTQ5cUtkTk9ybGNZ0gFUQVVfeXFMTVdQd0xMdGoyNVZsWXlkWkJjY2Z5SXlaTmdNSDdLeW9BVlhLTFc5RTdrakVKQnlEcWRYWk1jUEkybEhWVy1OQTUtNEhad1gxazZORnpU": "2026-08-02T21:24:32.322400Z",
-    "hf|space|cruisewagner2220/Qwen-Image-Edit-Rapid-AIO-Loras-Experimental-neo": "2026-08-10T13:52:57.956533Z",
+    "hf|space|cruisewagner2220/Qwen-Image-Edit-Rapid-AIO-Loras-Experimental-neo": "2026-08-10T14:52:47.527593Z",
     "news-kr/image|CBMiWEFVX3lxTE9jdG43cW4yVDczU3g4ZFFWeHdaWTBvWENONEtPUGl6amFpcFFZR2cxYW9LV0JRWGVkM2xHY1o4c2ROdFR3bXdOZ0lXa2E4eUZaQzlMLUM0Tm0": "2026-08-03T01:06:43.766814Z",
     "github/comfyui/releases|tag:github.com,2008:Repository/589831718/v0.30.0": "2026-08-03T04:59:57.386796Z",
     "news-kr/image|CBMitwJBVV95cUxQU1VxemZ6dmR6Vi13Q2xlSHNxVk1kV3pNTU13eF9wOUs3aGp6NGxtZVZweVJSbHg2RnZ0OUNzc1Bsc05nWXFYRFJ6V1djbGRzZFFRbGcwSWxVTEVOTU9YbXdVZTdMbFJheFZPd1J3WE9DVzJHUVFOOC1wTnJNM1MyeGFSYy1tU0c3d0txZzVhSDJZZ3R0eVhDMl8zbFhYS0pfNXpoY191T2M0YUZwMDFBczZEVkxaUGUxNnA4cjNuSFBLLVJLczh6M2xVTVd6a0pMTms5dG5fN2hKeUZsa2tBQkVzVXNRRmctNEVmWFZyMmtxN3BPd1h5UmlLS2k4ek5uWFZSazdQWjh1cjVHcWIycmNpNU9oa1BJdkVwY3Vvd01pcDBjVXFDXzU1VmE2eEhIQUo4OGpUSQ": "2026-08-03T05:00:04.090866Z",
@@ -146,7 +146,7 @@
     "github/invokeai/releases|tag:github.com,2008:Repository/525592995/v6.13.7": "2026-08-05T01:57:50.992660Z",
     "news-kr/image|CBMickFVX3lxTE16MWJ3eGVEa055eTFoRTl5NXR0U09LY3dQWnJVWm1oZlJGSUdyMVdqakFZeVcyS3VQbTNxOXpIN0dhal90Vlh0ZF9sSEpBV09SaHR6dmQtTjhxdEhySmR1R0N4eU5vVHdJaVA1RW9EUGZvQdIBckFVX3lxTE16MWJ3eGVEa055eTFoRTl5NXR0U09LY3dQWnJVWm1oZlJGSUdyMVdqakFZeVcyS3VQbTNxOXpIN0dhal90Vlh0ZF9sSEpBV09SaHR6dmQtTjhxdEhySmR1R0N4eU5vVHdJaVA1RW9EUGZvQQ": "2026-08-05T01:57:52.255507Z",
     "github/comfyui/releases|tag:github.com,2008:Repository/589831718/v0.30.2": "2026-08-05T01:57:57.808260Z",
-    "hf|model|ethanfel/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot": "2026-08-10T13:52:54.402864Z",
+    "hf|model|ethanfel/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot": "2026-08-10T14:52:44.094046Z",
     "github/pinokio/releases|tag:github.com,2008:Repository/664226598/v8.0.40": "2026-08-05T08:00:25.670802Z",
     "news/upscale|CBMitgFBVV95cUxPRGtnNGR0dFJIMzROMHduMFNoS0JSUU5Jenh6Rjg2QzlsVk1kMVdvNW5vU19OZnNXT25FOS1ncE8tR0cyZ1J5YWhpM3QzSHBnX1NJMk9jTjBIVV9McXBTREVVN1hNYWgzNG1QX3QydnlXQmx1QzB3S21oNWt5bTVRTHhnc1gtMzRlN2V6Wm14X0pMd3ZDNmVRQS10RlA3OUVINVhtUUduZHIwMEV6d3RfOFM4Nl9WUQ": "2026-08-05T08:00:26.815984Z",
     "community/cgpersia|https://cgpersia.com/?p=204544": "2026-08-05T10:43:46.640268Z",
@@ -208,6 +208,7 @@
     "reddit/aivideo/new|t3_1vkgz5t": "2026-08-10T11:03:19.618848Z",
     "community/cgpersia|https://cgpersia.com/?p=204621": "2026-08-10T13:52:59.092219Z",
     "community/cgpersia|https://cgpersia.com/?p=204618": "2026-08-10T13:53:00.221563Z",
-    "reddit/aivideo/new|t3_1vkkon5": "2026-08-10T13:53:01.387044Z"
+    "reddit/aivideo/new|t3_1vkkon5": "2026-08-10T13:53:01.387044Z",
+    "reddit/aivideo/new|t3_1vkn03q": "2026-08-10T14:52:48.638775Z"
   }
 }
