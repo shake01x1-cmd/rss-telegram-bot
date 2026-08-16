@@ -6,7 +6,7 @@
     "hf|space|Fighterdan/LTX-2.3-10Eros_I2V": "2026-08-08T17:55:06.193281Z",
     "hf|model|unsloth/DeepSeek-V4-Flash-0731-GGUF": "2026-08-05T01:57:54.466431Z",
     "hf|space|prithivMLmods/Qwen-Image-Edit-2511-LoRAs-Fast": "2026-08-03T05:00:01.870527Z",
-    "hf|space|cruisewagner2220/Qwen-Image-Edit-Rapid-AIO-Loras-Experimental-neo": "2026-08-16T21:42:12.796381Z",
+    "hf|space|cruisewagner2220/Qwen-Image-Edit-Rapid-AIO-Loras-Experimental-neo": "2026-08-16T22:14:23.853746Z",
     "news-kr/image|CBMiWEFVX3lxTE9jdG43cW4yVDczU3g4ZFFWeHdaWTBvWENONEtPUGl6amFpcFFZR2cxYW9LV0JRWGVkM2xHY1o4c2ROdFR3bXdOZ0lXa2E4eUZaQzlMLUM0Tm0": "2026-08-03T01:06:43.766814Z",
     "github/comfyui/releases|tag:github.com,2008:Repository/589831718/v0.30.0": "2026-08-03T04:59:57.386796Z",
     "news-kr/image|CBMitwJBVV95cUxQU1VxemZ6dmR6Vi13Q2xlSHNxVk1kV3pNTU13eF9wOUs3aGp6NGxtZVZweVJSbHg2RnZ0OUNzc1Bsc05nWXFYRFJ6V1djbGRzZFFRbGcwSWxVTEVOTU9YbXdVZTdMbFJheFZPd1J3WE9DVzJHUVFOOC1wTnJNM1MyeGFSYy1tU0c3d0txZzVhSDJZZ3R0eVhDMl8zbFhYS0pfNXpoY191T2M0YUZwMDFBczZEVkxaUGUxNnA4cjNuSFBLLVJLczh6M2xVTVd6a0pMTms5dG5fN2hKeUZsa2tBQkVzVXNRRmctNEVmWFZyMmtxN3BPd1h5UmlLS2k4ek5uWFZSazdQWjh1cjVHcWIycmNpNU9oa1BJdkVwY3Vvd01pcDBjVXFDXzU1VmE2eEhIQUo4OGpUSQ": "2026-08-03T05:00:04.090866Z",
@@ -139,7 +139,7 @@
     "github/comfyui/releases|tag:github.com,2008:Repository/589831718/v0.32.0": "2026-08-11T21:39:49.831196Z",
     "news-kr/image|CBMijgFBVV95cUxPbkJ0aFhoMWtjQ0ZCMm5qaXdpZmFhQXBvZm9FeUU2bFFJaWZPSXRPUFVKMHhTYVNlandOd3ViWXJfaEFfN1E5aUNhM04tdzYtdmFyLXZnUkh4YjZWM3hJeXJsMlBST0lOczFiRUNVSTkxeVluVTN0amJJbEVOZWVmMFFldHFzYmNURXlSNXlR": "2026-08-11T21:39:50.961200Z",
     "reddit/aivideo/new|t3_1vltp73": "2026-08-11T21:39:52.099292Z",
-    "hf|model|unsloth/Muse-Glimmer-30B-GGUF": "2026-08-16T21:42:10.504397Z",
+    "hf|model|unsloth/Muse-Glimmer-30B-GGUF": "2026-08-16T22:14:21.577075Z",
     "hf|model|Lightricks/LTX-2.5": "2026-08-14T16:14:59.080100Z",
     "news-kr/image|CBMibEFVX3lxTE5SYkxMamRvQ3hPNkFOUEpFZW4zRFc1Xy1Rd2tpdW5KRkRIU1l4eVJDUms1ZW9TNHN0bnFCRHdlYko5R1cyUUQ4UU5JUU5XS0plcWpXMTZDX1JzZE5KOW9QaDd5bmhSRlJwcms4VNIBcEFVX3lxTE9sSzNfbHNMWWViMzI4SUcyQXlGbFM2MnFEd3g0TURSQW5USDJNZ0RTR2Mxd0NSamloZmxxUTc3VUV6emctZDJiWWo3ZkljbXNrYkd5YTVQNzNOMXlTWUQ4akNZRkRncjVhSEVBSGlVa1M": "2026-08-12T10:55:45.298418Z",
     "news-kr/image|CBMiV0FVX3lxTE5iRktjOWtobHdGU3ZiVjZYaTc0clpCTC1NWnZHVWR1R3FjWDJvWTZWZ18wQzhxVWhzMGZLYzJrb0c0VUlkNnpXYk5wN2VoaTFfZV9pVEtTWdIBXEFVX3lxTE83TzRRXzVLVmVma0FYYXo0RjJDS3AzTFZ4UUd0VGEyalAxdXBtT0FmSVZsODhSN0JkbkpnQTY1THk1M0xNSmZTOFhJcmNSU2lEbkhTWkplVUo1RGI5": "2026-08-12T12:55:15.936983Z",
@@ -211,7 +211,7 @@
     "reddit/aivideo/new|t3_1vppbso": "2026-08-16T06:29:37.961666Z",
     "github/stabilitymatrix/releases|tag:github.com,2008:Repository/652941996/v2.16.2": "2026-08-16T07:52:55.127623Z",
     "community/cgpersia|https://cgpersia.com/?p=204673": "2026-08-16T07:53:00.636800Z",
-    "hf|model|Qwen/Qwen3.8-27B-FP8": "2026-08-16T21:42:09.358652Z",
+    "hf|model|Qwen/Qwen3.8-27B-FP8": "2026-08-16T22:14:20.445646Z",
     "reddit/aivideo/new|t3_1vpx7fd": "2026-08-16T13:51:03.994651Z",
     "reddit/aivideo/new|t3_1vpz2rh": "2026-08-16T15:15:39.455429Z",
     "news-kr/image|CBMia0FVX3lxTFB2d2MtNGhLTEJFZk94Qnp4VXhjYlFuTUVrdlhBRjllbnVFMENpdWtKNEpnVUd1dnBGcmplb0FGMjkxU3JQX05ySFJNYXB0eTFzZ3d0TWdrSGlkVGs5STkwU3VFMzRNSGdXczdR": "2026-08-16T15:15:45.119900Z",
@@ -220,6 +220,7 @@
     "community/cgpersia|https://cgpersia.com/?p=204680": "2026-08-16T18:54:04.538040Z",
     "reddit/aivideo/new|t3_1vq4rsm": "2026-08-16T18:54:05.653577Z",
     "news-kr/video|CBMibkFVX3lxTE9ad2U4UFRFS05VQUYtRnBGSUNfT1RxeTdLZGVMSzQyT29ETWhiTzZBc1ZzUjJjVjZEeFVTdmpsNWFxQXJQckZwUFRoVm82emRCVlV0d2VXTGFTc2RTNkxzemFlTWxUQldYdTFZTGdB0gFyQVVfeXFMTnZ3MHNrY2xRanM3eE8xbjZpMFlPTlpyNEVEN0MxWm5pdXdqdE50S012bDJsRm9xYzJlSGktSDZ1RlBkWElmRndjOFczVXIxMjRhVk44TTlPejFjbkVIdXhTOGRCbjRlY25QNU1ITGoyRkJB": "2026-08-16T19:42:15.967215Z",
-    "reddit/aivideo/new|t3_1vq6ltl": "2026-08-16T20:14:53.026804Z"
+    "reddit/aivideo/new|t3_1vq6ltl": "2026-08-16T20:14:53.026804Z",
+    "github/invokeai/releases|tag:github.com,2008:Repository/525592995/v6.14.0-rc2": "2026-08-16T22:14:19.315336Z"
   }
 }
