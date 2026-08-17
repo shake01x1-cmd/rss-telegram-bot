@@ -5,7 +5,7 @@
     "hf|dataset|moonshotai/PerceptionBench": "2026-08-04T05:17:24.311287Z",
     "hf|space|Fighterdan/LTX-2.3-10Eros_I2V": "2026-08-08T17:55:06.193281Z",
     "hf|model|unsloth/DeepSeek-V4-Flash-0731-GGUF": "2026-08-05T01:57:54.466431Z",
-    "hf|space|cruisewagner2220/Qwen-Image-Edit-Rapid-AIO-Loras-Experimental-neo": "2026-08-17T17:54:00.659401Z",
+    "hf|space|cruisewagner2220/Qwen-Image-Edit-Rapid-AIO-Loras-Experimental-neo": "2026-08-17T18:30:13.476884Z",
     "github/impact-pack/tags|tag:github.com,2008:Repository/621356302/8.21.2": "2026-08-03T19:03:50.331892Z",
     "github/impact-pack/tags|tag:github.com,2008:Repository/621356302/8.28": "2026-08-03T19:03:51.444864Z",
     "news/image-edit|CBMicEFVX3lxTE9OLVJ1Z095YkVyUVkxLVI0cEZXZzZGXzdlV3JueThVZGt4dVdmc3NLelBjOTNRbTJwLWlTUlVvYWJhRTBMaGJRcER6Tm1HdGc5eFlpdHczYWI2QWJjdmRoWTlfczd4ZENyaU9DZ19nVnA": "2026-08-03T19:03:52.564351Z",
@@ -190,7 +190,7 @@
     "reddit/aivideo/new|t3_1vppbso": "2026-08-16T06:29:37.961666Z",
     "github/stabilitymatrix/releases|tag:github.com,2008:Repository/652941996/v2.16.2": "2026-08-16T07:52:55.127623Z",
     "community/cgpersia|https://cgpersia.com/?p=204673": "2026-08-16T07:53:00.636800Z",
-    "hf|model|Qwen/Qwen3.8-27B-FP8": "2026-08-17T17:53:57.383550Z",
+    "hf|model|Qwen/Qwen3.8-27B-FP8": "2026-08-17T18:30:10.050073Z",
     "reddit/aivideo/new|t3_1vpx7fd": "2026-08-16T13:51:03.994651Z",
     "reddit/aivideo/new|t3_1vpz2rh": "2026-08-16T15:15:39.455429Z",
     "news-kr/image|CBMia0FVX3lxTFB2d2MtNGhLTEJFZk94Qnp4VXhjYlFuTUVrdlhBRjllbnVFMENpdWtKNEpnVUd1dnBGcmplb0FGMjkxU3JQX05ySFJNYXB0eTFzZ3d0TWdrSGlkVGs5STkwU3VFMzRNSGdXczdR": "2026-08-16T15:15:45.119900Z",
@@ -210,11 +210,13 @@
     "reddit/aivideo/new|t3_1vqua22": "2026-08-17T14:51:55.265222Z",
     "news-kr/image|CBMiakFVX3lxTE1Oek1WZWh5THFTbExhUlc2cEN1MlpxWDZZeGNUN2s4ZnNBcHcwZU9TWk5JN215bXZNX1ByaXZ0MVFCazAtRnhJaGpMUW5ZVWtMTWZraXk2Q0RsUm1FcXBwMXU4SnhVVmthQVE": "2026-08-17T15:19:25.433373Z",
     "community/cgpersia|https://cgpersia.com/?p=204690": "2026-08-17T15:48:21.507582Z",
-    "hf|model|orcarouter/Qwen3.8-27B-Uncensored-FP8": "2026-08-17T17:53:58.472892Z",
+    "hf|model|orcarouter/Qwen3.8-27B-Uncensored-FP8": "2026-08-17T18:30:11.221377Z",
     "news-kr/image|CBMicEFVX3lxTFBUNHFYd0ljMHJQaG5BRDNKMWxiMzNZVzZPQnFpV1dzb2tDRWZvVkNGT2ZfX3Z4Y2hPZndjTnNEVzV6UTFhWXdkaVZQUW1SR3N1YjVqQXk3S1hiTDUwTVdKeVRBSG9QN2hkNVZzUG9vX0Y": "2026-08-17T16:53:43.868821Z",
     "github/swarmui/releases|tag:github.com,2008:Repository/818118661/0.9.7-Beta": "2026-08-17T17:53:54.107583Z",
     "github/swarmui/releases|tag:github.com,2008:Repository/818118661/0.9.8-Beta": "2026-08-17T17:53:55.198021Z",
     "news/low-vram|CBMimAFBVV95cUxQT3lBT1NFb29oRlJid3BoeDNLMk16VVZBMHdMeUtjZ0w4VHNIWmRoR3BmSUFLV043ZFdkMTBnSWhhMDRzSEFuWlY2OU1YbzczVWFkNnNmeDJSYUt2TDJjYzh2dFRFVXVwTkpBV3prNERPTWxDVnZTb3ZPQnFpd1dnM254UTM2TkdnZ0g1dWZnM0syTWE1dHpwdg": "2026-08-17T17:53:56.292909Z",
-    "news-kr/video|CBMiW0FVX3lxTFBmQ3EzMHE5UnY3NlVTZ2g0dGVSVUItUy1uTGt2X2tlcF9TQUpUMGFNemlSRTV2bzJOM1FPdl9tWFAtaFc1MW9xOXJBYkpnb2dvNnNHVmlEUUJ2c0nSAWBBVV95cUxNR3N1cV8tM2Z6c1NZNWJ4N0otZzJrcVRieUFKTW4yaTlxNVNrc0pnSXVKRU5jLWJvWWQxT2RZd0JOcVZNczNITUZVMXd3bktJcVpaMTJhVXZ6aW4wQlRzRGc": "2026-08-17T17:54:01.766546Z"
+    "news-kr/video|CBMiW0FVX3lxTFBmQ3EzMHE5UnY3NlVTZ2g0dGVSVUItUy1uTGt2X2tlcF9TQUpUMGFNemlSRTV2bzJOM1FPdl9tWFAtaFc1MW9xOXJBYkpnb2dvNnNHVmlEUUJ2c0nSAWBBVV95cUxNR3N1cV8tM2Z6c1NZNWJ4N0otZzJrcVRieUFKTW4yaTlxNVNrc0pnSXVKRU5jLWJvWWQxT2RZd0JOcVZNczNITUZVMXd3bktJcVpaMTJhVXZ6aW4wQlRzRGc": "2026-08-17T17:54:01.766546Z",
+    "news-kr/upscale|CBMiUEFVX3lxTE84aU04WS15dFU2SjdCT2lQcW12Z3JBOXlHNnhEeTBBSkhGWUpxQThCa203WXZOcmY3Z1I4TUc4R3pjbTczaXVfVHhSWS1FWjBk": "2026-08-17T18:30:14.596354Z",
+    "news-kr/video|CBMigAFBVV95cUxPbjFfOENpWHliTHh4Y0NUcXZUREh3TUdEYU1nZTJCa0lkX2NYVThFeEJxU2E4N1lpRHRTMUVyV2dZYUdHS3hVZU9ESEh3VnFGaGk2V094ZTRIQWlLZDdUUlNqQlVRdzN4TDhKLUtwMnNLQ21hSC1CdFJVa05ST0FrcA": "2026-08-17T18:30:15.719663Z"
   }
 }
