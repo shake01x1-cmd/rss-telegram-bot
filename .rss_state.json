@@ -5,7 +5,7 @@
     "hf|dataset|moonshotai/PerceptionBench": "2026-08-04T05:17:24.311287Z",
     "hf|space|Fighterdan/LTX-2.3-10Eros_I2V": "2026-08-08T17:55:06.193281Z",
     "hf|model|unsloth/DeepSeek-V4-Flash-0731-GGUF": "2026-08-05T01:57:54.466431Z",
-    "hf|space|cruisewagner2220/Qwen-Image-Edit-Rapid-AIO-Loras-Experimental-neo": "2026-08-18T02:12:37.485303Z",
+    "hf|space|cruisewagner2220/Qwen-Image-Edit-Rapid-AIO-Loras-Experimental-neo": "2026-08-18T03:21:16.144314Z",
     "news-kr/image|CBMiX0FVX3lxTE9HSURYd1F3djdKVWcyc1h1UmhnVHl4b0pHVU5TaGJCSEJ1TlNPOUhWeTFBTnd3N0JvVFRfOHVOekxJelcybjRkWkUyUVZtXzlpMEVnUFAyeXV2VllzRGFr": "2026-08-04T05:17:18.564647Z",
     "news/comfyui|CBMirAFBVV95cUxQQW9hZXJsVDR1aUZoNW0zNkR6aDZvSGp6SUgtYmVhN0NGbk1MSVVHNEliZno1M2VqZVNXeHRWNFJyLU5BUUxCbXM0MDBGdjF1YkYxMDNaQmtYeWt3UzFLLWc3dkNvckt0YTFpNXMwZkNyT1RiSng1Y1FldkVrVkFrS1ozWVVmSE5NbUtTTXltd2V5Ymd6ZS1VaE51UDhndkZIZk9KaFNSSGxRWW0z": "2026-08-04T10:43:08.889135Z",
     "news-kr/image|CBMiaEFVX3lxTFBwU0NNS25KUXRwbFBEVy1ZNy1fZ1ZiTUFtamNuS3RaRkNQVGJMQWp5cTdfMWk5VFlKQkdHYmxWd25lelhlVUNmaUtUb25IcGhva3hPM2tZLXdvSG1aV0F0QldSM1FpbGZC0gFsQVVfeXFMTUdXTTMwcFZiV3VCOGNPSjlmamFDMllUQlpjMS1KWUZxSF9yUFNhQko3NTBSM1Y3ZmxvTjVWZ2xFSXZaNmx3MlNqa0dSSnZRWVJVTjJsclVqRWZKTldPNXBOcWpnYWFpbjkyWFAz": "2026-08-04T12:55:35.592451Z",
@@ -183,7 +183,7 @@
     "reddit/aivideo/new|t3_1vppbso": "2026-08-16T06:29:37.961666Z",
     "github/stabilitymatrix/releases|tag:github.com,2008:Repository/652941996/v2.16.2": "2026-08-16T07:52:55.127623Z",
     "community/cgpersia|https://cgpersia.com/?p=204673": "2026-08-16T07:53:00.636800Z",
-    "hf|model|Qwen/Qwen3.8-27B-FP8": "2026-08-18T02:12:34.185406Z",
+    "hf|model|Qwen/Qwen3.8-27B-FP8": "2026-08-18T03:21:12.567890Z",
     "reddit/aivideo/new|t3_1vpx7fd": "2026-08-16T13:51:03.994651Z",
     "reddit/aivideo/new|t3_1vpz2rh": "2026-08-16T15:15:39.455429Z",
     "news-kr/image|CBMia0FVX3lxTFB2d2MtNGhLTEJFZk94Qnp4VXhjYlFuTUVrdlhBRjllbnVFMENpdWtKNEpnVUd1dnBGcmplb0FGMjkxU3JQX05ySFJNYXB0eTFzZ3d0TWdrSGlkVGs5STkwU3VFMzRNSGdXczdR": "2026-08-16T15:15:45.119900Z",
@@ -203,7 +203,7 @@
     "reddit/aivideo/new|t3_1vqua22": "2026-08-17T14:51:55.265222Z",
     "news-kr/image|CBMiakFVX3lxTE1Oek1WZWh5THFTbExhUlc2cEN1MlpxWDZZeGNUN2s4ZnNBcHcwZU9TWk5JN215bXZNX1ByaXZ0MVFCazAtRnhJaGpMUW5ZVWtMTWZraXk2Q0RsUm1FcXBwMXU4SnhVVmthQVE": "2026-08-17T15:19:25.433373Z",
     "community/cgpersia|https://cgpersia.com/?p=204690": "2026-08-17T15:48:21.507582Z",
-    "hf|model|orcarouter/Qwen3.8-27B-Uncensored-FP8": "2026-08-18T02:12:35.282526Z",
+    "hf|model|orcarouter/Qwen3.8-27B-Uncensored-FP8": "2026-08-18T03:21:13.750178Z",
     "news-kr/image|CBMicEFVX3lxTFBUNHFYd0ljMHJQaG5BRDNKMWxiMzNZVzZPQnFpV1dzb2tDRWZvVkNGT2ZfX3Z4Y2hPZndjTnNEVzV6UTFhWXdkaVZQUW1SR3N1YjVqQXk3S1hiTDUwTVdKeVRBSG9QN2hkNVZzUG9vX0Y": "2026-08-17T16:53:43.868821Z",
     "github/swarmui/releases|tag:github.com,2008:Repository/818118661/0.9.7-Beta": "2026-08-17T17:53:54.107583Z",
     "github/swarmui/releases|tag:github.com,2008:Repository/818118661/0.9.8-Beta": "2026-08-17T17:53:55.198021Z",
@@ -218,6 +218,7 @@
     "news-kr/video|CBMiYEFVX3lxTE1Hc3VxXy0zZnpzU1k1Yng3Si1nMmtxVGJ5QUpNbjJpOXE1U2tzSmdJdUpFTmMtYm9ZZDFPZFl3Qk5xVk1zM0hNRlUxd3duS0lxWloxMmFVdnppbjBCVHNEZ9IBYEFVX3lxTE1Hc3VxXy0zZnpzU1k1Yng3Si1nMmtxVGJ5QUpNbjJpOXE1U2tzSmdJdUpFTmMtYm9ZZDFPZFl3Qk5xVk1zM0hNRlUxd3duS0lxWloxMmFVdnppbjBCVHNEZw": "2026-08-17T19:49:26.904045Z",
     "news/comfyui|CBMib0FVX3lxTE5yNENSZ0hvUHE4bDFRRkFscEQ3U0V6X0tncDItbG5vR0ZIQnBMTG1mbGJDcl9xSkRNOGZKSnZOdy11MDVKNmEyVk91QVhiTm9QOU1QZlo1b3BlaEtkNGF2OW5fU01WclF0SFpjTm9Ycw": "2026-08-17T23:44:57.996890Z",
     "reddit/aivideo/new|t3_1vrbovj": "2026-08-18T02:12:38.584871Z",
-    "news-kr/video|CBMiVEFVX3lxTFBfT3lLblVnTlJ5V3hLYWpkSmZ5V0dFSTFzREhIY21vb1hfUnhLUmhHQUtWX01rLTJQYU1kdXJuakVfQld2RjEtb2VfMTZMY3JGUk9vSQ": "2026-08-18T02:12:39.681524Z"
+    "news-kr/video|CBMiVEFVX3lxTFBfT3lLblVnTlJ5V3hLYWpkSmZ5V0dFSTFzREhIY21vb1hfUnhLUmhHQUtWX01rLTJQYU1kdXJuakVfQld2RjEtb2VfMTZMY3JGUk9vSQ": "2026-08-18T02:12:39.681524Z",
+    "reddit/aivideo/new|t3_1vrda7f": "2026-08-18T03:21:17.299394Z"
   }
 }
