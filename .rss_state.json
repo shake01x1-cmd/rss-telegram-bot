@@ -4,7 +4,7 @@
     "hf|model|DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF": "2026-08-12T18:25:08.354433Z",
     "hf|space|Fighterdan/LTX-2.3-10Eros_I2V": "2026-08-08T17:55:06.193281Z",
     "hf|model|unsloth/DeepSeek-V4-Flash-0731-GGUF": "2026-08-05T01:57:54.466431Z",
-    "hf|space|cruisewagner2220/Qwen-Image-Edit-Rapid-AIO-Loras-Experimental-neo": "2026-08-18T09:03:19.059725Z",
+    "hf|space|cruisewagner2220/Qwen-Image-Edit-Rapid-AIO-Loras-Experimental-neo": "2026-08-18T09:56:41.185085Z",
     "news/comfyui|CBMirAFBVV95cUxQQW9hZXJsVDR1aUZoNW0zNkR6aDZvSGp6SUgtYmVhN0NGbk1MSVVHNEliZno1M2VqZVNXeHRWNFJyLU5BUUxCbXM0MDBGdjF1YkYxMDNaQmtYeWt3UzFLLWc3dkNvckt0YTFpNXMwZkNyT1RiSng1Y1FldkVrVkFrS1ozWVVmSE5NbUtTTXltd2V5Ymd6ZS1VaE51UDhndkZIZk9KaFNSSGxRWW0z": "2026-08-04T10:43:08.889135Z",
     "news-kr/image|CBMiaEFVX3lxTFBwU0NNS25KUXRwbFBEVy1ZNy1fZ1ZiTUFtamNuS3RaRkNQVGJMQWp5cTdfMWk5VFlKQkdHYmxWd25lelhlVUNmaUtUb25IcGhva3hPM2tZLXdvSG1aV0F0QldSM1FpbGZC0gFsQVVfeXFMTUdXTTMwcFZiV3VCOGNPSjlmamFDMllUQlpjMS1KWUZxSF9yUFNhQko3NTBSM1Y3ZmxvTjVWZ2xFSXZaNmx3MlNqa0dSSnZRWVJVTjJsclVqRWZKTldPNXBOcWpnYWFpbjkyWFAz": "2026-08-04T12:55:35.592451Z",
     "community/cgpersia|https://cgpersia.com/?p=204508": "2026-08-04T12:55:41.275531Z",
@@ -181,7 +181,7 @@
     "reddit/aivideo/new|t3_1vppbso": "2026-08-16T06:29:37.961666Z",
     "github/stabilitymatrix/releases|tag:github.com,2008:Repository/652941996/v2.16.2": "2026-08-16T07:52:55.127623Z",
     "community/cgpersia|https://cgpersia.com/?p=204673": "2026-08-16T07:53:00.636800Z",
-    "hf|model|Qwen/Qwen3.8-27B-FP8": "2026-08-18T09:03:15.761275Z",
+    "hf|model|Qwen/Qwen3.8-27B-FP8": "2026-08-18T09:56:37.697222Z",
     "reddit/aivideo/new|t3_1vpx7fd": "2026-08-16T13:51:03.994651Z",
     "reddit/aivideo/new|t3_1vpz2rh": "2026-08-16T15:15:39.455429Z",
     "news-kr/image|CBMia0FVX3lxTFB2d2MtNGhLTEJFZk94Qnp4VXhjYlFuTUVrdlhBRjllbnVFMENpdWtKNEpnVUd1dnBGcmplb0FGMjkxU3JQX05ySFJNYXB0eTFzZ3d0TWdrSGlkVGs5STkwU3VFMzRNSGdXczdR": "2026-08-16T15:15:45.119900Z",
@@ -201,7 +201,7 @@
     "reddit/aivideo/new|t3_1vqua22": "2026-08-17T14:51:55.265222Z",
     "news-kr/image|CBMiakFVX3lxTE1Oek1WZWh5THFTbExhUlc2cEN1MlpxWDZZeGNUN2s4ZnNBcHcwZU9TWk5JN215bXZNX1ByaXZ0MVFCazAtRnhJaGpMUW5ZVWtMTWZraXk2Q0RsUm1FcXBwMXU4SnhVVmthQVE": "2026-08-17T15:19:25.433373Z",
     "community/cgpersia|https://cgpersia.com/?p=204690": "2026-08-17T15:48:21.507582Z",
-    "hf|model|orcarouter/Qwen3.8-27B-Uncensored-FP8": "2026-08-18T09:03:16.863272Z",
+    "hf|model|orcarouter/Qwen3.8-27B-Uncensored-FP8": "2026-08-18T09:56:38.850433Z",
     "news-kr/image|CBMicEFVX3lxTFBUNHFYd0ljMHJQaG5BRDNKMWxiMzNZVzZPQnFpV1dzb2tDRWZvVkNGT2ZfX3Z4Y2hPZndjTnNEVzV6UTFhWXdkaVZQUW1SR3N1YjVqQXk3S1hiTDUwTVdKeVRBSG9QN2hkNVZzUG9vX0Y": "2026-08-17T16:53:43.868821Z",
     "github/swarmui/releases|tag:github.com,2008:Repository/818118661/0.9.7-Beta": "2026-08-17T17:53:54.107583Z",
     "github/swarmui/releases|tag:github.com,2008:Repository/818118661/0.9.8-Beta": "2026-08-17T17:53:55.198021Z",
@@ -221,6 +221,7 @@
     "reddit/aivideo/new|t3_1vre3p6": "2026-08-18T04:05:17.196518Z",
     "news-kr/video|CBMiakFVX3lxTFBVU2ZBX1I1VUJDZ0ZPT0Q5bzdUYk1KQ1djREI0ZEpUUGduYU41bVpRam8xVC1Dbk1sME1YMk1sbVJqd0EyN3pKR2N4UDJ1Y0Q2aTJrNC1HUmRaMTFER0Vqekg0eE0xY0hkMWc": "2026-08-18T05:00:46.435099Z",
     "reddit/aivideo/new|t3_1vrfzpm": "2026-08-18T05:53:07.838929Z",
-    "news-kr/video|CBMilAFBVV95cUxPRmVIbDJUYnlhSDZ1R1lhdWZKUFZ4UE5UUnRaOVhlQ1FYNmwxenVpM2RmNENELU1hNVZWa1F6bkhpTFBlWXg0OHhfSmEtQmNjUWV1UGpNM1Vsby1ickU1Qzh1T0tSRHdSMXEwZG5mc0NnR3JTdUdFMmExOFRlRDdaMnZNLXpQTjdVdzZRMGJFcl9PUkpS": "2026-08-18T09:03:20.220721Z"
+    "news-kr/video|CBMilAFBVV95cUxPRmVIbDJUYnlhSDZ1R1lhdWZKUFZ4UE5UUnRaOVhlQ1FYNmwxenVpM2RmNENELU1hNVZWa1F6bkhpTFBlWXg0OHhfSmEtQmNjUWV1UGpNM1Vsby1ickU1Qzh1T0tSRHdSMXEwZG5mc0NnR3JTdUdFMmExOFRlRDdaMnZNLXpQTjdVdzZRMGJFcl9PUkpS": "2026-08-18T09:03:20.220721Z",
+    "community/cgpersia|https://cgpersia.com/?p=204693": "2026-08-18T09:56:42.339225Z"
   }
 }
