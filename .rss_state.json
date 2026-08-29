@@ -3,8 +3,7 @@
   "seen": {
     "hf|space|cruisewagner2220/Qwen-Image-Edit-Rapid-AIO-Loras-Experimental-neo": "2026-08-19T00:54:23.386859Z",
     "hf|model|unsloth/Muse-Glimmer-30B-GGUF": "2026-08-17T11:48:41.394260Z",
-    "hf|model|unsloth/Qwen3.8-27B-GGUF": "2026-08-29T19:52:06.538533Z",
-    "reddit/aivideo/new|t3_1vpdmh2": "2026-08-15T20:45:50.383944Z",
+    "hf|model|unsloth/Qwen3.8-27B-GGUF": "2026-08-29T22:11:18.992921Z",
     "community/cgpersia|https://cgpersia.com/?p=204670": "2026-08-15T22:45:27.958835Z",
     "reddit/aivideo/new|t3_1vpg2cs": "2026-08-15T22:45:29.042163Z",
     "news-kr/video|CBMickFVX3lxTE52dzBza2NsUWpzN3hPMW42aTBZT05acjRFRDdDMVpuaXV3anROdEtNdmwybEZvcWMyZUhpLUg2dUZQZFhJZkZ3YzhXM1VyMTI0YVZOOE05T3oxY25FSHV4UzhkQm40ZWNuUDVNSExqMkZCQdIBckFVX3lxTE52dzBza2NsUWpzN3hPMW42aTBZT05acjRFRDdDMVpuaXV3anROdEtNdmwybEZvcWMyZUhpLUg2dUZQZFhJZkZ3YzhXM1VyMTI0YVZOOE05T3oxY25FSHV4UzhkQm40ZWNuUDVNSExqMkZCQQ": "2026-08-15T23:42:31.213144Z",
@@ -63,7 +62,7 @@
     "news/low-vram|CBMiXEFVX3lxTFBmcHp4NUs5S0dNZkhxM2tIdFIyYVk5aTVOZEN3eEw2UXVaR2ZmZkZWZTByVi16Qk4wQVJlYlRrbE9vOGVNS01PS1lZaXNfUTVGU2NhM2VwWndJSGps": "2026-08-18T15:55:37.828376Z",
     "reddit/aivideo/new|t3_1vrsu1g": "2026-08-18T16:23:59.472879Z",
     "news-kr/upscale|CBMia0FVX3lxTFBWcUxBNF9helYwQlNIT0M5SlVDY18xR2J0cmltSm1fdWZ3OVV1Z0lULVVCRktIeTRRbUlYYXRuTlBaUlY2MFFoSTYycE0xaFdSVDdDbVg2MHUwR3pkSm0wSG15c2RvZ3l1cXdz": "2026-08-18T16:24:05.098354Z",
-    "hf|space|Saravutw/Omni-videos-custom": "2026-08-29T19:52:08.778929Z",
+    "hf|space|Saravutw/Omni-videos-custom": "2026-08-29T22:11:21.159392Z",
     "news-kr/video|CBMiakFVX3lxTE1RZ05YbmlwVEhRRjA5cHIwRkxjNkVLTy1qYUttMUxXSE1EUVlwSkZNdXpXSXUtT3MxU2JBbGF6VzJYbm8zNWpfTDlQRUZVQkdCN0o0SXZoZ2dYZUVRSHdpLXpaUGl5LUNTS3c": "2026-08-19T00:54:24.523304Z",
     "github/pinokio/releases|tag:github.com,2008:Repository/664226598/v8.0.40": "2026-08-19T08:29:04.286097Z",
     "news-kr/video|CBMiX0FVX3lxTE5MZWZMRV9hcEtZem9vV0t0eEhjVU4tOTlaTjRQMmljbWZFN0d3Q2otbExySzRfdEQwdW9ic3cxc2drdWxBNm5fcnNKazNiV0dYMFNIRC1qaHRZQTQxaXUw": "2026-08-19T08:29:05.385992Z",
@@ -121,7 +120,7 @@
     "reddit/aivideo/new|t3_1vuvvtu": "2026-08-22T00:54:07.728481Z",
     "news/comfyui|CBMie0FVX3lxTE1DVEw2NUh6bGVFUjJGOVV4VXVKeGcyOEY4emhrLXlFWUxuWEIzTFJMQXNyRlZFRHRwOFVOaW1pczJIQ3o2MGsxdlVWeV9uWHg0QkN1NEZmOTdsTFAzUHJvSlRpTlhQdDViMGprRXBmUzJiZ05JUzU2ZDJBRQ": "2026-08-22T04:58:19.293124Z",
     "reddit/aivideo/new|t3_1vv3kaj": "2026-08-22T05:28:50.052208Z",
-    "hf|dataset|markov-ai/cad-1000-hours": "2026-08-29T19:52:10.039648Z",
+    "hf|dataset|markov-ai/cad-1000-hours": "2026-08-29T22:11:22.232134Z",
     "community/cgpersia|https://cgpersia.com/?p=204729": "2026-08-22T12:26:52.274586Z",
     "news/upscale|CBMiakFVX3lxTE80R0xHLVp3Ri1Jb1BQa1ZNQXA2NkNvU2RXWFNkRFhDanpLMEFSY0N2TC13LTk4MGtZRWRPV3BxQ0xqR1JNZlk2V0EwMmt0dkYzVkxZYWIzNXVsX3lDNlBZSXhPdk1BOXhNb1E": "2026-08-22T14:45:51.749071Z",
     "news/upscale|CBMiV0FVX3lxTE1zUnN6a1IzalZ5RDBJR0MyTi11SzUyN0I1d3JxTmNWT0FWcVNKV3FnWUZ0bUdwbmhBNHJBOURXb0tnbWp3VU9WWF9MNmdKRDYyN1NFWlVMQQ": "2026-08-22T14:45:52.916071Z",
@@ -242,6 +241,6 @@
     "community/cgpersia|https://cgpersia.com/?p=204795": "2026-08-29T17:16:28.531904Z",
     "news/image-generation|CBMibkFVX3lxTE0tTjRUWjkwU01OOGRiVFJHd3Zwa2FJay1peEhfSmtWR1owVERHVWN5QlpDUVVLOHI3MzBKc1V6MngzT0NrdW1sUW55Z2tXT082aHdKTmM1TS1Tb2I2dXlYaVB6OWM1d0hjMTFIU1RB": "2026-08-29T17:16:29.677843Z",
     "github/pinokio/releases|tag:github.com,2008:Repository/664226598/v8.0.35": "2026-08-29T17:16:32.016934Z",
-    "hf|model|unsloth/GLM-5.3-Flash-GGUF": "2026-08-29T19:52:05.409788Z"
+    "hf|model|unsloth/GLM-5.3-Flash-GGUF": "2026-08-29T22:11:17.912312Z"
   }
 }
