@@ -2,10 +2,8 @@
   "version": 1,
   "seen": {
     "hf|space|cruisewagner2220/Qwen-Image-Edit-Rapid-AIO-Loras-Experimental-neo": "2026-08-19T00:54:23.386859Z",
-    "hf|model|unsloth/Muse-Glimmer-30B-GGUF": "2026-08-17T11:48:41.394260Z",
-    "hf|model|unsloth/Qwen3.8-27B-GGUF": "2026-08-31T05:52:15.414599Z",
+    "hf|model|unsloth/Qwen3.8-27B-GGUF": "2026-08-31T12:26:37.684180Z",
     "hf|model|Qwen/Qwen3.8-27B-FP8": "2026-08-20T23:48:31.378429Z",
-    "reddit/aivideo/new|t3_1vqnt8i": "2026-08-17T10:03:36.804532Z",
     "community/cgpersia|https://cgpersia.com/?p=204687": "2026-08-17T14:21:02.848949Z",
     "community/cgpersia|https://cgpersia.com/?p=204684": "2026-08-17T14:21:04.023696Z",
     "reddit/aivideo/new|t3_1vqua22": "2026-08-17T14:51:55.265222Z",
@@ -40,7 +38,7 @@
     "news/low-vram|CBMiXEFVX3lxTFBmcHp4NUs5S0dNZkhxM2tIdFIyYVk5aTVOZEN3eEw2UXVaR2ZmZkZWZTByVi16Qk4wQVJlYlRrbE9vOGVNS01PS1lZaXNfUTVGU2NhM2VwWndJSGps": "2026-08-18T15:55:37.828376Z",
     "reddit/aivideo/new|t3_1vrsu1g": "2026-08-18T16:23:59.472879Z",
     "news-kr/upscale|CBMia0FVX3lxTFBWcUxBNF9helYwQlNIT0M5SlVDY18xR2J0cmltSm1fdWZ3OVV1Z0lULVVCRktIeTRRbUlYYXRuTlBaUlY2MFFoSTYycE0xaFdSVDdDbVg2MHUwR3pkSm0wSG15c2RvZ3l1cXdz": "2026-08-18T16:24:05.098354Z",
-    "hf|space|Saravutw/Omni-videos-custom": "2026-08-31T05:52:17.598296Z",
+    "hf|space|Saravutw/Omni-videos-custom": "2026-08-31T12:26:39.909658Z",
     "news-kr/video|CBMiakFVX3lxTE1RZ05YbmlwVEhRRjA5cHIwRkxjNkVLTy1qYUttMUxXSE1EUVlwSkZNdXpXSXUtT3MxU2JBbGF6VzJYbm8zNWpfTDlQRUZVQkdCN0o0SXZoZ2dYZUVRSHdpLXpaUGl5LUNTS3c": "2026-08-19T00:54:24.523304Z",
     "github/pinokio/releases|tag:github.com,2008:Repository/664226598/v8.0.40": "2026-08-19T08:29:04.286097Z",
     "news-kr/video|CBMiX0FVX3lxTE5MZWZMRV9hcEtZem9vV0t0eEhjVU4tOTlaTjRQMmljbWZFN0d3Q2otbExySzRfdEQwdW9ic3cxc2drdWxBNm5fcnNKazNiV0dYMFNIRC1qaHRZQTQxaXUw": "2026-08-19T08:29:05.385992Z",
@@ -98,7 +96,7 @@
     "reddit/aivideo/new|t3_1vuvvtu": "2026-08-22T00:54:07.728481Z",
     "news/comfyui|CBMie0FVX3lxTE1DVEw2NUh6bGVFUjJGOVV4VXVKeGcyOEY4emhrLXlFWUxuWEIzTFJMQXNyRlZFRHRwOFVOaW1pczJIQ3o2MGsxdlVWeV9uWHg0QkN1NEZmOTdsTFAzUHJvSlRpTlhQdDViMGprRXBmUzJiZ05JUzU2ZDJBRQ": "2026-08-22T04:58:19.293124Z",
     "reddit/aivideo/new|t3_1vv3kaj": "2026-08-22T05:28:50.052208Z",
-    "hf|dataset|markov-ai/cad-1000-hours": "2026-08-31T05:52:18.683484Z",
+    "hf|dataset|markov-ai/cad-1000-hours": "2026-08-31T12:26:43.337818Z",
     "community/cgpersia|https://cgpersia.com/?p=204729": "2026-08-22T12:26:52.274586Z",
     "news/upscale|CBMiakFVX3lxTE80R0xHLVp3Ri1Jb1BQa1ZNQXA2NkNvU2RXWFNkRFhDanpLMEFSY0N2TC13LTk4MGtZRWRPV3BxQ0xqR1JNZlk2V0EwMmt0dkYzVkxZYWIzNXVsX3lDNlBZSXhPdk1BOXhNb1E": "2026-08-22T14:45:51.749071Z",
     "news/upscale|CBMiV0FVX3lxTE1zUnN6a1IzalZ5RDBJR0MyTi11SzUyN0I1d3JxTmNWT0FWcVNKV3FnWUZ0bUdwbmhBNHJBOURXb0tnbWp3VU9WWF9MNmdKRDYyN1NFWlVMQQ": "2026-08-22T14:45:52.916071Z",
@@ -219,7 +217,7 @@
     "community/cgpersia|https://cgpersia.com/?p=204795": "2026-08-29T17:16:28.531904Z",
     "news/image-generation|CBMibkFVX3lxTE0tTjRUWjkwU01OOGRiVFJHd3Zwa2FJay1peEhfSmtWR1owVERHVWN5QlpDUVVLOHI3MzBKc1V6MngzT0NrdW1sUW55Z2tXT082aHdKTmM1TS1Tb2I2dXlYaVB6OWM1d0hjMTFIU1RB": "2026-08-29T17:16:29.677843Z",
     "github/pinokio/releases|tag:github.com,2008:Repository/664226598/v8.0.35": "2026-08-29T17:16:32.016934Z",
-    "hf|model|unsloth/GLM-5.3-Flash-GGUF": "2026-08-31T05:52:14.307937Z",
+    "hf|model|unsloth/GLM-5.3-Flash-GGUF": "2026-08-31T12:26:36.573392Z",
     "community/cgpersia|https://cgpersia.com/?p=204798": "2026-08-30T00:30:01.089004Z",
     "news/comfyui|CBMiYEFVX3lxTE1mLUFaT1VfWXBHUUVDWmU0eDZkTGRIS0lNUU1RemN2ZUhmTGhLTml3WF9XSEdJd3k0TWFmSGdYcEhpMFl5NFZKLW1nVzF6dWJ2VV9kQndqYUwySHFudzZEaQ": "2026-08-30T00:30:02.256334Z",
     "reddit/aivideo/new|t3_1w22oao": "2026-08-30T00:30:09.451371Z",
@@ -229,6 +227,8 @@
     "news-kr/video|CBMiiAFBVV95cUxQaDlhajZDMW5xS2I2dEdJMjFOdU9ObE9fMGp1NHJOLWk3cm1SOXNVbzBtWFAydDQ3bll1X0NHN1dNeXRqTFpWUmxFR0Z2VWg2WUtiMG4yNWREZTVIODZ1TUJwOUtIWHg1MWw5dmVCVUYySmxTT284WHZFcmFRNFBLNjlobnNRRHUx": "2026-08-30T21:48:39.123787Z",
     "github/invokeai/releases|tag:github.com,2008:Repository/525592995/v6.14.0-rc2": "2026-08-31T00:08:39.433134Z",
     "reddit/comfyui/new|t3_1w34sc0": "2026-08-31T05:52:19.779533Z",
-    "reddit/comfyui/new|t3_1w33mo7": "2026-08-31T05:52:20.868901Z"
+    "reddit/comfyui/new|t3_1w33mo7": "2026-08-31T05:52:20.868901Z",
+    "community/cgpersia|https://cgpersia.com/?p=204804": "2026-08-31T12:26:41.043577Z",
+    "community/cgpersia|https://cgpersia.com/?p=204807": "2026-08-31T12:26:42.195719Z"
   }
 }
