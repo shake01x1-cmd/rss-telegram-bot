@@ -1,13 +1,10 @@
 {
   "version": 1,
   "seen": {
-    "hf|model|unsloth/Qwen3.8-27B-GGUF": "2026-09-02T14:00:22.465575Z",
+    "hf|model|unsloth/Qwen3.8-27B-GGUF": "2026-09-02T17:49:56.765354Z",
     "hf|model|Qwen/Qwen3.8-27B-FP8": "2026-08-20T23:48:31.378429Z",
     "hf|model|orcarouter/Qwen3.8-27B-Uncensored-FP8": "2026-08-29T07:14:19.604568Z",
-    "hf|space|Saravutw/Omni-videos-custom": "2026-09-02T14:00:25.442324Z",
-    "hf/blog|https://huggingface.co/blog/LiquidAI/qad": "2026-08-19T14:26:17.494882Z",
-    "reddit/aivideo/new|t3_1vsofma": "2026-08-19T15:00:43.264422Z",
-    "reddit/aivideo/new|t3_1vsrkje": "2026-08-19T16:56:22.709177Z",
+    "hf|space|Saravutw/Omni-videos-custom": "2026-09-02T17:50:00.133784Z",
     "hf|model|JonathanColetti/Qwen3.8-27B-Uncensored-GGUF": "2026-08-25T15:36:09.731394Z",
     "news-kr/upscale|CBMiakFVX3lxTE81U0pzNDNTUXNEbnQ0Ry1zMEl1RmRBbERUVU5uWjhKSGoyQUpSaUpmQ2d3NmtIaDhqZGRMeUxQWnZTeE9jWG1TX1g5TmN1LVNtMGlPUHNMT0lldkxKa2I1RlhPOGRuckc4enc": "2026-08-19T18:24:55.694674Z",
     "community/cgpersia|https://cgpersia.com/?p=204705": "2026-08-19T18:25:01.555891Z",
@@ -54,7 +51,7 @@
     "reddit/aivideo/new|t3_1vuvvtu": "2026-08-22T00:54:07.728481Z",
     "news/comfyui|CBMie0FVX3lxTE1DVEw2NUh6bGVFUjJGOVV4VXVKeGcyOEY4emhrLXlFWUxuWEIzTFJMQXNyRlZFRHRwOFVOaW1pczJIQ3o2MGsxdlVWeV9uWHg0QkN1NEZmOTdsTFAzUHJvSlRpTlhQdDViMGprRXBmUzJiZ05JUzU2ZDJBRQ": "2026-08-22T04:58:19.293124Z",
     "reddit/aivideo/new|t3_1vv3kaj": "2026-08-22T05:28:50.052208Z",
-    "hf|dataset|markov-ai/cad-1000-hours": "2026-09-02T14:00:26.529785Z",
+    "hf|dataset|markov-ai/cad-1000-hours": "2026-09-02T17:50:01.249352Z",
     "community/cgpersia|https://cgpersia.com/?p=204729": "2026-08-22T12:26:52.274586Z",
     "news/upscale|CBMiakFVX3lxTE80R0xHLVp3Ri1Jb1BQa1ZNQXA2NkNvU2RXWFNkRFhDanpLMEFSY0N2TC13LTk4MGtZRWRPV3BxQ0xqR1JNZlk2V0EwMmt0dkYzVkxZYWIzNXVsX3lDNlBZSXhPdk1BOXhNb1E": "2026-08-22T14:45:51.749071Z",
     "news/upscale|CBMiV0FVX3lxTE1zUnN6a1IzalZ5RDBJR0MyTi11SzUyN0I1d3JxTmNWT0FWcVNKV3FnWUZ0bUdwbmhBNHJBOURXb0tnbWp3VU9WWF9MNmdKRDYyN1NFWlVMQQ": "2026-08-22T14:45:52.916071Z",
@@ -168,7 +165,7 @@
     "community/cgpersia|https://cgpersia.com/?p=204785": "2026-08-29T00:19:43.196696Z",
     "news-kr/image|CBMiRkFVX3lxTE9tLVplQmxudTVlZjZwS0pUTFluT25uUldWY1hKeldvemo5aVdob1REMW9SUnF1ZmI0aVE3MmtDdnB4cmFTbUE": "2026-08-29T00:19:45.369843Z",
     "github/stabilitymatrix/releases|tag:github.com,2008:Repository/652941996/v2.16.3": "2026-08-29T07:14:18.509065Z",
-    "hf|model|unsloth/Qwen3.8-Flash-Next-GGUF": "2026-08-29T17:16:25.070173Z",
+    "hf|model|unsloth/Qwen3.8-Flash-Next-GGUF": "2026-09-02T17:49:57.924275Z",
     "community/cgpersia|https://cgpersia.com/?p=204792": "2026-08-29T13:16:28.567405Z",
     "news-kr/video|CBMiVkFVX3lxTE83YmxTLWl6RFFpRXJzejlEaXlpemhFLW5FMk02Qk55ZXFfTEoyZmFkOU1yX1VYSUtGVFB4SGlpdGxRLUZiSVRxbzhwd1dtNnJ2OFBUakp3": "2026-08-29T13:16:30.818074Z",
     "news-kr/video|CBMiaEFVX3lxTE52d0c0OENsamc3TW03U3Jqa0pKVXQ4WE1WcmkxRHpYOU9lYk85RmltU3ptemR3UF9YU1BxX3o0R0hDQkxRMU1HbFRDT09lWkNTTDNmRTZ5YURvT3hOd2IwNTFZWkdONXNk": "2026-08-29T13:16:31.924428Z",
@@ -213,6 +210,7 @@
     "news-kr/comfyui|CBMikAFBVV95cUxOQVp2X2xveU9KalkweWRqMEhHNEhvZEhGZ2pPX3ctSkVHVmlOUmtXbjN2OElfbWRUOEZJQ3cwSjFaSkZuOERsZW45azlPZDJUTWJVX19ER0djWHZaS3lvZHBoUkQzejBVeEgzLUgwZENtdVItckJOaDU2WU52b0JSX1hyVHMxaDBjenFDYWhYR08": "2026-09-02T09:47:29.396505Z",
     "github/pinokio/releases|tag:github.com,2008:Repository/664226598/v8.0.40": "2026-09-02T09:47:30.595954Z",
     "news/image-generation|CBMiZ0FVX3lxTE1NMWR4LWIyQlRaRTVBaFNCeHBpNXlYbkRBZUY5ZFJrYXZSQS11a2I1S2NrSGRpUUQ5N1M3eS1qWjgyVU1hcTFTa0JoYzVOWHhHWDZPcFVBVWl4UlZWM1JyWU85WVBseUU": "2026-09-02T14:00:27.629876Z",
-    "news/image-edit|CBMijgFBVV95cUxNaFhpMkdtT0VVTkRxQm9GaVVwTmM5RkV1TkM3b24zVUdfSnpsOW45SkZ5Zm9pc3k2THFTVDlDX0RkZVhTTHVnV2VDUWNIdWt2cDNzSVdfU1dBRHIyYUlyWm5XeFNvTHhHaUhQcU8tUWljMmRHZl9HLXB5Z2E3aFJ0MHRwWm11b2N5N1lhdEtB": "2026-09-02T14:00:28.732703Z"
+    "news/image-edit|CBMijgFBVV95cUxNaFhpMkdtT0VVTkRxQm9GaVVwTmM5RkV1TkM3b24zVUdfSnpsOW45SkZ5Zm9pc3k2THFTVDlDX0RkZVhTTHVnV2VDUWNIdWt2cDNzSVdfU1dBRHIyYUlyWm5XeFNvTHhHaUhQcU8tUWljMmRHZl9HLXB5Z2E3aFJ0MHRwWm11b2N5N1lhdEtB": "2026-09-02T14:00:28.732703Z",
+    "news-kr/image|CBMicEFVX3lxTE56TW1zSHVubThJMmlhOGx1N3kzcGRsQi1mVkQwVTFrdTFrc2JPYi1QYUZkWnl5MnNSa3dYOG40MHhwVkUzaUlFeXYtaUVTR3BFcWRvWnh1czVMdU5IcnlmOUVyREI3bVN0ZGhadGZtUTU": "2026-09-02T17:50:02.403643Z"
   }
 }
