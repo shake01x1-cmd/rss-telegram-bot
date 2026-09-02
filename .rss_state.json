@@ -1,13 +1,10 @@
 {
   "version": 1,
   "seen": {
-    "hf|model|unsloth/Qwen3.8-27B-GGUF": "2026-09-02T09:47:23.547949Z",
+    "hf|model|unsloth/Qwen3.8-27B-GGUF": "2026-09-02T14:00:22.465575Z",
     "hf|model|Qwen/Qwen3.8-27B-FP8": "2026-08-20T23:48:31.378429Z",
     "hf|model|orcarouter/Qwen3.8-27B-Uncensored-FP8": "2026-08-29T07:14:19.604568Z",
-    "hf|space|Saravutw/Omni-videos-custom": "2026-09-02T09:47:25.939606Z",
-    "community/cgpersia|https://cgpersia.com/?p=204702": "2026-08-19T09:57:04.429792Z",
-    "reddit/aivideo/new|t3_1vsibms": "2026-08-19T10:26:26.080538Z",
-    "news-kr/video|CBMib0FVX3lxTE1iak1NMFh3bmZXV3NUN2ZQdVNpQmJQdm9RZGdmUWYxdm53RjRza0dsZm9uMkEzREgwQUhScDl3TmVNRzFvZlB3dXRORUhFVmxrUnBsUkF2MkVjWk82OXYwR2d3aEZ0dzI2cnVXNVQ0ONIBb0FVX3lxTE1iak1NMFh3bmZXV3NUN2ZQdVNpQmJQdm9RZGdmUWYxdm53RjRza0dsZm9uMkEzREgwQUhScDl3TmVNRzFvZlB3dXRORUhFVmxrUnBsUkF2MkVjWk82OXYwR2d3aEZ0dzI2cnVXNVQ0OA": "2026-08-19T11:48:56.358594Z",
+    "hf|space|Saravutw/Omni-videos-custom": "2026-09-02T14:00:25.442324Z",
     "hf/blog|https://huggingface.co/blog/LiquidAI/qad": "2026-08-19T14:26:17.494882Z",
     "reddit/aivideo/new|t3_1vsofma": "2026-08-19T15:00:43.264422Z",
     "reddit/aivideo/new|t3_1vsrkje": "2026-08-19T16:56:22.709177Z",
@@ -57,7 +54,7 @@
     "reddit/aivideo/new|t3_1vuvvtu": "2026-08-22T00:54:07.728481Z",
     "news/comfyui|CBMie0FVX3lxTE1DVEw2NUh6bGVFUjJGOVV4VXVKeGcyOEY4emhrLXlFWUxuWEIzTFJMQXNyRlZFRHRwOFVOaW1pczJIQ3o2MGsxdlVWeV9uWHg0QkN1NEZmOTdsTFAzUHJvSlRpTlhQdDViMGprRXBmUzJiZ05JUzU2ZDJBRQ": "2026-08-22T04:58:19.293124Z",
     "reddit/aivideo/new|t3_1vv3kaj": "2026-08-22T05:28:50.052208Z",
-    "hf|dataset|markov-ai/cad-1000-hours": "2026-09-02T09:47:27.065815Z",
+    "hf|dataset|markov-ai/cad-1000-hours": "2026-09-02T14:00:26.529785Z",
     "community/cgpersia|https://cgpersia.com/?p=204729": "2026-08-22T12:26:52.274586Z",
     "news/upscale|CBMiakFVX3lxTE80R0xHLVp3Ri1Jb1BQa1ZNQXA2NkNvU2RXWFNkRFhDanpLMEFSY0N2TC13LTk4MGtZRWRPV3BxQ0xqR1JNZlk2V0EwMmt0dkYzVkxZYWIzNXVsX3lDNlBZSXhPdk1BOXhNb1E": "2026-08-22T14:45:51.749071Z",
     "news/upscale|CBMiV0FVX3lxTE1zUnN6a1IzalZ5RDBJR0MyTi11SzUyN0I1d3JxTmNWT0FWcVNKV3FnWUZ0bUdwbmhBNHJBOURXb0tnbWp3VU9WWF9MNmdKRDYyN1NFWlVMQQ": "2026-08-22T14:45:52.916071Z",
@@ -178,7 +175,7 @@
     "community/cgpersia|https://cgpersia.com/?p=204795": "2026-08-29T17:16:28.531904Z",
     "news/image-generation|CBMibkFVX3lxTE0tTjRUWjkwU01OOGRiVFJHd3Zwa2FJay1peEhfSmtWR1owVERHVWN5QlpDUVVLOHI3MzBKc1V6MngzT0NrdW1sUW55Z2tXT082aHdKTmM1TS1Tb2I2dXlYaVB6OWM1d0hjMTFIU1RB": "2026-08-29T17:16:29.677843Z",
     "github/pinokio/releases|tag:github.com,2008:Repository/664226598/v8.0.35": "2026-08-29T17:16:32.016934Z",
-    "hf|model|unsloth/GLM-5.3-Flash-GGUF": "2026-09-02T09:47:22.407620Z",
+    "hf|model|unsloth/GLM-5.3-Flash-GGUF": "2026-09-02T14:00:21.380264Z",
     "community/cgpersia|https://cgpersia.com/?p=204798": "2026-08-30T00:30:01.089004Z",
     "news/comfyui|CBMiYEFVX3lxTE1mLUFaT1VfWXBHUUVDWmU0eDZkTGRIS0lNUU1RemN2ZUhmTGhLTml3WF9XSEdJd3k0TWFmSGdYcEhpMFl5NFZKLW1nVzF6dWJ2VV9kQndqYUwySHFudzZEaQ": "2026-08-30T00:30:02.256334Z",
     "reddit/aivideo/new|t3_1w22oao": "2026-08-30T00:30:09.451371Z",
@@ -214,6 +211,8 @@
     "news/low-vram|CBMihAFBVV95cUxNb1JhNWxzUU5VVmIySW5wS1JCVlhmeWxZZVE2dmQ2RUt2Q29iRnJyemt1WE5sMFRjbXh2VXRyR0YtdDF4ZUpTdTRtUGZoOUJGYWFOMV9HTDZWRTVDVE1oUUQ1cGxjczdCUVVUNk9EcXU5ZXNMaFdGNFFEOG82bkdGRjVPYkk": "2026-09-02T09:47:21.273439Z",
     "news-kr/comfyui|CBMifkFVX3lxTE1OUjg3YXJ2SEpYMzZvcDh3SUJ5cGtSdE1USXBpQTJrTmUwcUNnNE40YVZ1bjBwU0cwSTdqWE5oRXNBRVhkTVMzQjdWTmJER19GeGtOM1JjZW9wNDhJandWdUM5T1BHQ3RCRnllMnhFZ0FYd19DQXJmajE1TDU4Zw": "2026-09-02T09:47:28.257732Z",
     "news-kr/comfyui|CBMikAFBVV95cUxOQVp2X2xveU9KalkweWRqMEhHNEhvZEhGZ2pPX3ctSkVHVmlOUmtXbjN2OElfbWRUOEZJQ3cwSjFaSkZuOERsZW45azlPZDJUTWJVX19ER0djWHZaS3lvZHBoUkQzejBVeEgzLUgwZENtdVItckJOaDU2WU52b0JSX1hyVHMxaDBjenFDYWhYR08": "2026-09-02T09:47:29.396505Z",
-    "github/pinokio/releases|tag:github.com,2008:Repository/664226598/v8.0.40": "2026-09-02T09:47:30.595954Z"
+    "github/pinokio/releases|tag:github.com,2008:Repository/664226598/v8.0.40": "2026-09-02T09:47:30.595954Z",
+    "news/image-generation|CBMiZ0FVX3lxTE1NMWR4LWIyQlRaRTVBaFNCeHBpNXlYbkRBZUY5ZFJrYXZSQS11a2I1S2NrSGRpUUQ5N1M3eS1qWjgyVU1hcTFTa0JoYzVOWHhHWDZPcFVBVWl4UlZWM1JyWU85WVBseUU": "2026-09-02T14:00:27.629876Z",
+    "news/image-edit|CBMijgFBVV95cUxNaFhpMkdtT0VVTkRxQm9GaVVwTmM5RkV1TkM3b24zVUdfSnpsOW45SkZ5Zm9pc3k2THFTVDlDX0RkZVhTTHVnV2VDUWNIdWt2cDNzSVdfU1dBRHIyYUlyWm5XeFNvTHhHaUhQcU8tUWljMmRHZl9HLXB5Z2E3aFJ0MHRwWm11b2N5N1lhdEtB": "2026-09-02T14:00:28.732703Z"
   }
 }
