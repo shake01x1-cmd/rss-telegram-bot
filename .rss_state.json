@@ -1,11 +1,11 @@
 {
   "version": 1,
   "seen": {
-    "hf|model|unsloth/Qwen3.8-27B-GGUF": "2026-09-10T09:33:19.194682Z",
+    "hf|model|unsloth/Qwen3.8-27B-GGUF": "2026-09-10T14:00:34.031485Z",
     "hf|model|orcarouter/Qwen3.8-27B-Uncensored-FP8": "2026-08-29T07:14:19.604568Z",
     "hf|space|Saravutw/Omni-videos-custom": "2026-09-07T06:21:06.490278Z",
     "hf|model|HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF": "2026-08-28T03:38:07.703243Z",
-    "hf|dataset|markov-ai/cad-1000-hours": "2026-09-10T09:33:24.991882Z",
+    "hf|dataset|markov-ai/cad-1000-hours": "2026-09-10T14:00:37.576114Z",
     "community/cgpersia|https://cgpersia.com/?p=204770": "2026-08-27T19:11:09.403154Z",
     "community/cgpersia|https://cgpersia.com/?p=204773": "2026-08-27T19:11:10.493012Z",
     "news-kr/image|CBMiYkFVX3lxTE95WDliU2s0YW5MU2NQcG9FU2dSay00a2xNZWlrOGgyd3dWQ2dISkpEdUlSb18tU0E3anljdTJ1d2Rzd3JYMWxsVzV6NXdkU2VxY3pWd3BuT2FsWWlldTJha01R": "2026-08-27T19:11:12.676932Z",
@@ -108,7 +108,7 @@
     "community/cgpersia|https://cgpersia.com/?p=204828": "2026-09-04T09:49:05.603629Z",
     "news-kr/image|CBMiU0FVX3lxTE8waEFqT1pqVW1KS18tUGFacFowb1JkSm5VbUxHN0ZaYWFROHNzS3VsQVlkdUpqNTFIN3JSVE5BMldyLWVyRXFDSlZtcTB4Rkx3bmZV0gFTQVVfeXFMTzBoQWpPWmpVbUpLXy1QYVpwWjBvUmRKblVtTEc3RlphYVE4c3NLdWxBWWR1Smo1MUg3clJUTkEyV3ItZXJFcUNKVm1xMHhGTHduZlU": "2026-09-04T09:49:07.934010Z",
     "reddit/comfyui/new|t3_1w74xyy": "2026-09-04T13:56:14.298137Z",
-    "hf|model|ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF": "2026-09-10T09:33:18.013222Z",
+    "hf|model|ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF": "2026-09-10T14:00:32.858684Z",
     "community/cgpersia|https://cgpersia.com/?p=204834": "2026-09-04T13:56:20.116065Z",
     "community/cgpersia|https://cgpersia.com/?p=204831": "2026-09-04T13:56:21.273536Z",
     "reddit/comfyui/new|t3_1w74jy4": "2026-09-04T13:56:23.562141Z",
@@ -182,6 +182,10 @@
     "community/cgpersia|https://cgpersia.com/?p=204884": "2026-09-10T09:33:22.673940Z",
     "community/cgpersia|https://cgpersia.com/?p=204881": "2026-09-10T09:33:23.834724Z",
     "news/text-to-video|CBMimwFBVV95cUxNTEd3d2pPbURlWUM4XzVvU29UV2EtZTlPRUJVR09xOWFCSnVFVzBmNlZGSy0ybVdDTk54d0FtRGNiRUtJNHoyLUJkTm5ySkpGbGRIUjlhaTNBdzFLQ09wUnh1Mmh1eFo4cXlzU1JMWUU1dExEQy1EbTRubnlTbDZMUlE4WVBKWUNhbUJFS1lPQUJINXF4NUs1R29ZYw": "2026-09-10T09:33:26.165032Z",
-    "news/image-generation|CBMi8gFBVV95cUxPYlc1THNJVXJjcEZFajA0aXUxd0tud1JDUkdfWTlhT2JoaENydU9oRDRvVDFlU2dKMHFaaV9WemVpWU55U19IcFdXaUV6VHJxT2otcllZOHJMbVJ1U3piVWpvT1pvRS1lNVVBa1FGY1lhSTd0djZqYW12OTUwTTNSdmg1VldpSnFtSjVmWGNnZW95aGQxdGlVUGhUREl0cGVwaktMaTYzb0xBbkNZVGFEQnN0Yzc5MkxKbF9Ga0pNNk1BM3VvNEZxVkc5dWZPaTFaNGEwcGVTM0E3cGlGSks4T0Zkdmhsakx6cGdRaHdvdFV1UQ": "2026-09-10T09:33:27.325885Z"
+    "news/image-generation|CBMi8gFBVV95cUxPYlc1THNJVXJjcEZFajA0aXUxd0tud1JDUkdfWTlhT2JoaENydU9oRDRvVDFlU2dKMHFaaV9WemVpWU55U19IcFdXaUV6VHJxT2otcllZOHJMbVJ1U3piVWpvT1pvRS1lNVVBa1FGY1lhSTd0djZqYW12OTUwTTNSdmg1VldpSnFtSjVmWGNnZW95aGQxdGlVUGhUREl0cGVwaktMaTYzb0xBbkNZVGFEQnN0Yzc5MkxKbF9Ga0pNNk1BM3VvNEZxVkc5dWZPaTFaNGEwcGVTM0E3cGlGSks4T0Zkdmhsakx6cGdRaHdvdFV1UQ": "2026-09-10T09:33:27.325885Z",
+    "news-kr/sfx|CBMibEFVX3lxTE1QTmI3TXhLQ1FseU1BbndfVEUxcmhCVi1UUGR4ZEw4QlFjUEltUS1aa1RGeDlnSy1zanV4dnJFb180ZFRuN0JUQUd4azhMQkxBWnZIZHRybksyU1NmT0FmNHNUTXhEdE9XYmRpOA": "2026-09-10T14:00:29.286731Z",
+    "community/cgpersia|https://cgpersia.com/?p=204887": "2026-09-10T14:00:30.485732Z",
+    "hf/blog|https://huggingface.co/blog/gradio-workflow-1111": "2026-09-10T14:00:31.659381Z",
+    "hf|space|STCM/wan2-2-fp8da-aoti-preview-2c-finishing": "2026-09-10T14:00:36.400285Z"
   }
 }
