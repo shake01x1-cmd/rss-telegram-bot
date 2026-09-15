@@ -3,11 +3,9 @@
   "seen": {
     "hf|model|unsloth/Qwen3.8-27B-GGUF": "2026-09-13T07:54:33.890432Z",
     "hf|space|Saravutw/Omni-videos-custom": "2026-09-07T06:21:06.490278Z",
-    "hf|dataset|markov-ai/cad-1000-hours": "2026-09-15T13:46:46.432343Z",
+    "hf|dataset|markov-ai/cad-1000-hours": "2026-09-15T17:53:13.367128Z",
     "hf|model|unsloth/Qwen3.8-Flash-Next-GGUF": "2026-09-04T09:49:02.061445Z",
     "hf|model|unsloth/GLM-5.3-Flash-GGUF": "2026-09-02T14:00:21.380264Z",
-    "reddit/comfyui/new|t3_1w4hwn4": "2026-09-01T17:06:19.057783Z",
-    "reddit/comfyui/new|t3_1w4gruz": "2026-09-01T17:06:20.182100Z",
     "news-kr/image|CBMiaEFVX3lxTE5CTkgzcnVPS21uYWt0ZlhwU284WjBiVGE2M24yZHQzRDA3amM1cllhblRtQmVFQjdFT1gxQ081YmhUcDBudHk0X0M1Ukxwd1lJSVJhN1huam5OTTN3WFFfMFN0Y2hWVFEt": "2026-09-01T20:00:58.498075Z",
     "news-kr/image|CBMic0FVX3lxTE04blY1d0F5WnlEbEU5OE5UM2VuY2Rid3E1bF83VmRDVDJEZ3ZyZ1FPNkxyVWE4aTdUQjNtc24waHlFRXBuSVNHLVFZS1RMd2dXZWU4QWxYVmMtVEJiajZ2XzRYckhoc29zWFY3ZG8yU181UU0": "2026-09-01T22:42:42.917662Z",
     "news-kr/image|CBMiVEFVX3lxTFBfX3VYbEdncGhnVm4tRGRwWkZJOW5OcHpOa3hRRjcxdm5OeDBDOEYzQ3pXU2gxanJfTzcyUnZvZVNOaEFZdzhsbVFOeFFRQnJqSDBHbA": "2026-09-02T05:21:08.077380Z",
@@ -57,7 +55,7 @@
     "community/cgpersia|https://cgpersia.com/?p=204828": "2026-09-04T09:49:05.603629Z",
     "news-kr/image|CBMiU0FVX3lxTE8waEFqT1pqVW1KS18tUGFacFowb1JkSm5VbUxHN0ZaYWFROHNzS3VsQVlkdUpqNTFIN3JSVE5BMldyLWVyRXFDSlZtcTB4Rkx3bmZV0gFTQVVfeXFMTzBoQWpPWmpVbUpLXy1QYVpwWjBvUmRKblVtTEc3RlphYVE4c3NLdWxBWWR1Smo1MUg3clJUTkEyV3ItZXJFcUNKVm1xMHhGTHduZlU": "2026-09-04T09:49:07.934010Z",
     "reddit/comfyui/new|t3_1w74xyy": "2026-09-04T13:56:14.298137Z",
-    "hf|model|ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF": "2026-09-15T13:46:40.852336Z",
+    "hf|model|ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF": "2026-09-15T17:53:06.527517Z",
     "community/cgpersia|https://cgpersia.com/?p=204834": "2026-09-04T13:56:20.116065Z",
     "community/cgpersia|https://cgpersia.com/?p=204831": "2026-09-04T13:56:21.273536Z",
     "reddit/comfyui/new|t3_1w74jy4": "2026-09-04T13:56:23.562141Z",
@@ -98,7 +96,7 @@
     "news-kr/comfyui|CBMicEFVX3lxTE5nbTY2ZktqS0RYSllVZFlXLUxFTS1ObE5GSWVKVm5icm5hQTQwWG9XNVY2MzYybndWaC1WZVFRSUE0amVWUWdac2lFaWpqRW5BRlR5eFViNy03YmtSUWp5OUZxTy1lMTY1QTUyZVZUaHQ": "2026-09-07T23:53:52.291269Z",
     "github/invokeai/releases|tag:github.com,2008:Repository/525592995/v6.14.0": "2026-09-08T07:42:30.142411Z",
     "news-kr/video|CBMibEFVX3lxTE5kdmtycDRDUi1CN2NKaXN1bTdpaDhJcGJJYU43Ym94Z3Z4RndlbFVCSWtnUm5YQzlLdWtWdDBvb2c1Z0lhM3E0bkZacF80SUgxUjdmdFdkczZtWGRtNWJlRzdjY1lmbFNhZUxkZw": "2026-09-08T07:42:36.682118Z",
-    "hf|space|aet256/Qwen-Image-Edit-Rapid-AIO-Loras-Experimental": "2026-09-10T09:33:21.513967Z",
+    "hf|space|aet256/Qwen-Image-Edit-Rapid-AIO-Loras-Experimental": "2026-09-15T17:53:11.028854Z",
     "community/cgpersia|https://cgpersia.com/?p=204860": "2026-09-08T12:31:33.301751Z",
     "news/comfyui|CBMiQkFVX3lxTE9EVmNxTzBEQWxLRy1JUzFfaVpvcURWX2hWOTNoZ3JicmNtdER4UW1HMXk5MGJnbzhxbWY3UmtfUE5IZw": "2026-09-08T17:00:10.405799Z",
     "community/cgpersia|https://cgpersia.com/?p=204875": "2026-09-08T17:00:16.303628Z",
@@ -154,7 +152,7 @@
     "community/cgpersia|https://cgpersia.com/?p=204921": "2026-09-12T19:32:01.676380Z",
     "community/cgpersia|https://cgpersia.com/?p=204918": "2026-09-12T19:32:07.135108Z",
     "github/stabilitymatrix/releases|tag:github.com,2008:Repository/652941996/v2.16.2": "2026-09-13T13:03:02.113943Z",
-    "hf|model|Lightricks/LTX-2.5": "2026-09-15T13:46:44.183759Z",
+    "hf|model|Lightricks/LTX-2.5": "2026-09-15T17:53:07.695958Z",
     "community/cgpersia|https://cgpersia.com/?p=204924": "2026-09-13T13:03:07.788162Z",
     "community/cgpersia|https://cgpersia.com/?p=204928": "2026-09-13T17:00:34.819650Z",
     "news-kr/image|CBMidkFVX3lxTE9OMzVoU3NkTU16WFp2ZzhFNEU4Y2ZpOUtSMnBjS1hkWEZrN0VWeFJCZ0VTejJwTVZRRFVkYzVVUmRRZ1FnZ0c1bDhzTmdBSlNfYXAyclpaeEx0S3BXY2FYNG1CUmd0LU8xRXFYUVRraGoyelRmYVHSAWZBVV95cUxORHBndnVpZXlyV1oxUUxuNmVWYTk2UmdTOUhkYW1tZHhUczVWX1RYUXNYQ2E1TkpPYWJmc08xcl82MjF4UUZpT0pJMEl1NXpaNUtrOVdUVDBmTEE0N2FRUXA3amJmU1E": "2026-09-13T22:01:00.540095Z",
@@ -181,6 +179,8 @@
     "news/comfyui|CBMie0FVX3lxTE1DVEw2NUh6bGVFUjJGOVV4VXVKeGcyOEY4emhrLXlFWUxuWEIzTFJMQXNyRlZFRHRwOFVOaW1pczJIQ3o2MGsxdlVWeV9uWHg0QkN1NEZmOTdsTFAzUHJvSlRpTlhQdDViMGprRXBmUzJiZ05JUzU2ZDJBRQ": "2026-09-15T08:27:54.214926Z",
     "news/low-vram|CBMid0FVX3lxTE5TMTdaUXFLaFJQbmItdS0tdmIyalhhaTZyd0hQVEpPQjY5eU5Rejd0MlpCT3BUa1VLRGtxc3ptbDVQTnhHQmV6a21LaDBYODRWVXRpU2FoeC1iaEZMZF94a3FqRm9DQUF6dmtGUGVLSTh2T1F4X3U4": "2026-09-15T08:27:55.354512Z",
     "news-kr/video|CBMixAJBVV95cUxNV195ZUtrcDZudVpDRXlmUlcwSWtFM2dQdTZpT2RORy1qMi1hZlJDUDdER0RSYXpLdURqZHBRY29Hd0hwaXNkcm8tNUlFNk9uWFB6UnhCaXM4WlBHODN6VGQwZFdHem9OaUFIXzNfVXZEVVUxSTViSHNwMVFaeHBaUXZtNGtDYWJXa2FaTXlaM0c1TWZwYmxBeTRJMTZvSWJlUHdCUXJqU055LVkxVy1jWnJiWWJIWTVlZmRYd0F2dXA0dGZ3ZEoyV2FuMmMtMkw5bVd5dWdCbVlLVm1TMmlzaTJ6RW1leVUwa0tEaFhpLW1jTkhUS3FnRldONTNUZ2R1RzhtOU93VGZhSDZma0lITVF5YkdROGVzZFJVSVEwck1ydlNCSzdoTEIzeHpvczNUMHJVMlNROHk0dDJGZkZ0LTQwVXA": "2026-09-15T08:27:56.506323Z",
-    "community/cgpersia|https://cgpersia.com/?p=204937": "2026-09-15T13:46:45.306154Z"
+    "community/cgpersia|https://cgpersia.com/?p=204937": "2026-09-15T13:46:45.306154Z",
+    "news/text-to-video|CBMingJBVV95cUxNTTVrNXBuYU03T0tHem5vcFlneGJtTDRMUVl5QzY3bXBfbGFPeEZVbTRvdUlsU0ZnamNTRGZjUXJZYzRncENseU5acU9tbkZzMERPcDJxbXJoN0RQeHZnZGxBR2pTTEVsTG9KLTE2OVFkaHFJbWZSQkFJd0tFMkM4aTRzdTRXQ3llajFPZC1pWjNtTEtQTzdxY2Fvd1pzaVhwdHY5aEkxNHlxNkZrMmQ3V3lvOV9sVlZkRjZKWmxGZndOYk9CRmZaWEtGbENja01mZ3dfUDBENV9taE5OOXBuZlpjMXhTT0FKalIxNVgyMUZLYkwyV2dGQ1BWaHRuM3ppRVBqY0Z5UVIzZERSa0JtOHhZd09Gc0FXYjdaelJB": "2026-09-15T17:53:08.800918Z",
+    "community/cgpersia|https://cgpersia.com/?p=204940": "2026-09-15T17:53:12.254100Z"
   }
 }
