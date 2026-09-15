@@ -3,10 +3,9 @@
   "seen": {
     "hf|model|unsloth/Qwen3.8-27B-GGUF": "2026-09-13T07:54:33.890432Z",
     "hf|space|Saravutw/Omni-videos-custom": "2026-09-07T06:21:06.490278Z",
-    "hf|dataset|markov-ai/cad-1000-hours": "2026-09-14T23:39:40.814520Z",
+    "hf|dataset|markov-ai/cad-1000-hours": "2026-09-15T02:58:27.860635Z",
     "hf|model|unsloth/Qwen3.8-Flash-Next-GGUF": "2026-09-04T09:49:02.061445Z",
     "hf|model|unsloth/GLM-5.3-Flash-GGUF": "2026-09-02T14:00:21.380264Z",
-    "news/text-to-video|CBMitwFBVV95cUxNNTRBOEhwUDZmN21IYVJITVdxZFUwSV92ckdPU2E0bm80alFuWlhFVVNPQ0hUREFVUHZ2dEpsbVNlWDhoTVpoXzhKTElvdWozck9kRVh5dllwODl6LS1ZaFloTC01SG9WUWZ1RGZmeF9JQXJqaVh2UVF2c3R3aFNKSzAzN1F3bDY3RE1ERFNvdzMwOHVaWlFfZE5EalRJemVvS3ZuSURMN1JlZWZzdGdnMGthMFdSZUk": "2026-09-01T01:56:11.847152Z",
     "news/audio|CBMiV0FVX3lxTE0wXzhrNG40aEppc0dBVDFKN0VtdzlCMmF5enVXZ2RPNWpKN2MwTlloUzRQcVlyR091RVJmMWUyYkVIRzI5Qmc5SjE0U1FabXVnVmIxMkpFSQ": "2026-09-01T07:10:51.577209Z",
     "community/cgpersia|https://cgpersia.com/?p=204814": "2026-09-01T12:39:21.468096Z",
     "news-kr/image|CBMia0FVX3lxTE9NejJIc3ZESUFxSE5HWGhpalFueV9hS3VGYlM5VlRmVmdDZjBPMFRxNDNsekJYWUdNNllzTHRIU0RWbVB6NHJlc3NrQUpRWXpWZk1KYlc2aVNIaEFBTkktOHM3bmRDQ1Z2TnVN": "2026-09-01T12:39:23.920792Z",
@@ -61,7 +60,7 @@
     "community/cgpersia|https://cgpersia.com/?p=204828": "2026-09-04T09:49:05.603629Z",
     "news-kr/image|CBMiU0FVX3lxTE8waEFqT1pqVW1KS18tUGFacFowb1JkSm5VbUxHN0ZaYWFROHNzS3VsQVlkdUpqNTFIN3JSVE5BMldyLWVyRXFDSlZtcTB4Rkx3bmZV0gFTQVVfeXFMTzBoQWpPWmpVbUpLXy1QYVpwWjBvUmRKblVtTEc3RlphYVE4c3NLdWxBWWR1Smo1MUg3clJUTkEyV3ItZXJFcUNKVm1xMHhGTHduZlU": "2026-09-04T09:49:07.934010Z",
     "reddit/comfyui/new|t3_1w74xyy": "2026-09-04T13:56:14.298137Z",
-    "hf|model|ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF": "2026-09-14T23:39:36.068437Z",
+    "hf|model|ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF": "2026-09-15T02:58:23.209471Z",
     "community/cgpersia|https://cgpersia.com/?p=204834": "2026-09-04T13:56:20.116065Z",
     "community/cgpersia|https://cgpersia.com/?p=204831": "2026-09-04T13:56:21.273536Z",
     "reddit/comfyui/new|t3_1w74jy4": "2026-09-04T13:56:23.562141Z",
@@ -139,7 +138,7 @@
     "news-kr/sfx|CBMibEFVX3lxTE1QTmI3TXhLQ1FseU1BbndfVEUxcmhCVi1UUGR4ZEw4QlFjUEltUS1aa1RGeDlnSy1zanV4dnJFb180ZFRuN0JUQUd4azhMQkxBWnZIZHRybksyU1NmT0FmNHNUTXhEdE9XYmRpOA": "2026-09-10T14:00:29.286731Z",
     "community/cgpersia|https://cgpersia.com/?p=204887": "2026-09-10T14:00:30.485732Z",
     "hf/blog|https://huggingface.co/blog/gradio-workflow-1111": "2026-09-10T14:00:31.659381Z",
-    "hf|space|STCM/wan2-2-fp8da-aoti-preview-2c-finishing": "2026-09-14T23:39:38.519293Z",
+    "hf|space|STCM/wan2-2-fp8da-aoti-preview-2c-finishing": "2026-09-15T02:58:25.518468Z",
     "community/cgpersia|https://cgpersia.com/?p=204891": "2026-09-10T17:46:05.083747Z",
     "reddit/aivideo/new|t3_1wcu5pt": "2026-09-10T20:19:53.906186Z",
     "github/comfyui/releases|tag:github.com,2008:Repository/589831718/v0.35.1": "2026-09-10T22:42:11.713057Z",
@@ -158,7 +157,7 @@
     "community/cgpersia|https://cgpersia.com/?p=204921": "2026-09-12T19:32:01.676380Z",
     "community/cgpersia|https://cgpersia.com/?p=204918": "2026-09-12T19:32:07.135108Z",
     "github/stabilitymatrix/releases|tag:github.com,2008:Repository/652941996/v2.16.2": "2026-09-13T13:03:02.113943Z",
-    "hf|model|Lightricks/LTX-2.5": "2026-09-14T23:39:39.670485Z",
+    "hf|model|Lightricks/LTX-2.5": "2026-09-15T02:58:26.701632Z",
     "community/cgpersia|https://cgpersia.com/?p=204924": "2026-09-13T13:03:07.788162Z",
     "community/cgpersia|https://cgpersia.com/?p=204928": "2026-09-13T17:00:34.819650Z",
     "news-kr/image|CBMidkFVX3lxTE9OMzVoU3NkTU16WFp2ZzhFNEU4Y2ZpOUtSMnBjS1hkWEZrN0VWeFJCZ0VTejJwTVZRRFVkYzVVUmRRZ1FnZ0c1bDhzTmdBSlNfYXAyclpaeEx0S3BXY2FYNG1CUmd0LU8xRXFYUVRraGoyelRmYVHSAWZBVV95cUxORHBndnVpZXlyV1oxUUxuNmVWYTk2UmdTOUhkYW1tZHhUczVWX1RYUXNYQ2E1TkpPYWJmc08xcl82MjF4UUZpT0pJMEl1NXpaNUtrOVdUVDBmTEE0N2FRUXA3amJmU1E": "2026-09-13T22:01:00.540095Z",
@@ -177,6 +176,10 @@
     "github/impact-pack/tags|tag:github.com,2008:Repository/621356302/8.21.2": "2026-09-14T20:43:08.480295Z",
     "github/impact-pack/tags|tag:github.com,2008:Repository/621356302/8.28": "2026-09-14T20:43:09.630952Z",
     "news/image-edit|CBMicEFVX3lxTE9OLVJ1Z095YkVyUVkxLVI0cEZXZzZGXzdlV3JueThVZGt4dVdmc3NLelBjOTNRbTJwLWlTUlVvYWJhRTBMaGJRcER6Tm1HdGc5eFlpdHczYWI2QWJjdmRoWTlfczd4ZENyaU9DZ19nVnA": "2026-09-14T20:43:10.780834Z",
-    "github/comfyui/releases|tag:github.com,2008:Repository/589831718/v0.35.2": "2026-09-14T23:39:41.976425Z"
+    "github/comfyui/releases|tag:github.com,2008:Repository/589831718/v0.35.2": "2026-09-14T23:39:41.976425Z",
+    "news-kr/video|CBMibEFVX3lxTE9qUEFhelYwbFRIaW5KbEZZVjE5YzNhQnJ5LTNlTG9KNUJ0RXY0SDVRN3RZX2VEcHBIUEhaT1RUZ0dieEdPbElzQTN1VGhjYWVPY1VzLU9Nd21hQmhkSDJtX29PYTdfZ0g0R0IzbtIBbEFVX3lxTE9qUEFhelYwbFRIaW5KbEZZVjE5YzNhQnJ5LTNlTG9KNUJ0RXY0SDVRN3RZX2VEcHBIUEhaT1RUZ0dieEdPbElzQTN1VGhjYWVPY1VzLU9Nd21hQmhkSDJtX29PYTdfZ0g0R0Izbg": "2026-09-15T02:58:20.855835Z",
+    "reddit/aivideo/new|t3_1wgne29": "2026-09-15T02:58:22.047383Z",
+    "news-kr/image|CBMic0FVX3lxTE1KOGZ6Ymo3OHFDX2l4dTJRMkUyNWVDdXNvWkFvUlk5LVpWMjRyNUtsYXl3X290Q1NFOS1ydkxRbnQ4VGlIeWRhUnVhQmtFUVAxODJQcFFDN2JVR2g3N3MwQXBMNVA0cTlDUElvekY3bVRYRFk": "2026-09-15T02:58:29.029800Z",
+    "news-kr/image|CBMibkFVX3lxTE8yS1d1dG4tcWhURXROTm1ubWxuc2dSVnNieDNrblF3X1Q4N0s5aVV2SUlwcmlKOWN1czc1U0k3VVBzZW9zUEFnMUFCUHloZjhpNlJUUVJNZ0JMdmc5WnhUWnkxVWRmY1BKWm1lMVFn": "2026-09-15T02:58:30.211544Z"
   }
 }
