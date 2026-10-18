@@ -3,7 +3,7 @@
   "seen": {
     "hf|model|abenzerps/Qwen-Image-2.1-Uncensored-GGUF": "2026-10-12T01:29:21.499255Z",
     "hf|space|arudradey/qwen-image-2.1-uncensored-gguf": "2026-10-15T00:23:51.303016Z",
-    "hf|model|Lightricks/LTX-2.5": "2026-10-17T23:54:20.799559Z",
+    "hf|model|Lightricks/LTX-2.5": "2026-10-18T02:38:08.009253Z",
     "news/low-vram|CBMib0FVX3lxTE9DTDMydTgwWGtvaHFOYUdsWWFJcUdXa0ZtVUEyako3VW9uUEJ4MGZEZklTX2Y2NTNSNmZ1X25WLWFfV1NkbTNUckJ4c3E3SE9KRHJGWEFha3l1STBQMFJfemY2Z05ZdlBpWmJRQWt6SQ": "2026-10-04T06:08:28.429415Z",
     "news-kr/image|CBMijAFBVV95cUxOa0FhcW8wUHA0RnV6bnJzV0NDcXRVV0xlYUQ5eUVuekljTmt0OFdSX1ZTMGpzWVRXV0xOYVFNY3VwMlBRUWtmWGRxZGlNd2hoNDloTlVrOVBrUW1lcldrX3g0RG9iTWZsNkw2SVF0eS1UTzF4bXpDdHhoTVktcDNJd3pkSDQ4Y21JdU1ONA": "2026-10-04T12:40:57.436193Z",
     "reddit/aivideo/new|t3_1wxe8gx": "2026-10-04T12:40:58.537227Z",
@@ -127,7 +127,7 @@
     "github/pinokio/releases|tag:github.com,2008:Repository/664226598/v8.2.0": "2026-10-15T09:39:29.672735Z",
     "hf/blog|https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes": "2026-10-15T14:36:47.738488Z",
     "community/cgpersia|https://cgpersia.com/?p=205290": "2026-10-15T14:36:48.929518Z",
-    "hf|space|fishaudio/Drama-3": "2026-10-17T23:54:22.990286Z",
+    "hf|space|fishaudio/Drama-3": "2026-10-18T02:38:11.383137Z",
     "community/cgpersia|https://cgpersia.com/?p=205293": "2026-10-15T14:36:54.830945Z",
     "hf|space|hugging-apps/bfs-best-face-swap": "2026-10-17T07:26:03.254160Z",
     "community/cgpersia|https://cgpersia.com/?p=205296": "2026-10-15T18:50:05.450122Z",
@@ -157,6 +157,8 @@
     "news/audio|CBMipAFBVV95cUxNRG92TXBDYWptUHNkd2V4YTd3ZDI1UXh3cnRwUG9JMm5wNnJxUUwxY0ozb2ZpZnhPaHB0OUkyNEk2cm82NDRURmpRZmZxVnAzQmxmbW9uUjFtc2g0ank0OFJ3ZWhtdV9nVThLaWlzWHYwT2t4TjV5N3VzelRsNjZVN241MU1lMDNadmJVc1RYdzB3Mmg1cVNGNzJ4T21neXQ1RlR4Qg": "2026-10-17T11:42:17.434426Z",
     "community/cgpersia|https://cgpersia.com/?p=205319": "2026-10-17T17:43:20.100605Z",
     "community/cgpersia|https://cgpersia.com/?p=205316": "2026-10-17T17:43:25.842659Z",
-    "news/low-vram|CBMipAFBVV95cUxPRm9nb0VMRmhzVDZIMmZpQ1puRmRiSDVOay1nTGpwZ1BIWnE5cmdua3hNT0hfaURPVlVDS2hLand6cHBpUUpyczNRUzhrV25XN0FEQlAyTU9KLVNzV3dPMDB3R1hBN0Robi1wYUdsTTJUeXJDUnZWRWdBLWpHaF9MSlFTUHFSM3l0Tkt4N0J2SlQydlVnVFc0ejktLWdyYTdHb0N4dg": "2026-10-17T21:59:52.206598Z"
+    "news/low-vram|CBMipAFBVV95cUxPRm9nb0VMRmhzVDZIMmZpQ1puRmRiSDVOay1nTGpwZ1BIWnE5cmdua3hNT0hfaURPVlVDS2hLand6cHBpUUpyczNRUzhrV25XN0FEQlAyTU9KLVNzV3dPMDB3R1hBN0Robi1wYUdsTTJUeXJDUnZWRWdBLWpHaF9MSlFTUHFSM3l0Tkt4N0J2SlQydlVnVFc0ejktLWdyYTdHb0N4dg": "2026-10-17T21:59:52.206598Z",
+    "hf|model|fishaudio/drama-3": "2026-10-18T02:38:09.141366Z",
+    "news-kr/image|CBMihgFBVV95cUxNaVE0WW9GLWMyeGJjNUk0Q1N2bkpxeEhFYTBweWkycHliOXBMZDZOellhZjl4eEdRRkVRR3Zha1pUSlUyUTQ2cmduZlp1S1A4YkNJWmVhblJBRWJoMTViTlFQekZvazZJZHFMREd0R3ZGRWtaVUx3X1F4aFRnbkpfU2g2cjZRZw": "2026-10-18T02:38:12.497858Z"
   }
 }
