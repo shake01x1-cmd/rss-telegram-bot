@@ -3,10 +3,8 @@
   "seen": {
     "hf|model|abenzerps/Qwen-Image-2.1-Uncensored-GGUF": "2026-10-12T01:29:21.499255Z",
     "hf|space|arudradey/qwen-image-2.1-uncensored-gguf": "2026-10-15T00:23:51.303016Z",
-    "hf|model|Lightricks/LTX-2.5": "2026-10-19T06:40:08.181228Z",
+    "hf|model|Lightricks/LTX-2.5": "2026-10-19T14:15:39.958652Z",
     "hf|model|Venastine-Research/Xing4.0-29B-A4B-GGUF": "2026-10-12T07:51:33.508254Z",
-    "community/cgpersia|https://cgpersia.com/?p=205129": "2026-10-05T09:22:50.608240Z",
-    "news-kr/upscale|CBMiZ0FVX3lxTE1XY0hPUGUxamg5aXE0Q0lBbEV2M1FLc1dXd3dGWTJ0Vk1hMENib2NielByMVhuT29sSW42YnZ5UTRMd3FSdmRqNGpXU003eEViQjRIQ3lGUVpxR2gySjNJMVFFaTVsU0E": "2026-10-05T09:22:51.766232Z",
     "community/cgpersia|https://cgpersia.com/?p=205137": "2026-10-05T18:41:09.100049Z",
     "community/cgpersia|https://cgpersia.com/?p=205134": "2026-10-05T18:41:10.231660Z",
     "reddit/aivideo/new|t3_1wyg0s3": "2026-10-05T18:41:11.396657Z",
@@ -120,7 +118,7 @@
     "github/pinokio/releases|tag:github.com,2008:Repository/664226598/v8.2.0": "2026-10-15T09:39:29.672735Z",
     "hf/blog|https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes": "2026-10-15T14:36:47.738488Z",
     "community/cgpersia|https://cgpersia.com/?p=205290": "2026-10-15T14:36:48.929518Z",
-    "hf|space|fishaudio/Drama-3": "2026-10-19T06:40:11.570502Z",
+    "hf|space|fishaudio/Drama-3": "2026-10-19T14:15:43.325047Z",
     "community/cgpersia|https://cgpersia.com/?p=205293": "2026-10-15T14:36:54.830945Z",
     "hf|space|hugging-apps/bfs-best-face-swap": "2026-10-17T07:26:03.254160Z",
     "community/cgpersia|https://cgpersia.com/?p=205296": "2026-10-15T18:50:05.450122Z",
@@ -151,7 +149,7 @@
     "community/cgpersia|https://cgpersia.com/?p=205319": "2026-10-17T17:43:20.100605Z",
     "community/cgpersia|https://cgpersia.com/?p=205316": "2026-10-17T17:43:25.842659Z",
     "news/low-vram|CBMipAFBVV95cUxPRm9nb0VMRmhzVDZIMmZpQ1puRmRiSDVOay1nTGpwZ1BIWnE5cmdua3hNT0hfaURPVlVDS2hLand6cHBpUUpyczNRUzhrV25XN0FEQlAyTU9KLVNzV3dPMDB3R1hBN0Robi1wYUdsTTJUeXJDUnZWRWdBLWpHaF9MSlFTUHFSM3l0Tkt4N0J2SlQydlVnVFc0ejktLWdyYTdHb0N4dg": "2026-10-17T21:59:52.206598Z",
-    "hf|model|fishaudio/drama-3": "2026-10-19T06:40:09.334630Z",
+    "hf|model|fishaudio/drama-3": "2026-10-19T14:15:41.091732Z",
     "news-kr/image|CBMihgFBVV95cUxNaVE0WW9GLWMyeGJjNUk0Q1N2bkpxeEhFYTBweWkycHliOXBMZDZOellhZjl4eEdRRkVRR3Zha1pUSlUyUTQ2cmduZlp1S1A4YkNJWmVhblJBRWJoMTViTlFQekZvazZJZHFMREd0R3ZGRWtaVUx3X1F4aFRnbkpfU2g2cjZRZw": "2026-10-18T02:38:12.497858Z",
     "community/cgpersia|https://cgpersia.com/?p=205322": "2026-10-18T12:23:33.577413Z",
     "community/cgpersia|https://cgpersia.com/?p=205325": "2026-10-18T12:23:34.715956Z",
@@ -162,6 +160,11 @@
     "github/comfyui/releases|tag:github.com,2008:Repository/589831718/v0.42.1": "2026-10-18T23:26:30.732346Z",
     "reddit/aivideo/new|t3_1x9fgxk": "2026-10-18T23:26:31.869290Z",
     "github/invokeai/releases|tag:github.com,2008:Repository/525592995/v7.0.0-alpha.3": "2026-10-19T01:29:39.066238Z",
-    "news-kr/image|CBMic0FVX3lxTE1HdW5wQ3VUbkpyVkFsc3h4bjZLcVlaalNJUkZ2RU4tQlZUYWs4MHV6eDF3OUs4clpPb2hDcGV5RGNKX3Q0alFsS1ZjRXFXNGUzRGxKRTBNTHN6SWctbUJDVjdtSDg2czhNMlBqeW92N0pvQjg": "2026-10-19T06:40:12.666937Z"
+    "news-kr/image|CBMic0FVX3lxTE1HdW5wQ3VUbkpyVkFsc3h4bjZLcVlaalNJUkZ2RU4tQlZUYWs4MHV6eDF3OUs4clpPb2hDcGV5RGNKX3Q0alFsS1ZjRXFXNGUzRGxKRTBNTHN6SWctbUJDVjdtSDg2czhNMlBqeW92N0pvQjg": "2026-10-19T06:40:12.666937Z",
+    "community/cgpersia|https://cgpersia.com/?p=205331": "2026-10-19T14:15:37.680397Z",
+    "community/cgpersia|https://cgpersia.com/?p=205334": "2026-10-19T14:15:38.837678Z",
+    "news/comfyui|CBMiXEFVX3lxTFBJOTBhMjZVMFhDYWtaUmJUdHJIMHR0ZWdvbTNfa3hQWnZfNng5Nkd6X0ozSGVpdkV3dDM2b0RPLV9PempXc2NpM0VsYkJxSW9fb2FJSDBDZTh5Mklk": "2026-10-19T14:15:44.457207Z",
+    "news-kr/upscale|CBMiZ0FVX3lxTE1XY0hPUGUxamg5aXE0Q0lBbEV2M1FLc1dXd3dGWTJ0Vk1hMENib2NielByMVhuT29sSW42YnZ5UTRMd3FSdmRqNGpXU003eEViQjRIQ3lGUVpxR2gySjNJMVFFaTVsU0E": "2026-10-19T14:15:45.570192Z",
+    "news-kr/video|CBMib0FVX3lxTE5McVE2Tk4xc09Pcl9OOWEtN3N0X3VSZ1hvYU1aQ0hZNzhsUXVDZW9RTHZVNmcwZjhJZjZmSXQxRjhFOHRDdjZYeUotaTdkcTRLUXpHYlVsN2pET1Z1bm9pYk5NVlo0MEtzZmF3NGJRaw": "2026-10-19T14:15:46.688638Z"
   }
 }
