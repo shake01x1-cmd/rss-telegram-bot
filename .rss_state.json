@@ -1,12 +1,10 @@
 {
   "version": 1,
   "seen": {
-    "hf|model|Lightricks/LTX-2.5": "2026-11-01T17:01:19.659111Z",
+    "hf|model|Lightricks/LTX-2.5": "2026-11-01T21:18:11.712772Z",
     "hf|model|abenzerps/Qwen-Image-2.1-Uncensored-Quantized": "2026-11-01T17:01:18.465537Z",
     "hf|space|fishaudio/Drama-3": "2026-10-21T00:43:42.574845Z",
     "hf|model|fishaudio/drama-3": "2026-10-23T08:21:00.896259Z",
-    "news/comfyui|CBMipgFBVV95cUxOWmdURnh0NlVyWUdRWDdwWDNhbGNDa0ZoS21fSjRZbkFmWl9mV1phX2JRZkpBRWlXV0tMbUtmMlFTaVczMXpaajRBMENyWG1BSjBPNmRmcmY4LUhhSVlMRUpMN1I3cmUzWGtibTlPSFZ0S0JvaXlralJFYU8yaGlNUXEtNzJGbTZ3WkFWX3Jkd3NnUXQwblpNVFBTSlpQSnN2NVptYTFB": "2026-10-18T18:45:05.900608Z",
-    "github/invokeai/releases|tag:github.com,2008:Repository/525592995/v7.0.0-alpha.1": "2026-10-18T18:45:07.033613Z",
     "github/comfyui/releases|tag:github.com,2008:Repository/589831718/v0.42.0": "2026-10-18T23:26:25.095293Z",
     "github/comfyui/releases|tag:github.com,2008:Repository/589831718/v0.42.1": "2026-10-18T23:26:30.732346Z",
     "reddit/aivideo/new|t3_1x9fgxk": "2026-10-18T23:26:31.869290Z",
@@ -171,7 +169,7 @@
     "github/comfyui-manager/tags|tag:github.com,2008:Repository/631600154/4.3": "2026-10-31T12:54:44.187779Z",
     "news/upscale|CBMiqwFBVV95cUxNZ2FKS0J5S1lEbHZFaGViejZfVzluYlRDWHM0RWN1R0VzR0s4WV93M0NKN3hkaWZUSmgwWFdCTU9CQkRzSFpNUTlXaWZ3d0RrOUNBd0NyellkX0R5TGF0UTQwYzNvZ2JJZXhnN1pCLWRxSmNXd0NUbGlvbW9ZUThhbFd3N3Bad0pWeWd4U2FySk9xOGtndy1VZDBrbUN6ZFZSbXpQTXUybWpIQm8": "2026-10-31T12:54:45.353369Z",
     "news/audio|CBMipAFBVV95cUxNRG92TXBDYWptUHNkd2V4YTd3ZDI1UXh3cnRwUG9JMm5wNnJxUUwxY0ozb2ZpZnhPaHB0OUkyNEk2cm82NDRURmpRZmZxVnAzQmxmbW9uUjFtc2g0ank0OFJ3ZWhtdV9nVThLaWlzWHYwT2t4TjV5N3VzelRsNjZVN241MU1lMDNadmJVc1RYdzB3Mmg1cVNGNzJ4T21neXQ1RlR4Qg": "2026-10-31T12:54:46.530156Z",
-    "hf|space|AST-1320/Qwen-2511-Plus-Flux.2-klein": "2026-11-01T17:01:22.035541Z",
+    "hf|space|AST-1320/Qwen-2511-Plus-Flux.2-klein": "2026-11-01T21:18:15.164402Z",
     "news-kr/video|CBMiQ0FVX3lxTFBaZ0UxV2E2NjIwSkFwM013bXN0ZUNYbXVYVENPVTZMOGFUODZVRDdCQW40ZkRsZEQ5eW9nUDBlS3h5VWM": "2026-10-31T20:36:50.355621Z",
     "community/cgpersia|https://cgpersia.com/?p=205493": "2026-10-31T23:55:51.931151Z",
     "reddit/aivideo/new|t3_1xko9z3": "2026-10-31T23:55:53.041295Z",
@@ -184,6 +182,8 @@
     "github/impact-pack/tags|tag:github.com,2008:Repository/621356302/8.30": "2026-11-01T10:58:27.090374Z",
     "news/comfyui|CBMitAFBVV95cUxQejdjcGpLQkNyWmF5SHFXZlp1U2NsUm9LU1dNaGJmODYxWTE1V01XQ0ZVcVI3cjBMcGtTSEJTcERpM01MTVM3d0Jfdl9Pa1NLc2JiNUdJajRsV3lueWxublliMlF0Rk9mQmdDczhhUV9xcEg5MDYzZzk2Ry1KcjJOREw4Q0l5QmFHVjRfbXhRczFJbzI2aldneVV4ZWdSMGswdXZseHNiOFdJWUF0MklURF9KNzM": "2026-11-01T10:58:28.212237Z",
     "community/cgpersia|https://cgpersia.com/?p=205502": "2026-11-01T17:01:17.315493Z",
-    "community/cgpersia|https://cgpersia.com/?p=205505": "2026-11-01T17:01:23.210350Z"
+    "community/cgpersia|https://cgpersia.com/?p=205505": "2026-11-01T17:01:23.210350Z",
+    "hf|model|Pika-Labs/Pika-H3-Flex": "2026-11-01T21:18:12.901411Z",
+    "news/comfyui|CBMinAFBVV95cUxOSWJIaEtBTnprV1dYVWFyeGNXcm8tYmVsb1E1ekdrR2tJOFVUaHNQa0x4aThwVW9kLWlVRTdzQ3hHSEtwdzBUSC05OGUwMTl5eU9HV0xZNURSTzZaSzJKbmtjZW1WS3RiWUFnX1AtbUZmMUh1MklLVUFaN0ExaHlWZGNqM0J2N1FBNmR6eWNPUURuX2d4Sm1MdXJ0WTk": "2026-11-01T21:18:16.309857Z"
   }
 }
