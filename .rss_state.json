@@ -1,7 +1,7 @@
 {
   "version": 1,
   "seen": {
-    "hf|model|Lightricks/LTX-2.5": "2026-11-07T20:23:04.296099Z",
+    "hf|model|Lightricks/LTX-2.5": "2026-11-07T23:46:02.691911Z",
     "hf|model|abenzerps/Qwen-Image-2.1-Uncensored-Quantized": "2026-11-03T20:13:09.844110Z",
     "hf|space|glitchlab/MiniMax-H3-Turbo-Lora-UNCENSORED-Workflow": "2026-10-30T16:08:25.064998Z",
     "news-kr/video|CBMibEFVX3lxTE1OZHdFTVJlaERibmt6MGpLc081c1VVbGVKNFduUkd5V2xhMm1lbXc2SVlDZ3pDMEkwc3ZNNWQzMThZS2RVaXpXQU1VQVgwUE43QnhwSjlKTnJoa0pXTC1WTDFHZUZEV3NrODFENg": "2026-10-25T03:04:32.591601Z",
@@ -152,7 +152,7 @@
     "community/cgpersia|https://cgpersia.com/?p=205545": "2026-11-06T18:10:51.221149Z",
     "community/cgpersia|https://cgpersia.com/?p=205548": "2026-11-06T18:10:52.396175Z",
     "news-kr/image|CBMiZEFVX3lxTFB2Mnlxd1ZLT0FUd1l2WlMzSnBaQkF5MjRHaDVtZ2RVX1dCT0FOcVhYX3ZOeW41QTM1MEdBTFJvY2RqS3VDRmJWWElEWU9kSXJsdmJ6akRLNW1YWFdVSFhIcXpPSkY": "2026-11-06T18:10:53.560305Z",
-    "hf|space|hugging-apps/bfs-best-face-swap": "2026-11-07T20:23:06.555128Z",
+    "hf|space|hugging-apps/bfs-best-face-swap": "2026-11-07T23:46:04.859553Z",
     "github/comfyui/releases|tag:github.com,2008:Repository/589831718/v0.44.2": "2026-11-06T23:22:02.531238Z",
     "news/text-to-video|CBMihgFBVV95cUxPRGYxeVdUQ2pxWU5YTndmWVZMYV81cjliMHFMd0ZEcHdzUW5BREpqSjE0bzA4cUM2ZVRUYkw0c2taWHJUS2RWMmNJa3lBcnhLSTlKYktkTXV0bDA3bUdJX3hXcGFkVUd6blhLQkJBdFdFY2gzNVBYTi05TGZueW5XX0p2Y2dSZ9IBhAFBVV95cUxOMjFoU201bU80NHBzVHpCeGdQUjIyWk1PUktneDNDbklIdGpObnFZWG5hekxkdkRTbGlRWGt1bExEMVdHaWJZVWNJQnpUY2FKVFpvWldWS1VBcWhWTS1oaTZaTURjazNBNmJIMnVwa1NrNEN4NGNGcnpEWGgxNmpyWVRKY3o": "2026-11-06T23:22:03.617600Z",
     "reddit/aivideo/new|t3_1xq2icw": "2026-11-07T09:46:48.701183Z",
@@ -162,7 +162,9 @@
     "news-kr/image|CBMikgFBVV95cUxOVHBrNVp6dzNFVHA1Q3FvdW8yanJlS2x0V3RCWUlXQXh1Y21DUjBObzFnT2dlRkRSank0R2xMblk5MVZOd3pSd3hTd2tfSXRHNy1JTF9hX1N2UnBzSUY2Umk5U0pDUFFFN1JwU204bVdOSXFlMlZ5SVpPdnkzalBwLUhuQ1B2OVEzYldWNzJPdjVQdw": "2026-11-07T16:01:33.215472Z",
     "news-kr/video|CBMikgFBVV95cUxOVHBrNVp6dzNFVHA1Q3FvdW8yanJlS2x0V3RCWUlXQXh1Y21DUjBObzFnT2dlRkRSank0R2xMblk5MVZOd3pSd3hTd2tfSXRHNy1JTF9hX1N2UnBzSUY2Umk5U0pDUFFFN1JwU204bVdOSXFlMlZ5SVpPdnkzalBwLUhuQ1B2OVEzYldWNzJPdjVQdw": "2026-11-07T16:01:34.387804Z",
     "hf|space|a-test-user-in-the-wrold/qwen-image-21-uncensored": "2026-11-07T16:01:37.826601Z",
-    "hf|model|moonshotai/Kimi-K3.1-Pro": "2026-11-07T20:23:08.121322Z",
-    "reddit/aivideo/new|t3_1xq704z": "2026-11-07T16:01:40.018778Z"
+    "hf|model|moonshotai/Kimi-K3.1-Pro": "2026-11-07T23:46:05.992937Z",
+    "reddit/aivideo/new|t3_1xq704z": "2026-11-07T16:01:40.018778Z",
+    "community/cgpersia|https://cgpersia.com/?p=205557": "2026-11-07T23:46:00.500552Z",
+    "community/cgpersia|https://cgpersia.com/?p=205560": "2026-11-07T23:46:01.595732Z"
   }
 }
