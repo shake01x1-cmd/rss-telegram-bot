@@ -1,11 +1,9 @@
 {
   "version": 1,
   "seen": {
-    "hf|model|Lightricks/LTX-2.5": "2026-11-06T23:21:58.931047Z",
+    "hf|model|Lightricks/LTX-2.5": "2026-11-07T02:59:01.849051Z",
     "hf|model|abenzerps/Qwen-Image-2.1-Uncensored-Quantized": "2026-11-03T20:13:09.844110Z",
     "hf|space|glitchlab/MiniMax-H3-Turbo-Lora-UNCENSORED-Workflow": "2026-10-30T16:08:25.064998Z",
-    "reddit/aivideo/new|t3_1xdtoso": "2026-10-24T00:11:16.406942Z",
-    "news-kr/video|CBMiZEFVX3lxTE52enA2SlgwTHl3RlVoTC1yZUhQQUdEa3NDRUpJbGd1NHdJSVN1WHVyYkVlTXByQUllUFhYam85azFuNloyUF9DdHpFVWxuS1liNXZLZldhaUZBXzdQLWFDeXo2WXg": "2026-10-24T00:11:17.492983Z",
     "reddit/aivideo/new|t3_1xdzked": "2026-10-24T04:51:57.829242Z",
     "community/cgpersia|https://cgpersia.com/?p=205423": "2026-10-24T04:52:01.136117Z",
     "news-kr/lowvram|CBMiS0FVX3lxTE5vYWgtQUh1WmtQZTljek9jNVNlSzNVb0Z1eVBNNGVveEJ2S0hGeHRGb3lscDlSck5oajVTRGhGMFZGRGJmWXV5bUVjSQ": "2026-10-24T09:15:10.195798Z",
@@ -158,11 +156,11 @@
     "news-kr/video|CBMickFVX3lxTE9hZGVlb1VDVnZJRm5IaG1yQk1FMHhtb0FsQWVZeHpiVzd2X3JicHRLei1FQmUwOWtJYXV5OGtBUXJMbHpvcFF4ZTQ4UTNSX1VlT3VsdjRST2FYcHBIcXlOV0VxbzkzemxOcFZydFVZT0VDZ9IBdkFVX3lxTE1pLWxVOFBXTHRQR3gtTDFwREo4QUc4OVVWTE01RU1ya3luSW83bXZlTFlfSzFUaDJnNlVmN2ZSSGpGVnRxaUlLZW1jaTRTQVAyMXVYcm5HVmVDam5GSzRfZHYzQ1hZOEVVQUFMZngtQ2pUN2dtZXc": "2026-11-06T11:16:41.717891Z",
     "news-kr/video|CBMipwFBVV95cUxQWTB4N0otYjJQemNnMm9MX25zaWI0WHBhZkx6LW1IdWhiR1RTYzY3eS1qZi1zLXRaTV9qU2tnUFhKT3REMHJ5Y09lYzZTTERId01sZmRJc2NiWHViRlZrMnVqYTMzeFFKSkJQanFmbFphSGJvN24zc3lPb1hYcHFpcW1abTlsSVAtYkluYUpoYlFkTW9uRTQweUtRWjJiOWFXZTUxeTE0WQ": "2026-11-06T11:16:42.861570Z",
     "news-kr/video|CBMiZ0FVX3lxTE8zRnRZdk5tcGlYdEh1M0tpUmowUmxOV3JjMEJISExTckp6N1FoYWFPWnBIVFhZS0ZGMEljbExDTEZNQUF3ajRvMGcyTEV5RU9aX1VteGdyaFAxOGp1ZmN4UnlzVmRlUXM": "2026-11-06T18:10:45.403086Z",
-    "hf|model|AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF": "2026-11-06T23:21:57.847064Z",
+    "hf|model|AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF": "2026-11-07T02:59:00.741030Z",
     "community/cgpersia|https://cgpersia.com/?p=205545": "2026-11-06T18:10:51.221149Z",
     "community/cgpersia|https://cgpersia.com/?p=205548": "2026-11-06T18:10:52.396175Z",
     "news-kr/image|CBMiZEFVX3lxTFB2Mnlxd1ZLT0FUd1l2WlMzSnBaQkF5MjRHaDVtZ2RVX1dCT0FOcVhYX3ZOeW41QTM1MEdBTFJvY2RqS3VDRmJWWElEWU9kSXJsdmJ6akRLNW1YWFdVSFhIcXpPSkY": "2026-11-06T18:10:53.560305Z",
-    "hf|space|hugging-apps/bfs-best-face-swap": "2026-11-06T23:22:01.437754Z",
+    "hf|space|hugging-apps/bfs-best-face-swap": "2026-11-07T02:59:04.035161Z",
     "github/comfyui/releases|tag:github.com,2008:Repository/589831718/v0.44.2": "2026-11-06T23:22:02.531238Z",
     "news/text-to-video|CBMihgFBVV95cUxPRGYxeVdUQ2pxWU5YTndmWVZMYV81cjliMHFMd0ZEcHdzUW5BREpqSjE0bzA4cUM2ZVRUYkw0c2taWHJUS2RWMmNJa3lBcnhLSTlKYktkTXV0bDA3bUdJX3hXcGFkVUd6blhLQkJBdFdFY2gzNVBYTi05TGZueW5XX0p2Y2dSZ9IBhAFBVV95cUxOMjFoU201bU80NHBzVHpCeGdQUjIyWk1PUktneDNDbklIdGpObnFZWG5hekxkdkRTbGlRWGt1bExEMVdHaWJZVWNJQnpUY2FKVFpvWldWS1VBcWhWTS1oaTZaTURjazNBNmJIMnVwa1NrNEN4NGNGcnpEWGgxNmpyWVRKY3o": "2026-11-06T23:22:03.617600Z"
   }
