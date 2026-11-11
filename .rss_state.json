@@ -1,13 +1,10 @@
 {
   "version": 1,
   "seen": {
-    "hf|model|Lightricks/LTX-2.5": "2026-11-11T02:03:56.933621Z",
+    "hf|model|Lightricks/LTX-2.5": "2026-11-11T09:41:00.613117Z",
     "hf|model|abenzerps/Qwen-Image-2.1-Uncensored-Quantized": "2026-11-03T20:13:09.844110Z",
     "hf|space|glitchlab/MiniMax-H3-Turbo-Lora-UNCENSORED-Workflow": "2026-10-30T16:08:25.064998Z",
     "hf|model|ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF": "2026-10-31T06:04:00.466287Z",
-    "reddit/aivideo/new|t3_1xhhr3q": "2026-10-28T08:03:20.548460Z",
-    "github/comfyui/releases|tag:github.com,2008:Repository/589831718/v0.43.1": "2026-10-28T08:03:23.967846Z",
-    "news-kr/image|CBMia0FVX3lxTE02NHJhdlduT1hUM1JNcnVVQ1poWE5CVFhQZWZMM2dCdDE0NlA0bnN0MXA1Y0FrZ29tSEpsQWkwQVpyeThSTlB4N0dvd3BiS0Z1QnJlRkZVVXpUcVZJeXk2UkZhYTlCTmVwd3B3": "2026-10-28T08:03:25.106898Z",
     "github/stabilitymatrix/releases|tag:github.com,2008:Repository/652941996/v2.16.4": "2026-10-28T15:16:30.850924Z",
     "community/cgpersia|https://cgpersia.com/?p=205465": "2026-10-28T15:16:36.720678Z",
     "news-kr/comfyui|CBMiZ0FVX3lxTFBDYk1ESDNjMTYxSGN4VWtqeWpUVGRST3FNV09SM2IzZDFRZFlkWHA5NlluM1dqaWthcW9EbWNFMVNsek90ZU02N1haY0RxQ2RCWWpGM0JJWk9pMGJKVVFkRWFPUkhQQWc": "2026-10-28T15:16:37.863683Z",
@@ -118,7 +115,7 @@
     "github/comfyui/releases|tag:github.com,2008:Repository/589831718/v0.44.2": "2026-11-06T23:22:02.531238Z",
     "news/text-to-video|CBMihgFBVV95cUxPRGYxeVdUQ2pxWU5YTndmWVZMYV81cjliMHFMd0ZEcHdzUW5BREpqSjE0bzA4cUM2ZVRUYkw0c2taWHJUS2RWMmNJa3lBcnhLSTlKYktkTXV0bDA3bUdJX3hXcGFkVUd6blhLQkJBdFdFY2gzNVBYTi05TGZueW5XX0p2Y2dSZ9IBhAFBVV95cUxOMjFoU201bU80NHBzVHpCeGdQUjIyWk1PUktneDNDbklIdGpObnFZWG5hekxkdkRTbGlRWGt1bExEMVdHaWJZVWNJQnpUY2FKVFpvWldWS1VBcWhWTS1oaTZaTURjazNBNmJIMnVwa1NrNEN4NGNGcnpEWGgxNmpyWVRKY3o": "2026-11-06T23:22:03.617600Z",
     "reddit/aivideo/new|t3_1xq2icw": "2026-11-07T09:46:48.701183Z",
-    "hf|model|DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF": "2026-11-11T02:03:55.742434Z",
+    "hf|model|DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF": "2026-11-11T09:40:59.473956Z",
     "community/cgpersia|https://cgpersia.com/?p=205551": "2026-11-07T09:46:55.102869Z",
     "news-kr/lowvram|CBMiS0FVX3lxTE5vYWgtQUh1WmtQZTljek9jNVNlSzNVb0Z1eVBNNGVveEJ2S0hGeHRGb3lscDlSck5oajVTRGhGMFZGRGJmWXV5bUVjSQ": "2026-11-07T09:46:56.214640Z",
     "news-kr/image|CBMikgFBVV95cUxOVHBrNVp6dzNFVHA1Q3FvdW8yanJlS2x0V3RCWUlXQXh1Y21DUjBObzFnT2dlRkRSank0R2xMblk5MVZOd3pSd3hTd2tfSXRHNy1JTF9hX1N2UnBzSUY2Umk5U0pDUFFFN1JwU204bVdOSXFlMlZ5SVpPdnkzalBwLUhuQ1B2OVEzYldWNzJPdjVQdw": "2026-11-07T16:01:33.215472Z",
@@ -147,7 +144,7 @@
     "github/swarmui/releases|tag:github.com,2008:Repository/818118661/0.9.7-Beta": "2026-11-10T09:05:37.982688Z",
     "github/swarmui/releases|tag:github.com,2008:Repository/818118661/0.9.8-Beta": "2026-11-10T09:05:39.118942Z",
     "news/low-vram|CBMimAFBVV95cUxQT3lBT1NFb29oRlJid3BoeDNLMk16VVZBMHdMeUtjZ0w4VHNIWmRoR3BmSUFLV043ZFdkMTBnSWhhMDRzSEFuWlY2OU1YbzczVWFkNnNmeDJSYUt2TDJjYzh2dFRFVXVwTkpBV3prNERPTWxDVnZTb3ZPQnFpd1dnM254UTM2TkdnZ0g1dWZnM0syTWE1dHpwdg": "2026-11-10T09:05:40.318422Z",
-    "hf|space|thea2026/image-to-video": "2026-11-10T17:10:58.204867Z",
+    "hf|space|thea2026/image-to-video": "2026-11-11T09:41:02.899241Z",
     "github/impact-pack/tags|tag:github.com,2008:Repository/621356302/8.28": "2026-11-10T09:05:45.961365Z",
     "news-kr/upscale|CBMiY0FVX3lxTE91Nl9VQVd1ZjJBVWJYakhiZmozU0FlbGVsLTdYOE1KOWtTaHNKMTRQa2RCbDk2TGNCN3NMMVE1RU5yRDJFMy1ieGk1eHE0bk91N1dpbmxEU2xJcDh2Q3pJTDc3bw": "2026-11-10T09:05:47.144091Z",
     "news/image-edit|CBMicEFVX3lxTE9OLVJ1Z095YkVyUVkxLVI0cEZXZzZGXzdlV3JueThVZGt4dVdmc3NLelBjOTNRbTJwLWlTUlVvYWJhRTBMaGJRcER6Tm1HdGc5eFlpdHczYWI2QWJjdmRoWTlfczd4ZENyaU9DZ19nVnA": "2026-11-10T09:05:48.270162Z",
@@ -161,6 +158,7 @@
     "news-kr/image|CBMiakFVX3lxTE5RMmhWSzNkbS1SYXZHU3lCS3NONndNX0lJMEZuY09ZQ2pxa2VGci10LUN4MjVBcXpLWWFVSEtUV2V4andqY2IyNUVMX2NUQURSVU9GcW03ZUhCV3lUOEd0RlFuS0o1ekJhVnc": "2026-11-10T17:11:03.959503Z",
     "hf|space|umaircxnd/MiniMax-H3-Turbo-Lora-UNCENSORED-Workflow": "2026-11-11T02:03:54.569727Z",
     "github/comfyui/releases|tag:github.com,2008:Repository/589831718/v0.45.1": "2026-11-10T22:27:00.919285Z",
-    "news-kr/upscale|CBMiVEFVX3lxTE9TSUxka0FqWDh4ZzQyUDgtUWVzS2hjdnduUmhKcjFSTHZXZ0VWU2E2cVpNdTdGY3ZhTHRzTkJHa2xLaGF2Ty1MRUhRZS1MOGxtc1lpYg": "2026-11-11T02:03:52.214403Z"
+    "news-kr/upscale|CBMiVEFVX3lxTE9TSUxka0FqWDh4ZzQyUDgtUWVzS2hjdnduUmhKcjFSTHZXZ0VWU2E2cVpNdTdGY3ZhTHRzTkJHa2xLaGF2Ty1MRUhRZS1MOGxtc1lpYg": "2026-11-11T02:03:52.214403Z",
+    "github/comfyui/releases|tag:github.com,2008:Repository/589831718/v0.45.2": "2026-11-11T09:41:04.055069Z"
   }
 }
