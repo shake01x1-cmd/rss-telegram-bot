@@ -1,11 +1,10 @@
 {
   "version": 1,
   "seen": {
-    "hf|model|Lightricks/LTX-2.5": "2026-11-11T17:38:29.705635Z",
+    "hf|model|Lightricks/LTX-2.5": "2026-11-11T23:56:51.602649Z",
     "hf|model|abenzerps/Qwen-Image-2.1-Uncensored-Quantized": "2026-11-03T20:13:09.844110Z",
     "hf|space|glitchlab/MiniMax-H3-Turbo-Lora-UNCENSORED-Workflow": "2026-10-30T16:08:25.064998Z",
     "hf|model|ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF": "2026-10-31T06:04:00.466287Z",
-    "github/pinokio/releases|tag:github.com,2008:Repository/664226598/v8.0.40": "2026-10-28T20:25:51.630922Z",
     "hf|model|tencent/Hy-SimulMT-30B-A3B-FP8": "2026-10-29T13:28:06.967358Z",
     "news-kr/image|CBMiVkFVX3lxTFA5VHVNOGhHelBIVFNsRHFoSWxaZ2RMd2xLejlaaGRVVTh5QjRwM2ZvblVJTTRrRDV6Y2dWUGJiMVo4TW9ieXRnVG1ZdTZQd2JBcVJzbFZ3": "2026-10-29T06:08:23.699650Z",
     "community/cgpersia|https://cgpersia.com/?p=205474": "2026-10-29T13:28:08.097521Z",
@@ -110,7 +109,7 @@
     "github/comfyui/releases|tag:github.com,2008:Repository/589831718/v0.44.2": "2026-11-06T23:22:02.531238Z",
     "news/text-to-video|CBMihgFBVV95cUxPRGYxeVdUQ2pxWU5YTndmWVZMYV81cjliMHFMd0ZEcHdzUW5BREpqSjE0bzA4cUM2ZVRUYkw0c2taWHJUS2RWMmNJa3lBcnhLSTlKYktkTXV0bDA3bUdJX3hXcGFkVUd6blhLQkJBdFdFY2gzNVBYTi05TGZueW5XX0p2Y2dSZ9IBhAFBVV95cUxOMjFoU201bU80NHBzVHpCeGdQUjIyWk1PUktneDNDbklIdGpObnFZWG5hekxkdkRTbGlRWGt1bExEMVdHaWJZVWNJQnpUY2FKVFpvWldWS1VBcWhWTS1oaTZaTURjazNBNmJIMnVwa1NrNEN4NGNGcnpEWGgxNmpyWVRKY3o": "2026-11-06T23:22:03.617600Z",
     "reddit/aivideo/new|t3_1xq2icw": "2026-11-07T09:46:48.701183Z",
-    "hf|model|DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF": "2026-11-11T17:38:28.564730Z",
+    "hf|model|DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF": "2026-11-11T23:56:50.514180Z",
     "community/cgpersia|https://cgpersia.com/?p=205551": "2026-11-07T09:46:55.102869Z",
     "news-kr/lowvram|CBMiS0FVX3lxTE5vYWgtQUh1WmtQZTljek9jNVNlSzNVb0Z1eVBNNGVveEJ2S0hGeHRGb3lscDlSck5oajVTRGhGMFZGRGJmWXV5bUVjSQ": "2026-11-07T09:46:56.214640Z",
     "news-kr/image|CBMikgFBVV95cUxOVHBrNVp6dzNFVHA1Q3FvdW8yanJlS2x0V3RCWUlXQXh1Y21DUjBObzFnT2dlRkRSank0R2xMblk5MVZOd3pSd3hTd2tfSXRHNy1JTF9hX1N2UnBzSUY2Umk5U0pDUFFFN1JwU204bVdOSXFlMlZ5SVpPdnkzalBwLUhuQ1B2OVEzYldWNzJPdjVQdw": "2026-11-07T16:01:33.215472Z",
@@ -151,11 +150,12 @@
     "github/impact-pack/tags|tag:github.com,2008:Repository/621356302/evidence/pr1274-mask-blocking": "2026-11-10T17:11:01.689457Z",
     "github/impact-pack/tags|tag:github.com,2008:Repository/621356302/evidence/pr1274-media-paths": "2026-11-10T17:11:02.825014Z",
     "news-kr/image|CBMiakFVX3lxTE5RMmhWSzNkbS1SYXZHU3lCS3NONndNX0lJMEZuY09ZQ2pxa2VGci10LUN4MjVBcXpLWWFVSEtUV2V4andqY2IyNUVMX2NUQURSVU9GcW03ZUhCV3lUOEd0RlFuS0o1ekJhVnc": "2026-11-10T17:11:03.959503Z",
-    "hf|space|umaircxnd/MiniMax-H3-Turbo-Lora-UNCENSORED-Workflow": "2026-11-11T17:38:27.391049Z",
+    "hf|space|umaircxnd/MiniMax-H3-Turbo-Lora-UNCENSORED-Workflow": "2026-11-11T23:56:49.309189Z",
     "github/comfyui/releases|tag:github.com,2008:Repository/589831718/v0.45.1": "2026-11-10T22:27:00.919285Z",
     "news-kr/upscale|CBMiVEFVX3lxTE9TSUxka0FqWDh4ZzQyUDgtUWVzS2hjdnduUmhKcjFSTHZXZ0VWU2E2cVpNdTdGY3ZhTHRzTkJHa2xLaGF2Ty1MRUhRZS1MOGxtc1lpYg": "2026-11-11T02:03:52.214403Z",
     "github/comfyui/releases|tag:github.com,2008:Repository/589831718/v0.45.2": "2026-11-11T09:41:04.055069Z",
     "github/stabilitymatrix/releases|tag:github.com,2008:Repository/652941996/v2.16.4": "2026-11-11T17:38:25.035950Z",
-    "news-kr/image|CBMiYkFVX3lxTE9naHJPdjhjV3RVNkpPQjJjNEtJcjFvbVZDVHkwc05jamtqdnBydzl4em5iczNaNDNDSG9mM0N5eGh4UjBGUnh2cHhRaDQ3SHJlMUJDdUF6eVcyUko2VEE3RkpB": "2026-11-11T17:38:32.328016Z"
+    "news-kr/image|CBMiYkFVX3lxTE9naHJPdjhjV3RVNkpPQjJjNEtJcjFvbVZDVHkwc05jamtqdnBydzl4em5iczNaNDNDSG9mM0N5eGh4UjBGUnh2cHhRaDQ3SHJlMUJDdUF6eVcyUko2VEE3RkpB": "2026-11-11T17:38:32.328016Z",
+    "community/cgpersia|https://cgpersia.com/?p=205588": "2026-11-11T23:56:52.697042Z"
   }
 }
